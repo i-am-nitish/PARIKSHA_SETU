@@ -1,9 +1,12 @@
 import React from "react";
 
 import WordRotate from "../Wordrotate/WordRotate";
-
+import { useNavigate } from "react-router-dom"; // ✅ Import this at the top
 
 const Header = () => {
+
+  const navigate = useNavigate(); // ✅ Initialize navigate function
+
   return (
     <div className="">
       <header className="py-4 bg-white sm:py-5" x-data="{expanded: false}">
@@ -34,6 +37,14 @@ const Header = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
               massa in enim luctus. Rutrum arcu.
             </p>
+
+          {/* ✅ Fixed Button */}
+          <button
+              onClick={() => navigate("/explore")} // ✅ Navigates to /explore
+              className="mt-6 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-all"
+            >
+              Explore
+            </button>
 
             <form
               action="#"

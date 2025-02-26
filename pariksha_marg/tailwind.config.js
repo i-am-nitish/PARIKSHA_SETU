@@ -8,7 +8,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: colors, // Extending Tailwind's default colors
+      colors: {
+        ...colors, // Merge Tailwind's default colors
+        primary: colors.indigo["600"], // Explicitly setting a primary color for consistency
+      },
+      ringWidth: {
+        DEFAULT: "2px",
+        3: "3px",
+        4: "4px",
+      },
     },
   },
   plugins: [
@@ -20,5 +28,7 @@ module.exports = {
         ":root": newVars,
       });
     },
+    require("@tailwindcss/forms"), // Optional: Adds better form styling
+    require("@tailwindcss/typography"), // Optional: Improves text formatting
   ],
 };
