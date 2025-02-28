@@ -46,7 +46,7 @@ const Header = () => {
               Explore
             </button>
 
-            <form
+            {/* <form
               action="#"
               method="POST"
               class="max-w-md mx-auto mt-8 space-y-4 sm:space-x-4 sm:flex sm:space-y-0 sm:items-end"
@@ -77,7 +77,7 @@ const Header = () => {
                   Join Now
                 </button>
               </div>
-            </form>
+            </form> */}
 
             <ul class="flex items-center justify-center mt-6 space-x-6 sm:space-x-8">
               <li class="flex items-center">
