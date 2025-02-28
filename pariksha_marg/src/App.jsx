@@ -7,7 +7,6 @@ import AboutUs from "./Pages/AboutUs";
 import ExplorePage from "./Pages/ExplorePage"; // Ensure path is correct
 import Footer from "./Components/Footer/footer.jsx";
 
-// Checking Manu
 
 function App() {
   return (
