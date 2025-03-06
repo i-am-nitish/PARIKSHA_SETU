@@ -1,12 +1,22 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MoveRight } from "lucide-react";
+import { Button } from "@/components/Hero/button";
+import { Link } from "react-router-dom"; // Add this import
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => [
+      " Accurately",
+      "Effortlessly",
+      "Seamlessly",
+      "Precisely",
+      "Quickly",
+      "Smartly",
+      "Reliably",
+      "In Seconds",
+    ],
     []
   );
 
@@ -28,7 +38,9 @@ function Hero() {
           </div>
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-3xl sm:text-5xl md:text-7xl max-w-7xl tracking-tighter font-regular">
-              <span className="text-spektr-cyan-50 font-semibold">Know your exam eligibility & attempts instantly with </span>
+              <span className="text-spektr-cyan-50 font-semibold">
+                Know your exam eligibility & attempts instantly with{" "}
+              </span>
               <div>
                 <img src="/2.png" alt="" className="mx-auto" />
               </div>
@@ -46,7 +58,7 @@ function Hero() {
                         : { y: titleNumber > index ? -150 : 150, opacity: 0 }
                     }
                     style={{
-                      color: index % 2 === 0 ? 'blue' : 'green',
+                      color: index % 2 === 0 ? "blue" : "green",
                     }}
                   >
                     {title}
@@ -56,19 +68,21 @@ function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-7xl">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              Finding out your exam eligibility doesn't have to be complicated.
+              Stop struggling with confusing eligibility criteria and age
+              calculations. Our platform helps you instantly determine which
+              exams you're eligible for and how many attempts you have left.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             {/* <Button size="lg" className="gap-4" variant="outline">
               Jump on a call <PhoneCall className="w-4 h-4" />
             </Button> */}
-            <Button size="lg" className="gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
-            </Button>
+            <Link to="/form-page">
+              <Button size="lg" className="gap-4">
+                Check Now <MoveRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
