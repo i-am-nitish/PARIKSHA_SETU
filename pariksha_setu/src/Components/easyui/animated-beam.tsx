@@ -290,7 +290,7 @@ const Circle = forwardRef<
         ref={ref}
         className={cn(
           "z-10 flex items-center justify-center rounded-[20%] border-0 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-          isDark ? "bg-gray-800" : "bg-amber-200",
+          isDark ? "bg-gray-800" : "bg-amber-50",
           "w-16 h-16 p-13 sm:w-14 sm:h-14 sm:p-3.5 md:w-40 md:h-40 md:p-4", // Increased sizes
           className
         )}
