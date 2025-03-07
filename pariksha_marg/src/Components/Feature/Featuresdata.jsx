@@ -134,7 +134,7 @@ const TimelineDemo = () => {
             </p>
           </div>
           <img
-            src="./featuresimages/topic_summary.png"
+            src="./featuresimages/topic summary.png"
             alt="Quick Revision"
             className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
           />

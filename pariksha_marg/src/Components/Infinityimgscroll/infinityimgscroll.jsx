@@ -22,7 +22,7 @@ const InfinityImgScroll = () => {
     
     const scroll = () => {
       // Increment scroll position
-      scrollPos += 2.0;
+      scrollPos += 1.5;
       
       // Reset scroll position when one set of images is scrolled through
       if (scrollPos >= scrollTrack.firstChild.offsetWidth) {
@@ -44,6 +44,7 @@ const InfinityImgScroll = () => {
 
   return (
     <div className="w-full py-5">
+      <h2 className="text-center text-2xl font-bold mb-4">Supported Exams</h2>
       <div className="w-full overflow-hidden relative">
         <div 
           ref={scrollRef} 
@@ -62,7 +63,7 @@ const InfinityImgScroll = () => {
                     src={imgSrc} 
                     alt={`Scrolling image ${imgIndex + 1}`}
                     loading="lazy"
-                    className="w-30 h-30 object-cover "
+                    className="w-25 h-25 object-cover "
                   />
                 </div>
               ))}

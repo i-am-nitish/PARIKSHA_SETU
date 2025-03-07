@@ -1,5 +1,4 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../Components/ui/tabs"; 
-import { motion } from "framer-motion"; // Import animations
 
 const examData = {
   "SSC Exams": [
@@ -26,52 +25,43 @@ const examData = {
 
 function VerticalTabs() {
   return (
-    <Tabs defaultValue="SSC Exams" orientation="vertical" className="flex w-full gap-6">
-      {/* Left Panel - Categories */}
-      <TabsList className="flex-col w-1/4 border-l border-gray-600 bg-opacity-20 backdrop-blur-lg p-4 rounded-xl shadow-md">
-        {Object.keys(examData).map((category, index) => (
-          <motion.div 
-            key={category}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.1 }}
-          >
+    <div className="w-full">
+      <Tabs 
+        defaultValue="SSC Exams" 
+        className="flex flex-row w-full gap-2"
+      >
+        {/* Categories - vertical panel on both mobile and desktop */}
+        <TabsList className="flex flex-col h-auto w-1/4 border-l border-gray-600 bg-opacity-20 backdrop-blur-lg p-1 sm:p-2 rounded-lg overflow-y-auto max-h-[70vh]">
+          {Object.keys(examData).map((category) => (
             <TabsTrigger 
+              key={category}
               value={category} 
-              className="text-left w-full p-3 rounded-lg transition-all duration-300 bg-gray-800 text-gray-300 hover:bg-blue-500 hover:text-white shadow-sm"
+              className="text-left text-[10px] sm:text-xs md:text-sm p-1 sm:p-2 rounded-lg transition-colors bg-gray-800 text-gray-300 hover:bg-blue-500 hover:text-white focus:outline-none"
             >
               {category}
             </TabsTrigger>
-          </motion.div>
-        ))}
-      </TabsList>
+          ))}
+        </TabsList>
 
-      {/* Right Panel - Sub Exams */}
-      <div className="grow rounded-lg border border-gray-600 bg-opacity-20 backdrop-blur-lg p-6 shadow-lg">
-        {Object.entries(examData).map(([category, subExams]) => (
-          <TabsContent key={category} value={category}>
-            <motion.div 
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4 }}
-            >
-              {subExams.map((exam, index) => (
-                <motion.div 
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="p-3 border border-gray-500 rounded-lg bg-gray-900 shadow-md text-gray-200 text-center hover:shadow-lg hover:bg-blue-600 transition-all duration-300 cursor-pointer"
-                >
-                  {exam}
-                </motion.div>
-              ))}
-            </motion.div>
-          </TabsContent>
-        ))}
-      </div>
-    </Tabs>
+        {/* Exam content */}
+        <div className="grow rounded-lg border border-gray-600 bg-opacity-20 backdrop-blur-lg p-2 sm:p-3 md:p-4 shadow-md">
+          {Object.entries(examData).map(([category, subExams]) => (
+            <TabsContent key={category} value={category}>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1 sm:gap-2 md:gap-3">
+                {subExams.map((exam, index) => (
+                  <div 
+                    key={index}
+                    className="p-1 sm:p-2 border border-gray-500 rounded-lg bg-gray-900 shadow-sm text-gray-200 text-center text-[10px] sm:text-xs md:text-sm hover:bg-blue-600 hover:border-blue-600 transition-colors cursor-pointer focus:outline-none focus:ring-0 active:outline-none"
+                  >
+                    {exam}
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+          ))}
+        </div>
+      </Tabs>
+    </div>
   );
 }
 

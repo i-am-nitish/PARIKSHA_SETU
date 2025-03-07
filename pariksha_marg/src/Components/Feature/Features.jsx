@@ -27,7 +27,7 @@ const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div ref={containerRef} className="w-full bg-white dark:bg-neutral-950 font-sans px-4 md:px-10">
+    <div ref={containerRef} className="w-full bg-black dark:bg-neutral-950 font-sans px-4 md:px-10">
       <div className="max-w-7xl mx-auto py-20">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white">
           FEATURES
