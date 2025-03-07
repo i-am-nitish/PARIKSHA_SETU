@@ -33,7 +33,7 @@ const Timeline = ({ data }) => {
           FEATURES
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-          Here's a timeline of my journey.
+        Start Your Exam Journey with the Best Roadmap!.
         </p>
       </div>
 

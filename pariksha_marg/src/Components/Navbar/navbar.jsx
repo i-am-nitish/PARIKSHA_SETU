@@ -24,21 +24,21 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 px-4 md:px-0">
-      <nav className={`container mx-auto mt-2 mb-2 shadow-lg ${isScrolled ? 'backdrop-blur-md bg-white/80' : ''}`}>
+      <nav className={`container mx-auto mt-2 mb-2 shadow-lg `}>
         <div className="bg-white shadow-md border border-[#b3a5a5] rounded-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-2 lg:px-4">
             <div className="flex justify-between h-16">
               {/* Logo and Brand Name - Smaller on mobile */}
               <div className="flex items-center">
-                <div className="h-10 w-10 md:h-16 md:w-16 rounded-full">
-                  <img src="parikshamarg_logo.svg" alt="" className="w-full h-full" />
+                <div className="h-10 w-5 md:h-12 md:w-12 rounded-full">
+                  <img src="./logos/pm.svg" alt="" className="w-full h-full" />
                 </div>
-                <img src="2.png" alt="" className="ml-1 h-4 md:h-7" />
+                <img src="./logos/pm_name.svg" alt="" className="ml-2 h-4 md:h-5" />
               </div>
 
               {/* Desktop Menu */}
               <div className="hidden md:flex space-x-6 items-center">
-                <a href="/" className="text-gray-700 hover:text-blue-500">
+                <a href="/" className="text-gray-700 hover:text-blue-500 ">
                   Home
                 </a>
                 <a href="/about" className="text-gray-700 hover:text-blue-500">
