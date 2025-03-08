@@ -12,7 +12,7 @@ const TimelineDemo = () => {
             Finding the right syllabus can be time-consuming and confusing. Our roadmap provides a one-stop solution where you can access the entire syllabus for every exam in a well-organized way. Subjects and topics are visually mapped out, ensuring that you never feel lost while studying. Save hours of manual syllabus searching—we’ve done the work for you so you can focus on learning.
             </p>
             <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
-              <span className="mr-1.5">🎯</span> No more guesswork - start with clarity and confidence!
+              <span className="mr-1.5">🎯</span> No guesswork - start with clarity & confidence!
             </p>
           </div>
           <img src="./featuresimages/Structured_sy.png" alt="Syllabus Mapping" className="rounded-lg object-contain w-full h-auto md:h-72 mx-auto" />
@@ -95,7 +95,7 @@ const TimelineDemo = () => {
               <span className="mr-1.5">🎯</span> Boost your memory, revise faster, and ace your exams!
             </p>
           </div>
-          <img src="./featuresimages/topic_summary.png" alt="Quick Revision" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
+          <img src="./featuresimages/topic summary.png" alt="Quick Revision" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },

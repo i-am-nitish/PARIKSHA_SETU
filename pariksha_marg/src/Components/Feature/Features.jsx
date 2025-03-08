@@ -36,27 +36,27 @@ const Timeline = ({ data }) => {
           FEATURES
         </h2>
         <div className="relative">
-  <div className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full bg-purple-100 border border-purple-300 relative">
-    <svg
-      className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1.5 sm:mr-2 text-amber-500 flex-shrink-0"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z"
-        clipRule="evenodd"
-      />
-    </svg>
-    <span className="text-[10px] sm:text-xs md:text-sm font-medium text-purple-800">
-      Start Your Exam Journey with the Best Roadmap!
-    </span>
+          <div className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full bg-purple-100 border border-purple-300 relative">
+            <svg
+              className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1.5 sm:mr-2 text-amber-500 flex-shrink-0"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <span className="text-[10px] sm:text-xs md:text-sm font-medium text-purple-800">
+              Start Your Exam Journey with the Best Roadmap!
+            </span>
 
-    {/* Connected line from the right side */}
-    <div className="hidden md:block absolute left-full top-1/2 w-230 h-[2px] bg-purple-300 -translate-y-1/2"></div>
-  </div>
-</div>
+            {/* Connected line from the right side */}
+            <div className="block absolute left-full top-1/2 w-[45vw] md:w-[58vw] h-[2px] bg-purple-700 md:bg-purple-300 -translate-y-1/2"></div>
+          </div>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
@@ -78,7 +78,9 @@ const Timeline = ({ data }) => {
               <h3 className="md:hidden block text-2xl mb-4 font-bold text-neutral-500">
                 {item.title}
               </h3>
-              {item.content}
+              <div className="border border-gray-300 dark:border-gray-500 rounded-[10px] p-3 sm:p-4 md:p-6  hover:shadow-md transition-shadow duration-300">
+                {item.content}
+              </div>
             </div>
           </div>
         ))}
