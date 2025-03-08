@@ -8,20 +8,14 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>One-stop solution – get the full syllabus for every exam in a well-organized way.</li>
-              <li>Visually mapped-out subjects so you never feel lost.</li>
-              <li>Save hours of manual syllabus searching – we've done it for you!</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 No more guesswork—start with clarity and confidence!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Finding the right syllabus can be time-consuming and confusing. Our roadmap provides a one-stop solution where you can access the entire syllabus for every exam in a well-organized way. Subjects and topics are visually mapped out, ensuring that you never feel lost while studying. Save hours of manual syllabus searching—we’ve done the work for you so you can focus on learning.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> No more guesswork - start with clarity and confidence!
             </p>
           </div>
-          <img
-            src="./featuresimages/Structured_sy.png"
-            alt="Syllabus Mapping"
-            className="rounded-lg object-contain w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/Structured_sy.png" alt="Syllabus Mapping" className="rounded-lg object-contain w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
@@ -30,21 +24,14 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>Ever felt overwhelmed by vast subjects? We break each topic into bite-sized, easy-to-understand sections.</li>
-              <li>Step-by-step learning – go from basics to advanced effortlessly.</li>
-              <li>Visual hierarchy – understand the depth of each topic.</li>
-              <li>Linked sub-topics – making complex subjects simpler.</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 Master subjects with clarity and ease!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Competitive exams cover vast subjects, which can feel overwhelming. To make learning easier, we break down each topic into bite-sized, easy-to-understand sections. Our step-by-step approach ensures you progress from basics to advanced concepts effortlessly. The visual hierarchy of topics helps you grasp the depth of each subject, while linked sub-topics provide a clear flow of concepts.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> Master subjects with clarity and ease!
             </p>
           </div>
-          <img
-            src="./featuresimages/Detailed_topics_subtopics.png"
-            alt="Topic Breakdown"
-            className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/Detailed_topics_subtopics.png" alt="Topic Breakdown" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
@@ -53,22 +40,14 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>Want to focus on high-scoring topics first? We got you!</li>
-              <li>Topics are categorized based on importance:</li>
-              <li>Important – Must-study topics</li>
-              <li>Most Important – High-weightage questions come from here</li>
-              <li>MM Important – Must-Master topics for rank improvement</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 Maximize your marks by prioritizing the right topics!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Not all topics carry the same weight in exams. Our roadmap categorizes topics based on their importance, helping you prioritize your study plan efficiently. Topics are labeled as Important, Most Important, and MM Important (Must-Master) based on previous exam trends and weightage. This ensures you focus on high-scoring areas first, maximizing your marks with smart study planning.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> Maximize your marks by prioritizing the right topics!
             </p>
           </div>
-          <img
-            src="./featuresimages/topic_importance.png"
-            alt="Study Priorities"
-            className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/topic_importance.png" alt="Study Priorities" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
@@ -77,21 +56,14 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>Tracking progress = More Productivity!</li>
-              <li>Mark each topic as completed and watch your progress grow.</li>
-              <li>Stay on top of your study plan – never miss a topic.</li>
-              <li>Visual completion bar to keep you motivated and focused!</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 Your journey to success is now trackable!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Tracking your progress keeps you productive and motivated. Our roadmap allows you to mark each topic as completed, giving you a clear view of your progress. This feature ensures you stay on top of your study plan and never miss a topic. With a visual completion bar, you can see how far you’ve come and what’s left, making your preparation more goal-oriented and effective.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> Your journey to success is now trackable!
             </p>
           </div>
-          <img
-            src="./featuresimages/tick_mark_progress.png"
-            alt="Progress Tracker"
-            className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/tick_mark_progress.png" alt="Progress Tracker" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
@@ -100,21 +72,14 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>Why waste time searching for the right materials? Get everything in one place!</li>
-              <li>Free resources – Notes, PDFs, video lectures, and question banks.</li>
-              <li>Premium resources – Exclusive high-quality paid courses for deeper learning.</li>
-              <li>Curated by experts – Study from the best, stress-free!</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 Smart resources = Faster preparation = Better results!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Finding the right study material is crucial, and we make it effortless. Our roadmap provides access to free and premium resources, including notes, PDFs, video lectures, and question banks. Need more depth? Explore high-quality paid courses curated by top educators and subject experts. Whether you’re looking for quick references or in-depth learning, everything you need is available in one place.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> Smart resources = Faster preparation = Better results!
             </p>
           </div>
-          <img
-            src="./featuresimages/resources.png"
-            alt="Study Resources"
-            className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/resources.png" alt="Study Resources" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
@@ -123,25 +88,17 @@ const TimelineDemo = () => {
       content: (
         <div className="grid md:grid-cols-2 items-center gap-4">
           <div>
-            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-              <li>No time for long books? We got you covered!</li>
-              <li>Short, crisp topic summaries – read, revise, and retain easily.</li>
-              <li>Important points highlighted – know what matters most.</li>
-              <li>Perfect for last-minute revision!</li>
-            </ul>
-            <p className="font-semibold text-purple-500">
-              🎯 Boost your memory, revise faster, and ace your exams!
+            <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 text-justify">
+            Long textbooks can be overwhelming, especially during revision. Our short, crisp topic summaries ensure you can read, revise, and retain key points easily. Important points are highlighted, so you instantly know what matters most. Whether you need a quick refresher or last-minute revision, these summaries help you boost retention and improve recall.
+            </p>
+            <p className="flex items-center px-3 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-xs font-medium text-blue-800 sm:text-sm max-w-fit">
+              <span className="mr-1.5">🎯</span> Boost your memory, revise faster, and ace your exams!
             </p>
           </div>
-          <img
-            src="./featuresimages/topic summary.png"
-            alt="Quick Revision"
-            className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto"
-          />
+          <img src="./featuresimages/topic_summary.png" alt="Quick Revision" className="rounded-lg object-cover w-full h-auto md:h-72 mx-auto" />
         </div>
       ),
     },
-    
   ];
 
   return (

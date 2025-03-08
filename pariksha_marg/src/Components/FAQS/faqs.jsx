@@ -54,26 +54,31 @@ const FAQS = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-20 px-4">
+    <section className="bg-gray-50 py-8 sm:py-16 px-3 sm:px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-12">
-          ParikshaMarg <span className="text-gray-600">(Syllabus Flowchart & Roadmap)</span>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-2 sm:mb-3">
+          Frequently Asked Questions
         </h2>
+        <p className="text-center text-gray-600 mb-6 sm:mb-12">
+          Everything you need to know about our platform
+        </p>
         
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 sm:gap-4">
           {faqData.map((faq, index) => (
             <div 
               key={index}
-              className={`bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition-all duration-300 ${
-                activeIndex === index ? 'shadow-lg' : ''
+              className={`bg-white rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                activeIndex === index 
+                  ? 'border-blue-400' 
+                  : 'border-gray-200 hover:border-gray-300'
               }`}
             >
               <div 
-                className="flex justify-between items-center p-5 cursor-pointer hover:bg-gray-50 transition-colors"
+                className="flex justify-between items-center p-3 sm:p-5 cursor-pointer hover:bg-gray-50 transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="font-medium text-gray-800 text-lg">{faq.question}</h3>
-                <span className="text-2xl text-gray-500 transition-transform duration-300 transform">
+                <h3 className="font-medium text-gray-800 text-base sm:text-lg">{faq.question}</h3>
+                <span className="text-xl sm:text-2xl text-gray-500 transition-transform duration-300 transform">
                   {activeIndex === index ? '−' : '+'}
                 </span>
               </div>
@@ -83,12 +88,20 @@ const FAQS = () => {
                   activeIndex === index ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="p-5 pt-0 text-gray-600">
+                <p className="p-3 sm:p-5 pt-0 text-sm sm:text-base text-gray-600">
                   {faq.answer}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 sm:mt-16 text-center">
+          <h3 className="text-lg sm:text-xl font-medium text-gray-800 mb-1 sm:mb-2">Still have questions?</h3>
+          <p className="text-gray-600 mb-3 sm:mb-4">We're here to help you</p>
+          <button className="px-5 py-2 sm:px-6 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+            Contact Support
+          </button>
         </div>
       </div>
     </section>

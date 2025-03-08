@@ -6,13 +6,13 @@ const InfinityImgScroll = () => {
   // Online images from Picsum Photos
   const images = [
     './infinityimages/air_authority.png',  // Dog
-    './infinityimages/airforce.jpeg',   // Book
-    './infinityimages/bsf.jpeg',   // Building
+    './infinityimages/airforce.png',   // Book
+    './infinityimages/bsf.png',   // Building
     './infinityimages/csir.png',   // Waterfall
     './infinityimages/delhimetro.png',   // Lake
-    './infinityimages/railways.jpeg',   // Mountain
-    './infinityimages/uppolice.jpeg',   // Flowers
-    './infinityimages/upsc.jpeg',   // Beach
+    './infinityimages/railways.png',   // Mountain
+    './infinityimages/uppolice.png',   // Flowers
+    './infinityimages/upsc.png',   // Beach
   ];
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const InfinityImgScroll = () => {
 
   return (
     <div className="w-full py-5">
-      <h2 className="text-center text-2xl font-bold mb-4">Supported Exams</h2>
+      <h2 className="text-center text-2xl font-semibold mb-4  md:text-3xl  dark:text-black">SUPPORTED EXAMS</h2>
       <div className="w-full overflow-hidden relative">
         <div 
           ref={scrollRef} 

@@ -27,19 +27,44 @@ const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div ref={containerRef} className="w-full bg-black dark:bg-neutral-950 font-sans px-4 md:px-10">
-      <div className="max-w-7xl mx-auto py-20">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white">
+    <div
+      ref={containerRef}
+      className="w-full bg-white dark:bg-neutral-950 font-sans px-4 md:px-10"
+    >
+      <div className="max-w-7xl mx-auto py-10">
+        <h2 className="text-5xl md:text-6xl mb-4 text-black dark:text-white">
           FEATURES
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-        Start Your Exam Journey with the Best Roadmap!.
-        </p>
+        <div className="relative">
+  <div className="inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full bg-purple-100 border border-purple-300 relative">
+    <svg
+      className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-1.5 sm:mr-2 text-amber-500 flex-shrink-0"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5z"
+        clipRule="evenodd"
+      />
+    </svg>
+    <span className="text-[10px] sm:text-xs md:text-sm font-medium text-purple-800">
+      Start Your Exam Journey with the Best Roadmap!
+    </span>
+
+    {/* Connected line from the right side */}
+    <div className="hidden md:block absolute left-full top-1/2 w-230 h-[2px] bg-purple-300 -translate-y-1/2"></div>
+  </div>
+</div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
+          <div
+            key={index}
+            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+          >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 max-w-sm md:w-full">
               <div className="h-10 w-10 absolute left-3 md:left-3 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
@@ -58,8 +83,14 @@ const Timeline = ({ data }) => {
           </div>
         ))}
 
-        <div style={{ height: height + "px" }} className="absolute left-8 top-0 w-[2px] bg-gradient-to-b from-transparent via-neutral-200 dark:via-neutral-700 to-transparent">
-          <motion.div style={{ height: heightTransform, opacity: opacityTransform }} className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent rounded-full" />
+        <div
+          style={{ height: height + "px" }}
+          className="absolute left-8 top-0 w-[2px] bg-gradient-to-b from-transparent via-neutral-200 dark:via-neutral-700 to-transparent"
+        >
+          <motion.div
+            style={{ height: heightTransform, opacity: opacityTransform }}
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent rounded-full"
+          />
         </div>
       </div>
     </div>

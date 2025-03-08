@@ -8,6 +8,7 @@ import AboutUs from "./Pages/AboutUs";
 import ExplorePage from "./Pages/ExplorePage"; // Ensure path is correct
 import Footer from "./Components/Footer/footer.jsx";
 import FAQS from "./Components/FAQS/faqs.jsx";
+import InfinityExams from "./Components/Infinityexams/infinityexams.jsx"; // Add thi import
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Navbar />
       <div className="bg-gray-100 min-h-screen">
         <Routes>
-          <Route path="/" element={<><Header /><InfinityImgScroll /><TimelineDemo /> </>} />
+          <Route path="/" element={<><Header /><InfinityImgScroll /><TimelineDemo /> <InfinityExams/> </>} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/explore" element={<ExplorePage />} />
         </Routes>

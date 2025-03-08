@@ -3,7 +3,6 @@
 import { AnimatePresence, motion } from "motion/react"
 import { useEffect, useState } from "react";
 
-
 export function WordRotateDemo() {
   return (
     <WordRotate
@@ -13,14 +12,13 @@ export function WordRotateDemo() {
   );
 }
 
-
 const WordRotate = ({
     words,
     duration = 2500,
     motionProps = {
-      initial: { opacity: 0, y: -50 },
+      initial: { opacity: 0, y: -15 },
       animate: { opacity: 1, y: 0 },
-      exit: { opacity: 0, y: 50 },
+      exit: { opacity: 0, y: 15 },
       transition: { duration: 0.25, ease: "easeOut" },
   },
   className,
@@ -36,17 +34,22 @@ const WordRotate = ({
   }, [words, duration]);
 
   return (
-    <div className="overflow-hidden inline-block">
+    <span className="inline-flex overflow-hidden align-baseline" style={{ height: "1.2em", verticalAlign: "baseline" }}>
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
           className={className}
           {...motionProps}
+          style={{ 
+            display: "inline-block", 
+            verticalAlign: "baseline",
+            ...motionProps.style 
+          }}
         >
           {words[index]}
         </motion.span>
       </AnimatePresence>
-    </div>
+    </span>
   );
 };
 
