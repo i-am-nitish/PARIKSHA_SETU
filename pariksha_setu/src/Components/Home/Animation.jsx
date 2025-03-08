@@ -14,7 +14,7 @@ export default function Home() {
    <AnimatedBeamDemo
         icons={CustomIcons}
         beamColor="#ff4040"
-        beamSpeed={10}
+        beamSpeed={100}
         className="custom-class"
     />
 }

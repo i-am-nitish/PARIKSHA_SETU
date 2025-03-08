@@ -3,43 +3,34 @@
 import React, {
   forwardRef,
   useRef,
+  useState,
   useEffect,
   useId,
-  useState,
+  SVGProps,
   RefObject,
 } from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "../../context/ThemeContext";
 
 // Utility function for class names
 const cn = (...classes: (string | undefined)[]) =>
   classes.filter(Boolean).join(" ");
 
-// Icons object with SVG logos
+// Icons object with PNG images
 const Icons = {
   image1: () => (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
-    </svg>
+    <img
+      src="/images/image1.png"
+      alt="Image 1"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image2: () => (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-    </svg>
+    <img
+      src="/images/image2.png"
+      alt="Image 2"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image3: () => (
     <svg
@@ -62,38 +53,32 @@ const Icons = {
     </svg>
   ),
   image4: () => (
-    <svg viewBox="0 0 24 24" fill="none">
-      <path
-        d="M12 6C9.33 6 7.67 7.33 7 10C8 8.67 9.17 8.17 10.5 8.5C11.26 8.69 11.81 9.24 12.41 9.85C13.39 10.85 14.5 12 17 12C19.67 12 21.33 10.67 22 8C21 9.33 19.83 9.83 18.5 9.5C17.74 9.31 17.19 8.76 16.59 8.15C15.61 7.15 14.5 6 12 6ZM7 12C4.33 12 2.67 13.33 2 16C3 14.67 4.17 14.17 5.5 14.5C6.26 14.69 6.81 15.24 7.41 15.85C8.39 16.85 9.5 18 12 18C14.67 18 16.33 16.67 17 14C16 15.33 14.83 15.83 13.5 15.5C12.74 15.31 12.19 14.76 11.59 14.15C10.61 13.15 9.5 12 7 12Z"
-        fill="#06B6D4"
-      />
-    </svg>
+    <img
+      src="/images/image4.png"
+      alt="Image 4"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image5: () => (
-    <svg viewBox="0 0 24 24" fill="none">
-      <path
-        d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
-        fill="#000"
-      />
-    </svg>
+    <img
+      src="/images/image5.png"
+      alt="Image 5"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image6: () => (
-    <svg viewBox="0 0 24 24" fill="none">
-      <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#61DAFB" />
-      <path
-        d="M12 9.86c-4.08 0-7.72 1.88-9.64 4.64C4.28 17.26 7.92 19.14 12 19.14c4.08 0 7.72-1.88 9.64-4.64-1.92-2.76-5.56-4.64-9.64-4.64zm0 8.28c-3.36 0-6.36-1.48-8-3.64 1.64-2.16 4.64-3.64 8-3.64s6.36 1.48 8 3.64c-1.64 2.16-4.64 3.64-8 3.64z"
-        fill="#61DAFB"
-      />
-      <path
-        d="M12 4.5c-4.08 0-7.72 1.88-9.64 4.64C4.28 11.9 7.92 13.78 12 13.78c4.08 0 7.72-1.88 9.64-4.64C19.72 6.38 16.08 4.5 12 4.5zm0 8.28c-3.36 0-6.36-1.48-8-3.64 1.64-2.16 4.64-3.64 8-3.64s6.36 1.48 8 3.64c-1.64 2.16-4.64 3.64-8 3.64z"
-        fill="#61DAFB"
-      />
-    </svg>
+    <img
+      src="/images/image6.png"
+      alt="Image 6"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image7: () => (
-    <svg viewBox="0 0 24 24" fill="none">
-      <path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z" fill="#0055FF" />
-    </svg>
+    <img
+      src="/images/image7.png"
+      alt="Image 7"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
 };
 
@@ -127,10 +112,11 @@ const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   toRef,
   curvature = 0,
   reverse = false,
-  duration = Math.random() * 3 + 4,
+  // duration = Math.random() * 3 + 4,
+  duration = 4,
   delay = 0,
   pathColor = "gray",
-  pathWidth = 2,
+  pathWidth = 5,
   pathOpacity = 0.2,
   gradientStartColor = "#4d40ff",
   gradientStopColor = "#4043ff",
@@ -291,36 +277,36 @@ const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
 };
 
 // Circle component with responsive sizing
-// const Circle = forwardRef<HTMLDivElement, { className?: string; children?: React.ReactNode }>(
-//   ({ className, children }, ref) => {
-//     return (
-//       <div
-//         ref={ref}
-//         className={cn(
-//           'z-10 flex items-center justify-center rounded-full border-2 bg-white dark:bg-gray-300 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]',
-//           'w-8 h-8 p-2 sm:w-10 sm:h-10 sm:p-2.5 md:w-12 md:h-12 md:p-3', // Responsive sizes
-//           className
-//         )}
-//       >
-//         {children}
-//       </div>
-//     );
-//   }
-// );
 const Circle = forwardRef<
   HTMLDivElement,
-  { className?: string; children?: React.ReactNode }
->(({ className, children }, ref) => {
+  { className?: string; children?: React.ReactNode; label?: string }
+>(({ className, children, label }, ref) => {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   return (
-    <div
-      ref={ref}
-      className={cn(
-        "z-10 flex items-center justify-center rounded-full border-2 bg-white dark:bg-gray-300 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        "w-16 h-16 p-13 sm:w-14 sm:h-14 sm:p-3.5 md:w-30 md:h-30 md:p-4", // Increased sizes
-        className
+    <div className="flex flex-col items-center">
+      <div
+        ref={ref}
+        className={cn(
+          "z-10 flex items-center justify-center rounded-[20%] border-0 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+          isDark ? "bg-gray-800" : "bg-amber-50",
+          "w-16 h-16 p-13 sm:w-14 sm:h-14 sm:p-3.5 md:w-40 md:h-40 md:p-4", // Increased sizes
+          className
+        )}
+      >
+        {children}
+      </div>
+      {label && (
+        <span
+          className={cn(
+            "mt-2 text-center text-4xl sm:text-base font-bold ",
+            isDark ? "text-gray-200" : "text-gray-700"
+          )}
+        >
+          {label}
+        </span>
       )}
-    >
-      {children}
     </div>
   );
 });
@@ -347,29 +333,41 @@ export const AnimatedBeamDemo: React.FC<AnimatedBeamDemoProps> = ({
   const div3Ref = useRef<HTMLDivElement>(null);
   const div6Ref = useRef<HTMLDivElement>(null);
   const div7Ref = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   return (
     <div
       className={cn(
-        "relative flex w-full max-w-[1200px] mx-auto items-center justify-center overflow-hidden rounded-lg border bg-background",
-        "p-4 sm:p-6 md:p-10 md:shadow-xl", // Responsive padding
+        "relative flex w-full max-w-[1200px] mx-auto mb-4 items-center justify-center overflow-hidden",
+        isDark ? "bg-transparent" : "bg-white",
+        "p-4 sm:p-6 md:p-10", // Responsive padding
         className
       )}
       ref={containerRef}
     >
       <div className="flex h-full w-full flex-row items-stretch justify-between gap-3 sm:gap-6 md:gap-10">
-        <div className="flex flex-col justify-center gap-1 sm:gap-1.5 md:gap-30">
-          <Circle ref={div1Ref}>{icons.image3()}</Circle>
-          <Circle ref={div2Ref}>{icons.image3()}</Circle>
-          <Circle ref={div3Ref}>{icons.image3()}</Circle>
+        <div className="flex flex-col justify-center gap-1 sm:gap-1.5 md:gap-5">
+          <Circle ref={div1Ref} label="Pariksha Yogya">
+            {icons.image3()}
+          </Circle>
+          <Circle ref={div2Ref} label="Pariksha Marg">
+            {icons.image3()}
+          </Circle>
+          <Circle ref={div3Ref} label="Pariksha ChatBot">
+            {icons.image3()}
+          </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref}>{icons.image1()}</Circle>
+          <Circle ref={div7Ref} label="">
+            {icons.image1()}
+          </Circle>
         </div>
         <div className="flex flex-col justify-center">
           <Circle
             ref={div6Ref}
             className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" // Larger circle with responsive sizing
+            label=""
           >
             {icons.image2()}
           </Circle>
