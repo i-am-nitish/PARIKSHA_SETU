@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[rgba(231,231,231,0.4)] border border-[rgba(0,0,0,0.4)] py-3 overflow-hidden rounded-2xl">
+    <div className="relative bg-[rgba(231,231,231,0.4)] border border-[rgba(0,0,0,0.4)] py-3 overflow-hidden rounded-2xl ">
       
       {/* Footer content */}
       <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between px-6 max-w-7xl mx-auto">

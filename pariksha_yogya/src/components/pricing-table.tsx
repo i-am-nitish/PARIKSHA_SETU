@@ -60,7 +60,7 @@ export function PricingTable({
       )}
     >
       <div
-        className={cn("w-full max-w-7xl mx-auto px-4", containerClassName)}
+        className={cn("w-full max-w-7xl mx-auto px-4 border-1 border-gray-400 rounded-lg", containerClassName)}
         {...props}
       >
         <div className="flex justify-end mb-4 sm:mb-8">

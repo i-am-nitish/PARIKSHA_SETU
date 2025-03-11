@@ -28,7 +28,11 @@ function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <div className="w-full">
+    <div className="w-full "
+      style={{
+          background:
+            "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)",
+        }} >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8 py-10 lg:py-20 items-center justify-center">
           <div>
