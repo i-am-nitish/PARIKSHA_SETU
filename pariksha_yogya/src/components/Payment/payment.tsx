@@ -1,4 +1,4 @@
-import {PricingTable}  from '../pricing-table'
+import {PricingTable}  from './pricing-table'
 
 const features = [
     { name: "Basic Analytics", included: "starter" },
@@ -39,7 +39,7 @@ function PricingTableDemo() {
             defaultPlan="pro"
             defaultInterval="monthly"
             onPlanSelect={(plan) => console.log("Selected plan:", plan)}
-            containerClassName="py-12"
+            containerClassName="py-1"
             buttonClassName="bg-primary hover:bg-primary/90"
         />
     );

@@ -9,8 +9,8 @@ const Footer = () => {
         {/* Left Section - Features */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mt-6 lg:mt-0 lg:pl-8">
           {/* Boxed section title */}
-          <div className="inline-block border-2 border-gray-400 rounded-lg px-1 py-0.5 mb-4 ">
-            <h3 className="text-lg font-semibold text-gray-800">Our Services</h3>
+          <div className="inline-block bg-black rounded-lg px-2 py-0.5 mb-4 ">
+            <h3 className="text-lg font-semibold text-white">Our Services</h3>
           </div>
                     
           {/* Feature Cards with reduced spacing */}
@@ -47,8 +47,8 @@ const Footer = () => {
         {/* Right Section - Description, Socials, and Footer */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mt-6 lg:mt-0 lg:pl-8">
           {/* Boxed section title */}
-          <div className="inline-block border-2 border-gray-400 rounded-lg px-1 py-0.5 mb-4">
-            <h3 className="text-lg font-semibold text-gray-800">About Us</h3>
+          <div className="inline-block bg-black  rounded-lg px-2 py-0.5 mb-4">
+            <h3 className="text-lg font-semibold text-white">About Us</h3>
           </div>
           
           <div className="p-2 border rounded-lg shadow-md flex items-center space-x-4 mb-3 bg-white border-[#a8a8a8]">
@@ -71,8 +71,8 @@ const Footer = () => {
           </div>
 
           {/* Social Media Icons with reduced margins */}
-          <div className="inline-block border-2 border-gray-400 rounded-lg px-1 py-0.5 mb-4">
-            <h3 className="text-base font-medium text-gray-800">Connect With Us</h3>
+          <div className="inline-block bg-black  rounded-lg px-2 py-0.5 mb-4">
+            <h3 className="text-base font-medium text-white">Connect With Us</h3>
           </div>
           
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-4">
@@ -108,7 +108,8 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center px-6 max-w-7xl mx-auto text-gray-600 text-sm">
           <div>Made with ❤️ for Aspirants</div>
           <div className="mt-1 sm:mt-0">
-            © {new Date().getFullYear()} | <a href="#" className="underline hover:text-gray-800">Privacy Policy</a> | <a href="#" className="underline hover:text-gray-800">Terms & Conditions</a>
+            © {new Date().getFullYear()} | <a href="#" className="underline hover:text-gray-800">Privacy Policy</a> | <a href="#" className="underline hover:text-gray-800">Terms & Conditions</a> |
+            <a href="#" className="underline hover:text-gray-800">Refund Policy</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,43 @@
+import { Hero } from "@/components/Hero/hero";
+import InfinityImgScroll from "@/components/Infinityimgscroll/infinityimgscroll";
+import FeatureSection from "@/components/cards/ii";
+import InfinityExams from "@/components/Infinityexams/infinityexams";
+import { PricingTableDemo } from "@/components/Payment/payment";
+import FAQS from "@/components/FAQS/faqs";
+import Footer from "@/components/Footer/footer";
+
+function Home() {
+  return (
+    <>
+      <div className="w-full mx-0 px-0">
+        <Hero />
+      </div>
+
+      <div>
+        <InfinityImgScroll />
+      </div>
+
+      <div className="w-full p-4 m-auto">
+        <FeatureSection />
+      </div>
+
+      <div className="w-full mx-0 px-0">
+        <InfinityExams />
+      </div>
+
+      <div className="w-full p-4 pb-0 m-auto">
+        <PricingTableDemo />
+      </div>
+
+      <div className="w-full p-4 pb-0 pt-0 m-auto">
+        <FAQS />
+      </div>
+
+      <div className="w-full p-4 pt-0 m-auto">
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+export default Home;

@@ -70,9 +70,9 @@ const FAQS = () => {
   );
 
   return (
-    <div className="max-w-3xl mx-auto px-3 py-6 m-10 bg-[#f6d772] border border-gray-500 rounded-lg shadow-md">
+    <div className="max-w-3xl mx-auto px-3 py-6 m-10 bg-[#f5f5f5] border border-gray-500 rounded-lg shadow-md">
       <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-5">
-        ParikshaYogya (Exam Eligibility & Attempt Tracker)
+        FAQs (Pariksha Yogya)
       </h1>
       
       <div className="flex flex-col space-y-2">

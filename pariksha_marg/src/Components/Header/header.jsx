@@ -8,7 +8,7 @@ const GradientBackground = styled.div`
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
   background: radial-gradient(
     125% 125% at -2% 101%,
     rgba(245, 87, 2, 1) 10.5%,
@@ -67,7 +67,7 @@ const Header = () => {
         {/* Replace image with gradient background */}
         <GradientBackground />
 
-        <div class="relative py-10 px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="relative py-35 px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div class="max-w-xl mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
               Helping{" "}
@@ -77,11 +77,6 @@ const Header = () => {
               />{" "}
               to get their dream job
             </h1>
-
-            <p class="max-w-md mx-auto mt-6 text-base font-normal leading-7 text-black-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula
-              massa in enim luctus. Rutrum arcu.
-            </p>
 
             <button
               onClick={() => navigate("/explore")}

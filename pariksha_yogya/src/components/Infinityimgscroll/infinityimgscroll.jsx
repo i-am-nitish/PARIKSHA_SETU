@@ -3,16 +3,48 @@ import React, { useEffect, useRef } from 'react';
 const InfinityImgScroll = () => {
   const scrollRef = useRef(null);
   
-  // Online images from Picsum Photos
+  // Images with custom dimensions for both mobile and desktop
   const images = [
-    './infinityimages/air_authority.png',  // Dog
-    './infinityimages/airforce.png',   // Book
-    './infinityimages/bsf.png',   // Building
-    './infinityimages/csir.png',   // Waterfall
-    './infinityimages/delhimetro.png',   // Lake
-    './infinityimages/railways.png',   // Mountain
-    './infinityimages/uppolice.png',   // Flowers
-    './infinityimages/upsc.png',   // Beach
+    {
+      src: './infinityimages/air_authority.png',
+      mobileDimensions: { width: 150, height: 120 },
+      desktopDimensions: { width: 200, height: 150 },
+    },
+    {
+      src: './infinityimages/airforce.png',
+      mobileDimensions: { width: 130, height: 120 }, 
+      desktopDimensions: { width: 180, height: 150 },
+    },
+    {
+      src: './infinityimages/bsf.png',
+      mobileDimensions: { width: 140, height: 120 },
+      desktopDimensions: { width: 190, height: 150 },
+    },
+    {
+      src: './infinityimages/csir.png',
+      mobileDimensions: { width: 160, height: 120 },
+      desktopDimensions: { width: 220, height: 150 },
+    },
+    {
+      src: './infinityimages/delhimetro.png',
+      mobileDimensions: { width: 170, height: 120 },
+      desktopDimensions: { width: 240, height: 150 },
+    },
+    {
+      src: './infinityimages/railways.png',
+      mobileDimensions: { width: 140, height: 120 },
+      desktopDimensions: { width: 200, height: 150 },
+    },
+    {
+      src: './infinityimages/uppolice.png',
+      mobileDimensions: { width: 130, height: 120 },
+      desktopDimensions: { width: 180, height: 150 },
+    },
+    {
+      src: './infinityimages/upsc.png',
+      mobileDimensions: { width: 150, height: 120 },
+      desktopDimensions: { width: 210, height: 150 },
+    },
   ];
 
   useEffect(() => {
@@ -44,7 +76,7 @@ const InfinityImgScroll = () => {
 
   return (
     <div className="w-full py-5">
-      <h2 className="text-center text-2xl font-semibold mb-4  md:text-3xl  dark:text-black">SUPPORTED EXAMS</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-10 text-gray-900 dark:text-white">Supported Exams</h2>
       <div className="w-full overflow-hidden relative">
         <div 
           ref={scrollRef} 
@@ -53,18 +85,36 @@ const InfinityImgScroll = () => {
         >
           {/* Create multiple copies of images for seamless looping */}
           {[...Array(3)].map((_, copyIndex) => (
-            <div key={`copy-${copyIndex}`} className="flex gap-0 px-2 flex-none">
-              {images.map((imgSrc, imgIndex) => (
+            <div key={`copy-${copyIndex}`} className="flex gap-5 md:gap-30 px-1 md:px-2 flex-none">
+              {images.map((image, imgIndex) => (
                 <div 
                   key={`img-${copyIndex}-${imgIndex}`} 
-                  className="flex-none w-[200px] h-[150px]"
+                  className="flex-none"
+                  style={{
+                    width: `${image.mobileDimensions.width}px`,
+                    height: `${image.mobileDimensions.height}px`,
+                    '@media (min-width: 768px)': {
+                      width: `${image.desktopDimensions.width}px`,
+                      height: `${image.desktopDimensions.height}px`,
+                    }
+                  }}
                 >
-                  <img 
-                    src={imgSrc} 
-                    alt={`Scrolling image ${imgIndex + 1}`}
-                    loading="lazy"
-                    className="w-25 h-25 object-cover "
-                  />
+                  <picture>
+                    <source 
+                      media="(min-width: 768px)" 
+                      srcSet={image.src} 
+                      width={image.desktopDimensions.width} 
+                      height={image.desktopDimensions.height}
+                    />
+                    <img 
+                      src={image.src} 
+                      alt={`Scrolling image ${imgIndex + 1}`}
+                      loading="lazy"
+                      className="object-contain h-full w-full"
+                      width={image.mobileDimensions.width}
+                      height={image.mobileDimensions.height}
+                    />
+                  </picture>
                 </div>
               ))}
             </div>
