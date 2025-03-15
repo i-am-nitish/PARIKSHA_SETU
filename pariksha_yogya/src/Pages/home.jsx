@@ -1,6 +1,6 @@
 import { Hero } from "@/components/Hero/hero";
 import InfinityImgScroll from "@/components/Infinityimgscroll/infinityimgscroll";
-import FeatureSection from "@/components/cards/ii";
+import FeatureSection from "@/components/Featurecards/cardscontent";
 import InfinityExams from "@/components/Infinityexams/infinityexams";
 import { PricingTableDemo } from "@/components/Payment/payment";
 import FAQS from "@/components/FAQS/faqs";

@@ -68,7 +68,7 @@ export function PricingTable({
     <section
       className={cn(
         "bg-background text-foreground",
-        "border border-2 rounded-lg",
+        "border-2 rounded-lg",
         "fade-bottom overflow-hidden ",
       )}
     >

@@ -32,7 +32,7 @@ const Navbar = () => {
       <nav
         className={`max-w-7xl mx-auto px-4 sm:px-2 md:px-4 py-1.5 rounded-lg shadow-lg transition-all duration-300 
           ${
-            isScrolled ? "backdrop-blur-lg bg-white/80" : "bg-white"
+            isScrolled ? "backdrop-blur-lg bg-white/10" : "bg-white"
           } border border-gray-300`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center h-10 sm:h-12">

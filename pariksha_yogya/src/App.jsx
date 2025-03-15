@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import FormPage from "./Pages/checknow";
 import ContributionPage from "./Pages/contribution";
 import Home from "./Pages/home";
+import ContactPage from "./Pages/contactus";
+import AboutUs from "./Pages/aboutus";
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/checknow" element={<FormPage />} />
         <Route path="/contribution" element={<ContributionPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </HeroUIProvider>
   );
