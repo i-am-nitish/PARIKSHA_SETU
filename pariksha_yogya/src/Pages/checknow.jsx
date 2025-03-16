@@ -63,7 +63,7 @@ const FormPage = () => {
       {/* Row with 3 inputs */}
       <div className="form-row three-items">
         <div className="form-item">
-          <FormInput label="Date of Birth" type="date" name="dateOfBirth" required />
+          <FormInput label="" type="date" name="dateOfBirth" required />
         </div>
         
         <div className="form-item">
@@ -132,16 +132,15 @@ const FormPage = () => {
 
 const StyledForm = styled.form`
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem;
+  margin: 70px auto 0; /* Added top margin to position below navbar */
+  padding: 1rem;
   
   .container {
     background-color: #fafafa;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     position: relative;
     overflow: hidden;
-    rounded-4xl;
-    
+    border-radius: 1rem; /* Fixed rounded-4xl syntax */
   }
   
   .border-gradient {
@@ -150,20 +149,20 @@ const StyledForm = styled.form`
   }
   
   h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduced from 1.5rem */
     color: #333;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px; /* Reduced from 22px */
     font-weight: 600;
     position: relative;
     
     &:after {
       content: '';
       position: absolute;
-      width: 60px;
-      height: 3px;
+      width: 50px; /* Reduced from 60px */
+      height: 2px; /* Reduced from 3px */
       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      bottom: -8px;
+      bottom: -6px; /* Reduced from -8px */
       left: 50%;
       transform: translateX(-50%);
       border-radius: 2px;
@@ -173,27 +172,27 @@ const StyledForm = styled.form`
   .form-row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
-    gap: 15px;
+    margin-bottom: 0.6rem; /* Reduced from 1rem */
+    gap: 8px; /* Reduced from 15px */
   }
   
   .two-items .form-item {
-    flex: 0 0 calc(50% - 8px);
+    flex: 0 0 calc(50% - 4px); /* Reduced gap adjustment */
   }
   
   .three-items .form-item {
-    flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(33.33% - 6px); /* Reduced gap adjustment */
   }
   
   .four-items .form-item {
-    flex: 0 0 calc(25% - 12px);
+    flex: 0 0 calc(25% - 6px); /* Reduced gap adjustment */
   }
   
   .form-item {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem; /* Reduced from 0.8rem */
     border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 12px;
+    border-radius: 8px; /* Reduced from 10px */
+    padding: 8px; /* Reduced from 12px */
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     transition: all 0.3s ease;
@@ -205,7 +204,7 @@ const StyledForm = styled.form`
   }
   
   .form-actions {
-    margin-top: 1.5rem;
+    margin-top: 0.8rem; /* Reduced from 1.5rem */
     display: flex;
     justify-content: center;
   }
@@ -214,8 +213,8 @@ const StyledForm = styled.form`
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     border: none;
-    padding: 0.7rem 2rem;
-    font-size: 0.95rem;
+    padding: 0.5rem 1.8rem; /* Reduced from 0.7rem 2rem */
+    font-size: 0.9rem; /* Reduced from 0.95rem */
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.2s;
@@ -239,7 +238,7 @@ const StyledForm = styled.form`
   .wave-group .input,
   .wave-group select {
     font-size: 13px;
-    padding: 8px 8px 8px 5px;
+    padding: 6px 6px 6px 5px; /* Reduced from 8px 8px 8px 5px */
     display: block;
     width: 100%;
     border: none;
@@ -255,12 +254,12 @@ const StyledForm = styled.form`
 
   .wave-group .label {
     color: #888;
-    font-size: 15px;
+    font-size: 14px; /* Reduced from 15px */
     font-weight: normal;
     position: absolute;
     pointer-events: none;
     left: 5px;
-    top: 8px;
+    top: 6px; /* Reduced from 8px */
     display: flex;
     z-index: 1;
   }
@@ -274,8 +273,8 @@ const StyledForm = styled.form`
   .wave-group .input:valid ~ label .label-char,
   .wave-group select:focus ~ label .label-char,
   .wave-group select:valid ~ label .label-char {
-    transform: translateY(-18px);
-    font-size: 12px;
+    transform: translateY(-15px); /* Reduced from -18px */
+    font-size: 11px; /* Reduced from 12px */
     color: #2575fc;
   }
 
@@ -313,8 +312,8 @@ const StyledForm = styled.form`
 
   /* For date input and select, ensure label is always moved up when populated */
   .wave-group input[type="date"] ~ label .label-char {
-    transform: translateY(-18px);
-    font-size: 12px;
+    transform: translateY(-15px); /* Reduced from -18px */
+    font-size: 11px; /* Reduced from 12px */
     color: #2575fc;
   }
 
@@ -325,20 +324,20 @@ const StyledForm = styled.form`
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232575fc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 8px center;
-    background-size: 12px;
-    padding-right: 24px;
+    background-size: 10px; /* Reduced from 12px */
+    padding-right: 20px; /* Reduced from 24px */
   }
 
   /* Responsive adjustments */
   @media (max-width: 992px) {
     .form-row {
       flex-direction: column;
-      gap: 10px;
+      gap: 6px; /* Reduced from 10px */
     }
     
     .form-item {
       width: 100%;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem; /* Reduced from 0.5rem */
     }
     
     .two-items .form-item,

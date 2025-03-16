@@ -71,6 +71,7 @@ function Hero() {
       "Seamlessly",
       "Quickly",
       "In Seconds",
+      "instantly",
     ],
     []
   );
@@ -95,7 +96,7 @@ function Hero() {
           <div className="flex flex-col gap-4 text-center">
             <h1 className="text-3xl sm:text-5xl md:text-7xl max-w-7xl tracking-tighter font-regular">
               <span className="text-spektr-cyan-50 font-semibold">
-                Know your Competitive exam eligibility & attempts instantly with{" "}
+                Know your Competitive exam eligibility & attempts with{" "}
               </span>
               <div>
                 <img

@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown, Search } from "lucide-react";
+import { Link } from "react-router-dom";
+import login from "../../Pages/login";
+import signup from "../../Pages/signup";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,12 +35,12 @@ const Navbar = () => {
       <nav
         className={`max-w-7xl mx-auto px-4 sm:px-2 md:px-4 py-1.5 rounded-lg shadow-lg transition-all duration-300 
           ${
-            isScrolled ? "backdrop-blur-lg bg-white/10" : "bg-white"
+            isScrolled ? "backdrop-blur-lg bg-white/15" : "bg-white"
           } border border-gray-300`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center h-10 sm:h-12">
           {/* Logo and Brand */}
-          <a href="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <img
               src="./logos/py.svg"
               alt="Pariksha Yogya Logo"
@@ -48,19 +51,19 @@ const Navbar = () => {
               alt="Pariksha Yogya"
               className="h-5 sm:h-6"
             />
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
             {["Home", "About Us", "Contribution", "Contact Us"].map(
               (item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/${item.toLowerCase().replace(" ", "-")}`}
+                  to={`/${item.toLowerCase().replace(" ", "-")}`}
                   className="text-gray-700 hover:text-blue-500 text-sm lg:text-base"
                 >
                   {item}
-                </a>
+                </Link>
               )
             )}
 
@@ -91,15 +94,15 @@ const Navbar = () => {
               >
                 {["Pariksha Yogya", "Pariksha Marg", "Pariksha Gyan"].map(
                   (feature, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={`/features/${feature
+                      to={`/features/${feature
                         .toLowerCase()
                         .replace(" ", "-")}`}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm"
                     >
                       {feature}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
@@ -117,15 +120,18 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="flex items-center space-x-2">
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="text-gray-700 hover:text-blue-500 text-sm"
               >
                 Log In
-              </a>
-              <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+              </Link>
+              <Link 
+                to="/signup" 
+                className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
                 Try for Free
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -153,13 +159,13 @@ const Navbar = () => {
           <div className="py-2 space-y-2">
             {["Home", "About Us", "Contribution", "Contact Us"].map(
               (item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`/${item.toLowerCase().replace(" ", "-")}`}
+                  to={`/${item.toLowerCase().replace(" ", "-")}`}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center"
                 >
                   {item}
-                </a>
+                </Link>
               )
             )}
 
@@ -188,15 +194,15 @@ const Navbar = () => {
               >
                 {["Pariksha Yogya", "Pariksha Marg", "Pariksha Gyan"].map(
                   (feature, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={`/features/${feature
+                      to={`/features/${feature
                         .toLowerCase()
                         .replace(" ", "-")}`}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center"
                     >
                       {feature}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
@@ -212,17 +218,20 @@ const Navbar = () => {
               />
             </div>
 
-            <a
-              href="/login"
+            <Link
+              to="/login"
               className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center mt-1"
             >
               Log In
-            </a>
+            </Link>
 
             <div className="px-4 py-2">
-              <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+              <Link 
+                to="/signup"
+                className="w-full block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-center"
+              >
                 Try for Free
-              </button>
+              </Link>
             </div>
           </div>
         </div>

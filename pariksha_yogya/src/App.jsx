@@ -8,6 +8,8 @@ import ContributionPage from "./Pages/contribution";
 import Home from "./Pages/home";
 import ContactPage from "./Pages/contactus";
 import AboutUs from "./Pages/aboutus";
+import Login from "./Pages/login";
+import Signup from "./Pages/signup";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/contribution" element={<ContributionPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </HeroUIProvider>
   );
