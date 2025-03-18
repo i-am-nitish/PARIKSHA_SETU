@@ -1,10 +1,11 @@
 import { Hero } from "@/components/Hero/hero";
 import InfinityImgScroll from "@/components/Infinityimgscroll/infinityimgscroll";
-import FeatureSection from "@/components/Featurecards/cardscontent";
+// import FeatureSection from "@/components/Featurecards/cardscontent";
 import InfinityExams from "@/components/Infinityexams/infinityexams";
 import { PricingTableDemo } from "@/components/Payment/payment";
 import FAQS from "@/components/FAQS/faqs";
 import Footer from "@/components/Footer/footer";
+import { GlowingEffectDemo } from "../components/Featurecards/cardscontent";
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
       </div>
 
       <div className="w-full p-4 m-auto">
-        <FeatureSection />
+        <GlowingEffectDemo />
       </div>
 
       <div className="w-full mx-0 px-0">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[rgba(231,231,231,0.4)] border border-[rgba(0,0,0,0.4)] py-3 overflow-hidden rounded-2xl ">
+    <div className="relative bg-[rgba(231,231,231,0.4)] border border-[rgba(0,0,0,0.4)] py-3 overflow-hidden rounded-lg ">
       
       {/* Footer content */}
       <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between px-6 max-w-7xl mx-auto">
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mt-6 lg:mt-0 lg:pl-8">
           {/* Boxed section title */}
           <div className="inline-block bg-black rounded-lg px-2 py-0.5 mb-4 ">
-            <h3 className="text-lg font-semibold text-white">Our Services</h3>
+            <h3 className="text-base font-semibold text-white">Our Services</h3>
           </div>
                     
           {/* Feature Cards with reduced spacing */}
@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mt-6 lg:mt-0 lg:pl-8">
           {/* Boxed section title */}
           <div className="inline-block bg-black  rounded-lg px-2 py-0.5 mb-4">
-            <h3 className="text-lg font-semibold text-white">About Us</h3>
+            <h3 className="text-base font-semibold text-white">About Us</h3>
           </div>
           
           <div className="p-2 border rounded-lg shadow-md flex items-center space-x-4 mb-3 bg-white border-[#a8a8a8]">

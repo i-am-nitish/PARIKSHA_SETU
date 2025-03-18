@@ -20,6 +20,7 @@ function App() {
         <div className="beam"></div>
         <div className="beam-vertical"></div>
         <div className="line-highlight"></div>
+       
       </div>
       <div className="w-full ">
         <Navbar />

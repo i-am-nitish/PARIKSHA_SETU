@@ -31,9 +31,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-1 left-2 right-2 z-50">
+    <div className="fixed top-1 left-3 right-3 z-50">
       <nav
-        className={`max-w-7xl mx-auto px-4 sm:px-2 md:px-4 py-1.5 rounded-lg shadow-lg transition-all duration-300 
+        className={`max-w-8xl px-4 sm:px-2 md:px-4 py-1.5 rounded-lg shadow-lg transition-all duration-300 
           ${
             isScrolled ? "backdrop-blur-lg bg-white/15" : "bg-white"
           } border border-gray-300`}
@@ -162,7 +162,7 @@ const Navbar = () => {
                 <Link
                   key={index}
                   to={`/${item.toLowerCase().replace(" ", "-")}`}
-                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-center font-extrabold md:font-extrabold sm:font-extrabold"
                 >
                   {item}
                 </Link>
@@ -173,7 +173,7 @@ const Navbar = () => {
             <div className="px-4">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="w-full text-center py-2 flex items-center justify-center text-gray-700 hover:text-blue-500 focus:outline-none"
+                className="w-full text-center py-2 flex items-center justify-center text-gray-700 hover:text-blue-500 focus:outline-none font-extrabold md:font-extrabold sm:font-extrabold"
                 aria-expanded={isDropdownOpen}
                 aria-haspopup="true"
               >

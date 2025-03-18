@@ -68,7 +68,7 @@ export function PricingTable({
     <section
       className={cn(
         "bg-background text-foreground",
-        "border-2 rounded-lg",
+        "border border-[rgba(0,0,0,0.4)] rounded-lg",
         "fade-bottom overflow-hidden ",
       )}
     >
@@ -192,7 +192,7 @@ export function PricingTable({
           </div>
 
           {/* Features column */}
-          <div className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden bg-white dark:bg-gray-950 shadow-sm">
+          <div className="border border-[rgba(0,0,0,0.4)] dark:border-gray-800 rounded-lg overflow-hidden bg-white dark:bg-gray-950 shadow-sm">
             <div className="overflow-x-auto">
               <div className="min-w-[240px] divide-y divide-gray-200 dark:divide-gray-800">
                 <div className="flex items-center py-1.5 px-2 bg-gray-50 dark:bg-gray-900 sticky top-0">
@@ -219,7 +219,7 @@ export function PricingTable({
                       index % 2 === 0 && "bg-gray-50/50 dark:bg-gray-900/20"
                     )}
                   >
-                    <div className="flex-1 text-s">{feature.name}</div>
+                    <div className="flex-1 text-sm">{feature.name}</div>
                     <div className="flex items-center gap-6 text-xs">
                       {plans.map((plan) => (
                         <div

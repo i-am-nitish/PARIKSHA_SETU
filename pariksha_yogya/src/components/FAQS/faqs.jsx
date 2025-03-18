@@ -70,7 +70,7 @@ const FAQS = () => {
   );
 
   return (
-    <div className="max-w-3xl mx-auto px-3 py-6 m-10 bg-[#f5f5f5] border border-gray-500 rounded-lg shadow-md">
+    <div className="max-w-5xl mx-auto px-3 py-6 m-5 bg-[#f5f5f5] border border-[rgba(0,0,0,0.4)] rounded-lg ">
       <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-5">
         FAQs (Pariksha Yogya)
       </h1>
@@ -84,24 +84,24 @@ const FAQS = () => {
                       ${activeIndex === index ? 'border-gray-300' : ''}`}
             onClick={() => toggleFAQ(index)}
           >
-            <div className="flex justify-between items-center px-4 py-3">
-              <h3 className="text-base md:text-lg text-left font-medium text-gray-700 pr-4">
+            <div className="flex justify-between items-center px-4 py-2">
+              <h3 className="text-sm md:text-base text-left font-medium text-gray-700 pr-4">
                 {faq.question}
               </h3>
-              <div className="flex-shrink-0 transform transition-transform duration-700 ease-in-out">
+              <div className="flex-shrink-0 transform transition-transform duration-300 ease-in-out">
                 {activeIndex === index ? <CloseIcon /> : <OpenIcon />}
               </div>
             </div>
             
             <div 
-              className={`overflow-hidden transition-all duration-700 ease-in-out transform
+              className={`overflow-hidden transition-all duration-300 ease-in-out transform
                 ${activeIndex === index 
                   ? 'max-h-96 opacity-100 translate-y-0' 
                   : 'max-h-0 opacity-0 -translate-y-1'
                 }`}
             >
               <div className="px-4 pb-4 pt-1 border-t border-gray-100">
-                <p className="text-gray-600 text-left text-xs md:text-sm leading-relaxed">
+                <p className="text-gray-600 text-left text-sm md:text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

@@ -1,108 +1,89 @@
-import React from "react";
-import { FaCheckCircle, FaSyncAlt, FaChartBar, FaClipboardList, FaBookOpen, FaLightbulb } from "react-icons/fa";
-import EligibilityCard from "./eligibilitycard"
-import AttemptsCard from "./attemptscard"
-import StandardFeatureCard from "./standardfeaturecard"
+"use client";
+import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
-import Highlighter from "@/components/ui/highlighter"
-
-const features = [
-  {
-    title: "Checks Eligibility",
-    description: "Easily determine your eligibility for various government exams based on age, education, category, and other criteria.",
-    icon: <FaCheckCircle size={24} />,
-  },
-  {
-    title: "Number of Attempts",
-    description: "Track your remaining attempts for exams with attempt limits like UPSC, SSC, and others.",
-    icon: <FaSyncAlt size={24} />,
-  },
-  {
-    title: "Detailed Exam Eligibility Chart",
-    description: "Get a full, downloadable chart of all upcoming exams you're eligible for, ensuring you never miss an opportunity.",
-    icon: <FaChartBar size={24} />,
-  },
-  {
-    title: "Related Exam Suggestions",
-    description: "Receive smart recommendations for similar exams based on your main exam, helping you explore more career opportunities.",
-    icon: <FaLightbulb size={24} />,
-  },
-  {
-    title: "Access Full Exam Syllabus",
-    description: "View and download the complete, structured syllabus for your main exam to streamline your preparation.",
-    icon: <FaBookOpen size={24} />,
-  },
-  {
-    title: "Dynamically Updated Eligibility Tracker",
-    description: "Automatically adjusts eligibility based on official exam guidelines, ensuring up-to-date information.",
-    icon: <FaClipboardList size={24} />,
-  },
-  // Note: You have a duplicated entry in your original code, I'm removing it here
-];
-
-const FeatureSection = () => {
+export function GlowingEffectDemo() {
   return (
+    <div className="border-2 border-gray-400 rounded-lg p-4 bg-opacity-50">
+      <ul className="grid grid-cols-1 gap-4 md:grid-cols-12 md:grid-rows-4 md:gap-4 xl:max-h-[48rem] xl:grid-rows-3">
+        <GridItem
+          area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
+          icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Do things the right way"
+          description="Running out of copy so I'll write anything."
+          className="min-h-[12rem]" />
+        <GridItem
+          area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
+          icon={<Settings className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="The best AI code editor ever."
+          description="Yes, it's true. I'm not even kidding. Ask my mom if you don't believe me."
+          className="min-h-[12rem]" />
+        <GridItem
+          area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/2/9]" // Changed from spanning 2 rows
+          icon={<Lock className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="You should buy Aceternity UI Pro"
+          description="It's the best money you'll ever spend"
+          className="min-h-[12rem]" />
+        <GridItem
+          area="md:[grid-area:2/7/3/13] xl:[grid-area:1/9/2/13]" // Adjusted positioning
+          icon={<Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="This card is also built by Cursor"
+          description="I'm not even kidding. Ask my mom if you don't believe me."
+          className="min-h-[12rem]" />
+        <GridItem
+          area="md:[grid-area:3/1/4/13] xl:[grid-area:2/5/3/13]" // Adjusted width
+          icon={<Search className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Coming soon on Aceternity UI"
+          description="I'm writing the code as I record this, no shit."
+          className="min-h-[12rem]" />
+        <GridItem
+          area="md:[grid-area:4/1/5/13] xl:[grid-area:3/1/4/13]"
+          icon={<Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Prepare for Success"
+          description="Access comprehensive study materials and practice tests to excel in your exams."
+          className="min-h-[12rem]" />
+      </ul>
+    </div>
+  );
+}
 
-    <div>
-
-
-
-    <div className="w-full mx-0 px-0">
-        <div className="relative z-10 w-full mx-0 px-0 py-4 md:py-12 text-center">
-          <h2 className="text-4xl md:text-4xl font-bold mb-6 md:mb-10 text-gray-900 dark:text-white">
-            Features
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-3xl md:max-w-4xl lg:max-w-4xl mx-auto mt-3 md:mt-6">
-            Finding out your <Highlighter color="#FF9800">exam eligibility </Highlighter> doesn't have to be complicated. Stop struggling with confusing eligibility criteria and age
-            calculations. Our platform helps you instantly determine which
-            exams you're eligible for and how many attempts you have left.<Highlighter color="#FFC107" action="circle">Try it out now!</Highlighter>
-          </p>
+const GridItem = ({
+  area,
+  icon,
+  title,
+  description,
+  className = ""
+}) => {
+  return (
+    <li className={`list-none ${area} ${className}`}>
+      <div
+        className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+        <GlowingEffect
+          spread={40}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01} />
+        <div
+          className="relative flex h-full flex-col justify-between gap-4 overflow-hidden rounded-xl border-0.75 p-4 md:p-5 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
+          <div className="relative flex flex-1 flex-col justify-between gap-3">
+            <div className="w-fit rounded-lg border border-gray-600 p-2">
+              {icon}
+            </div>
+            <div className="space-y-2">
+              <h3
+                className="pt-0.5 text-lg/[1.3rem] font-semibold font-sans -tracking-4 md:text-xl/[1.75rem] text-balance text-black dark:text-white">
+                {title}
+              </h3>
+              <h2
+                className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-sans text-sm/[1.125rem] 
+              md:text-base/[1.375rem] text-black dark:text-neutral-400">
+                {description}
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
-
-    
-
-
-    <div className="flex flex-col gap-6 px-4 py-8 mx-auto max-w-7xl border-2 border-gray-400 rounded-lg bg-gray-00">
-
-      
-      
-      {Array.from({ length: Math.ceil(features.length / 2) }).map((_, rowIndex) => (
-        <div key={rowIndex} className="flex flex-col sm:flex-row gap-6 w-full">
-          {features.slice(rowIndex * 2, rowIndex * 2 + 2).map((feature, colIndex) => {
-            const isFirst = colIndex === 0;
-            const isEvenRow = rowIndex % 2 === 0;
-            const isNarrow = (isEvenRow && isFirst) || (!isEvenRow && !isFirst);
-            const isFirstCard = rowIndex === 0 && colIndex === 0;
-            const isNumberOfAttemptsCard = rowIndex === 0 && colIndex === 1;
-            
-            const cardClassName = isNarrow ? 'sm:w-[30%]' : 'sm:w-[70%]';
-            
-            if (isFirstCard) {
-              return <EligibilityCard 
-                key={rowIndex * 2 + colIndex} 
-                feature={feature} 
-                className={cardClassName} 
-              />;
-            } else if (isNumberOfAttemptsCard) {
-              return <AttemptsCard 
-                key={rowIndex * 2 + colIndex} 
-                feature={feature} 
-                className={cardClassName} 
-              />;
-            } else {
-              return <StandardFeatureCard 
-                key={rowIndex * 2 + colIndex} 
-                feature={feature} 
-                className={cardClassName} 
-              />;
-            }
-          })}
-        </div>
-      ))}
-    </div>
-    </div> 
+    </li>
   );
 };
-
-export default FeatureSection;
