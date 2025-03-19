@@ -75,7 +75,7 @@ const InfinityImgScroll = () => {
   }, []);
 
   return (
-    <div className="w-full py-5">
+    <div className="w-full py-5 overflow-x-hidden">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-10 text-gray-900 dark:text-white">Supported Exams</h2>
       <div className="w-full overflow-hidden relative">
         <div 

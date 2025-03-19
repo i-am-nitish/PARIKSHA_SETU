@@ -23,7 +23,7 @@ function Home() {
         <InfinityImgScroll />
       </div>
 
-      <div className="w-full p-4 m-auto">
+      <div className="w-full p-4 m-auto overflow-hidden">
         <GlowingEffectDemo />
       </div>
 

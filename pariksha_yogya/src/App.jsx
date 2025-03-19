@@ -13,7 +13,7 @@ import Signup from "./Pages/signup";
 
 function App() {
   return (
-    <HeroUIProvider className="w-full mx-0 px-0">
+    <HeroUIProvider className="w-full mx-0 px-0 overflow-x-hidden">
       <div className="animated-background">
         <div className="line-grid"></div>
         <div className="diagonal-lines"></div>
