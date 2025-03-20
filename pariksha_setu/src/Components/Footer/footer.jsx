@@ -14,37 +14,50 @@ const Footer = () => {
         isDark ? "border-gray-800" : "border-gray-200"
       }`}
     >
-      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="container mx-auto px-3 py-6 sm:px-4 sm:py-8 md:py-10 lg:px-8 lg:py-12">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-10">
           {/* About */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
-              <img
-                src="/images/logo.svg"
-                alt="Pariksha Setu"
-                className="h-10 w-auto mr-3"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src =
-                    "https://placehold.co/100x40/indigo/white?text=Pariksha+Setu";
-                }}
-              />
-              <h2
-                className={`text-xl font-bold ${
-                  isDark ? "text-white" : "text-gray-900"
+            <div className="flex items-center mb-3 md:mb-4">
+              <Link to="/" className="flex-shrink-0 group">
+                <img
+                  src="/logos/ps.svg"
+                  alt="Pariksha Setu"
+                  className="h-6 sm:h-7 md:h-8 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/100x40/indigo/white?text=Pariksha+Setu";
+                  }}
+                />
+              </Link>
+              <Link to="/" className="ml-4 md:ml-6 flex-shrink-0 group">
+                <img
+                  src="/logos/ps_name.svg"
+                  alt="Pariksha Setu"
+                  className={`h-5 sm:h-5 md:h-6 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${
+                  theme === "dark" ? "filter brightness-0 invert" : ""
                 }`}
-              >
-                Pariksha Setu
-              </h2>
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://placehold.co/100x40/indigo/white?text=Pariksha+Setu";
+                  }}
+                />
+              </Link>
             </div>
-            <p className={`${isDark ? "text-gray-300" : "text-gray-600"} mb-6`}>
+            <p
+              className={`text-sm sm:text-base ${
+                isDark ? "text-gray-300" : "text-gray-600"
+              } mb-4 md:mb-6`}
+            >
               {language === "en"
                 ? "Pariksha Setu is your ultimate companion for competitive exam preparation, offering innovative tools to help you navigate your educational journey with confidence."
                 : "परीक्षा सेतु प्रतियोगी परीक्षा की तैयारी के लिए आपका अंतिम साथी है, जो आपको अपनी शैक्षिक यात्रा को आत्मविश्वास के साथ नेविगेट करने में मदद करने के लिए अभिनव उपकरण प्रदान करता है।"}
             </p>
 
             {/* Social Media Icons */}
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap gap-3 sm:gap-4 mb-6 md:mb-8">
               <a
                 href="mailto:contact@pariksha-setu.com"
                 className={`${
@@ -155,13 +168,13 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="col-span-1">
             <h3
-              className={`text-lg font-semibold ${
+              className={`text-base sm:text-lg font-semibold ${
                 isDark ? "text-white" : "text-gray-900"
-              } mb-4`}
+              } mb-2 md:mb-4`}
             >
               {language === "en" ? "Quick Links" : "त्वरित लिंक"}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link
                   to="/"
@@ -216,13 +229,13 @@ const Footer = () => {
           {/* Company */}
           <div className="col-span-1">
             <h3
-              className={`text-lg font-semibold ${
+              className={`text-base sm:text-lg font-semibold ${
                 isDark ? "text-white" : "text-gray-900"
-              } mb-4`}
+              } mb-2`}
             >
               {language === "en" ? "Company" : "कंपनी"}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link
                   to="/about"
@@ -279,9 +292,9 @@ const Footer = () => {
         <div
           className={`border-t ${
             isDark ? "border-gray-800" : "border-gray-200"
-          } mt-12 pt-8 text-center ${
+          } mt-5 pt-3 sm:mt-6 sm:pt-4 text-center ${
             isDark ? "text-gray-400" : "text-gray-500"
-          } text-sm`}
+          } text-xs sm:text-sm`}
         >
           <p>
             {" "}

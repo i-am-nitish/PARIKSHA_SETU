@@ -227,7 +227,7 @@ const FeatureSection = () => {
 
         {/* Feature Selector Tabs */}
         <motion.div
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-6 lg:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -237,7 +237,7 @@ const FeatureSection = () => {
             <button
               key={feature.id}
               onClick={() => setActiveFeature(feature.id)}
-              className={`px-6 py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 flex items-center gap-2 ${
+              className={`px-3 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-base font-medium transition-all duration-300 flex items-center gap-1 md:gap-2 ${
                 activeFeature === feature.id
                   ? `${getColorClasses(feature, "bg")} ${getColorClasses(
                       feature,
@@ -251,7 +251,7 @@ const FeatureSection = () => {
               <span className={getColorClasses(feature, "text")}>
                 {feature.icon}
               </span>
-              {feature.title}
+              <span className="whitespace-nowrap">{feature.title}</span>
             </button>
           ))}
         </motion.div>
@@ -271,21 +271,26 @@ const FeatureSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div
-              className={`inline-flex items-center justify-center p-3 rounded-lg ${getColorClasses(
-                activeFeatureData,
-                "bg"
-              )} ${getColorClasses(activeFeatureData, "text")} mb-6`}
-            >
-              {activeFeatureData.icon}
+            {" "}
+            <div className="flex flex-row justify-left">
+              <div
+                className={`justify-center p-3 rounded-lg ${getColorClasses(
+                  activeFeatureData,
+                  "bg"
+                )} ${getColorClasses(activeFeatureData, "text")} mb-6`}
+              >
+                {activeFeatureData.icon}
+              </div>
+              <div className={"basis-2/3 ml-6 flex flex-col justify-center"}>
+                <h3
+                  className={`text-2xl md:text-3xl font-bold ${
+                    isDark ? "text-white" : "text-gray-900"
+                  } mb-4`}
+                >
+                  {activeFeatureData.title}
+                </h3>
+              </div>
             </div>
-            <h3
-              className={`text-2xl md:text-3xl font-bold ${
-                isDark ? "text-white" : "text-gray-900"
-              } mb-4`}
-            >
-              {activeFeatureData.title}
-            </h3>
             <p
               className={`text-lg ${
                 isDark ? "text-gray-300" : "text-gray-600"

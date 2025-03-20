@@ -7,15 +7,18 @@ import CTASection from "../../Components/Home/CTASection";
 import StatsSection from "../../Components/Home/StatsSection";
 import { AnimatedBeamDemo } from "../../Components/easyui/animated-beam";
 import FAQSection from "../../Components/Home/FAQSection";
+import InfinityExams from "../../Components/Infinityexams/infinityexams.jsx";
 
 const HomePage = () => {
   return (
     <div className="pt-16">
       <HeroSection />
 
-      <AnimatedBeamDemo className="h-[650px] mt-8" />
+
+      <AnimatedBeamDemo className="lg:h-[650px] lg:mt-8" />
 
       <FeatureSection />
+      <InfinityExams/>
       {/* <StatsSection />
       <TestimonialSection /> */}
       <CTASection />

@@ -90,7 +90,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
                 src="/logos/ps.svg"
                 alt="Pariksha Setu"
-                className="h-8 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                className={`h-8 w-auto object-contain transition-all duration-300 group-hover:scale-105 `}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src =
@@ -98,14 +98,16 @@ const Navbar = () => {
                 }}
               />
             </Link>
-            <Link to="/" className=" ml-6 flex-shrink-0 group">
+            <Link to="/" className="ml-6 flex-shrink-0 group">
               <motion.img
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 src="/logos/ps_name.svg"
                 alt="Pariksha Setu"
-                className="h-6 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                className={`h-6 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${
+                  theme === "dark" ? "filter brightness-0 invert" : ""
+                }`}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src =
@@ -333,9 +335,15 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className={`md:hidden bg-white dark:bg-gray-900 shadow-lg ${
-              theme === "light" ? "text-gray-700" : "text-gray-300"
-            }`}
+            className={`md:hidden shadow-lg ${
+              scrolled
+                ? theme === "light"
+                  ? "bg-white/95 backdrop-blur-sm"
+                  : "bg-gray-900/95 backdrop-blur-sm"
+                : theme === "light"
+                ? "bg-white"
+                : "bg-gray-900"
+            } ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navLinks.map((link) => (

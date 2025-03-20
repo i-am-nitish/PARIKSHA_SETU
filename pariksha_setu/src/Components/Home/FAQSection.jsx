@@ -13,14 +13,14 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
       } shadow-md transition-all duration-200`}
     >
       <button
-        className={`flex w-full items-center justify-between p-5 text-left font-medium ${
+        className={`flex w-full items-center justify-between p-3 sm:p-4 md:p-5 text-left font-medium ${
           isDark ? "text-white" : "text-gray-900"
         }`}
         onClick={onClick}
       >
-        <span className="text-lg">{question}</span>
+        <span className="text-base sm:text-lg md:text-lg pr-2">{question}</span>
         <svg
-          className={`h-5 w-5 transform transition-transform duration-300 ${
+          className={`h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 transform transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           } ${isDark ? "text-gray-400" : "text-gray-500"}`}
           fill="none"
@@ -45,7 +45,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
             transition={{ duration: 0.3 }}
           >
             <div
-              className={`px-5 pb-5 pt-0 ${
+              className={`px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 pt-0 text-sm sm:text-base ${
                 isDark ? "text-gray-300" : "text-gray-600"
               }`}
             >
@@ -139,7 +139,11 @@ const FAQSection = () => {
         ];
 
   return (
-    <section className={`py-16 ${isDark ? "bg-gray-900" : "bg-gray-50"}`}>
+    <section
+      className={`py-8 sm:py-12 md:py-16 ${
+        isDark ? "bg-gray-900" : "bg-gray-50"
+      }`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <motion.h2
@@ -147,7 +151,7 @@ const FAQSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className={`text-3xl font-bold tracking-tight sm:text-4xl ${
+            className={`text-2xl sm:text-3xl font-bold tracking-tight sm:text-4xl ${
               isDark ? "text-white" : "text-gray-900"
             }`}
           >
@@ -160,7 +164,9 @@ const FAQSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className={`mt-4 ${isDark ? "text-gray-300" : "text-gray-600"}`}
+            className={`mt-2 sm:mt-4 text-sm sm:text-base ${
+              isDark ? "text-gray-300" : "text-gray-600"
+            }`}
           >
             {language === "en"
               ? "Have questions about Pariksha Setu? Find quick answers to common queries below."
@@ -168,7 +174,7 @@ const FAQSection = () => {
           </motion.p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mx-auto mt-6 sm:mt-8 md:mt-12 max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -191,16 +197,20 @@ const FAQSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-10 text-center"
+            className="mt-6 sm:mt-8 md:mt-10 text-center"
           >
-            <p className={`mb-6 ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+            <p
+              className={`mb-4 sm:mb-6 text-sm sm:text-base ${
+                isDark ? "text-gray-300" : "text-gray-600"
+              }`}
+            >
               {language === "en"
                 ? "Didn't find what you're looking for?"
                 : "जो आप ढूंढ रहे हैं वह नहीं मिला?"}
             </p>
             <a
               href="#contact"
-              className={`inline-flex items-center rounded-md px-6 py-3 text-base font-medium shadow-lg ${
+              className={`inline-flex items-center rounded-md px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium shadow-lg ${
                 isDark
                   ? "bg-indigo-600 text-white hover:bg-indigo-700"
                   : "bg-indigo-600 text-white hover:bg-indigo-700"
@@ -208,7 +218,7 @@ const FAQSection = () => {
             >
               {language === "en" ? "Contact Us" : "हमसे संपर्क करें"}
               <svg
-                className="ml-2 h-5 w-5"
+                className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"

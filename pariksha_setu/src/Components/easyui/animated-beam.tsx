@@ -276,7 +276,7 @@ const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   );
 };
 
-// Circle component with responsive sizing
+// Circle component with enhanced mobile responsiveness
 const Circle = forwardRef<
   HTMLDivElement,
   { className?: string; children?: React.ReactNode; label?: string }
@@ -285,13 +285,13 @@ const Circle = forwardRef<
   const isDark = theme === "dark";
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-2">
       <div
         ref={ref}
         className={cn(
           "z-10 flex items-center justify-center rounded-[20%] border-0 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
           isDark ? "bg-gray-800" : "bg-amber-50",
-          "w-16 h-16 p-13 sm:w-14 sm:h-14 sm:p-3.5 md:w-40 md:h-40 md:p-4", // Increased sizes
+          "w-12 h-12 p-2 xs:w-16 xs:h-16 xs:p-3 sm:w-14 sm:h-14 sm:p-3.5 md:w-40 md:h-40 md:p-4", // Enhanced mobile sizing
           className
         )}
       >
@@ -300,7 +300,7 @@ const Circle = forwardRef<
       {label && (
         <span
           className={cn(
-            "mt-2 text-center text-4xl sm:text-base font-bold ",
+            "mt-2 xs:mt-2 text-center text-xs xs:text-sm sm:text-base font-bold", // Improved text scaling
             isDark ? "text-gray-200" : "text-gray-700"
           )}
         >
@@ -337,76 +337,100 @@ export const AnimatedBeamDemo: React.FC<AnimatedBeamDemoProps> = ({
   const isDark = theme === "dark";
 
   return (
-    <div
-      className={cn(
-        // "relative flex w-full max-w-[600px] lg:max-w-[1000px] mx-auto mb-4 items-center justify-center overflow-hidden",
-        "relative flex max-w-[clamp(600px,80%,1200px)] mx-auto mb-4 items-center justify-center overflow-hidden",
-        isDark ? "bg-transparent" : "bg-white",
-        "p-4 sm:p-6 md:p-10", // Responsive padding
-        className
-      )}
-      ref={containerRef}
-    >
-      <div className="flex h-full w-full flex-row items-stretch justify-between gap-3 sm:gap-6 md:gap-10">
-        <div className="flex flex-col justify-center gap-1 sm:gap-1.5 md:gap-5">
-          <Circle ref={div1Ref} label="Pariksha Yogya">
-            {icons.image3()}
-          </Circle>
-          <Circle ref={div2Ref} label="Pariksha Marg">
-            {icons.image3()}
-          </Circle>
-          <Circle ref={div3Ref} label="Pariksha ChatBot">
-            {icons.image3()}
-          </Circle>
-        </div>
-        <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref} label="">
-            {icons.image1()}
-          </Circle>
-        </div>
-        <div className="flex flex-col justify-center">
-          <Circle
-            ref={div6Ref}
-            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" // Larger circle with responsive sizing
-            label=""
-          >
-            {icons.image2()}
-          </Circle>
-        </div>
+    <div>
+      <div className="mt-6 mb-2 xs:mt-2 text-center text-3xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
+        In students life ...
       </div>
+      <div
+        className={cn(
+          "relative flex max-w-[clamp(430px,60%,1200px)] mx-auto mb-0 lg:mb-4 items-center justify-center overflow-hidden", // Full width on smallest screens
+          isDark ? "bg-transparent" : "bg-white",
+          "p-2 xs:p-4 sm:p-6 md:p-10", // Enhanced padding for mobile
+          className
+        )}
+        ref={containerRef}
+      >
+        <div className="flex h-full w-full flex-row items-stretch justify-between gap-1 xs:gap-3 sm:gap-6 md:gap-10">
+          <div className="flex flex-col justify-center gap-5 xs:gap-1 sm:gap-1.5 md:gap-5">
+            <Circle
+              ref={div1Ref}
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              label="Pariksha Yogya"
+            >
+              {icons.image3()}
+            </Circle>
+            <Circle
+              ref={div2Ref}
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              label="Pariksha Marg"
+            >
+              {icons.image3()}
+            </Circle>
+            <Circle
+              ref={div3Ref}
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              label="Pariksha ChatBot"
+            >
+              {icons.image3()}
+            </Circle>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Circle
+              ref={div7Ref}
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              label=""
+            >
+              {icons.image1()}
+            </Circle>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Circle
+              ref={div6Ref}
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" // Enhanced responsive sizing
+              label=""
+            >
+              {icons.image2()}
+            </Circle>
+          </div>
+        </div>
 
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div1Ref}
-        toRef={div7Ref}
-        duration={beamSpeed}
-        gradientStartColor={beamColor}
-        gradientStopColor={beamColor}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div2Ref}
-        toRef={div7Ref}
-        duration={beamSpeed}
-        gradientStartColor={beamColor}
-        gradientStopColor={beamColor}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div3Ref}
-        toRef={div7Ref}
-        duration={beamSpeed}
-        gradientStartColor={beamColor}
-        gradientStopColor={beamColor}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div6Ref}
-        toRef={div7Ref}
-        duration={beamSpeed}
-        gradientStartColor={beamColor}
-        gradientStopColor={beamColor}
-      />
+        <AnimatedBeam
+          containerRef={containerRef}
+          fromRef={div1Ref}
+          toRef={div7Ref}
+          duration={beamSpeed}
+          gradientStartColor={beamColor}
+          gradientStopColor={beamColor}
+          pathWidth={window.innerWidth < 640 ? 3 : 5} // Thinner lines on mobile
+        />
+        <AnimatedBeam
+          containerRef={containerRef}
+          fromRef={div2Ref}
+          toRef={div7Ref}
+          duration={beamSpeed}
+          gradientStartColor={beamColor}
+          gradientStopColor={beamColor}
+          pathWidth={window.innerWidth < 640 ? 3 : 5} // Thinner lines on mobile
+        />
+        <AnimatedBeam
+          containerRef={containerRef}
+          fromRef={div3Ref}
+          toRef={div7Ref}
+          duration={beamSpeed}
+          gradientStartColor={beamColor}
+          gradientStopColor={beamColor}
+          pathWidth={window.innerWidth < 640 ? 3 : 5} // Thinner lines on mobile
+        />
+        <AnimatedBeam
+          containerRef={containerRef}
+          fromRef={div6Ref}
+          toRef={div7Ref}
+          duration={beamSpeed}
+          gradientStartColor={beamColor}
+          gradientStopColor={beamColor}
+          pathWidth={window.innerWidth < 640 ? 3 : 5} // Thinner lines on mobile
+        />
+      </div>
     </div>
   );
 };

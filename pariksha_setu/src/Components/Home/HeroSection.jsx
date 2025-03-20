@@ -48,65 +48,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
-          {/* Hero Text Content */}
-          <motion.div
-            className="lg:w-1/2 text-center lg:text-left"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold ${
-                isDark ? "text-white" : "text-gray-900"
-              } leading-tight`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Your Path to{" "}
-              <span className={isDark ? "text-indigo-400" : "text-indigo-600"}>
-                Success
-              </span>{" "}
-              in Competitive Exams
-            </motion.h1>
-
-            <motion.p
-              className={`mt-6 text-lg ${
-                isDark ? "text-gray-300" : "text-gray-600"
-              }`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Pariksha Setu brings advanced tools and personalized guidance to
-              help you navigate your exam preparation journey with confidence.
-            </motion.p>
-
-            <motion.div
-              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <a
-                href="#features"
-                className="px-8 py-3 text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Explore Features
-              </a>
-              <a
-                href="#contact"
-                className={`px-8 py-3 text-base font-medium ${
-                  isDark
-                    ? "text-indigo-400 bg-gray-800 hover:bg-gray-700 border-gray-600"
-                    : "text-indigo-600 bg-white hover:bg-gray-50 border-indigo-200"
-                } border rounded-lg shadow-sm hover:shadow transition-all duration-300`}
-              >
-                Contact Us
-              </a>
-            </motion.div>
-          </motion.div>
-
           {/* Hero Image */}
           <motion.div
             className="lg:w-1/2"
@@ -155,11 +96,70 @@ const HeroSection = () => {
               />
             </div>
           </motion.div>
+
+          {/* Hero Text Content */}
+          <motion.div
+            className="lg:w-1/2 text-center lg:text-left"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <motion.h1
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold ${
+                isDark ? "text-white" : "text-gray-900"
+              } leading-tight`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Your Path to{" "}
+              <span className={isDark ? "text-indigo-400" : "text-indigo-600"}>
+                Success
+              </span>{" "}
+              in Competitive Exams
+            </motion.h1>
+
+            <motion.p
+              className={`mt-2 mb-2 lg:mt-6 text-base lg:text-lg ${
+                isDark ? "text-gray-300" : "text-gray-600"
+              }`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              Pariksha Setu brings advanced tools and personalized guidance to
+              help you navigate your exam preparation journey with confidence.
+            </motion.p>
+
+            <motion.div
+              className="mt-4 lg:mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <a
+                href="#features"
+                className="px-8 py-3 text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              >
+                Explore Features
+              </a>
+              <a
+                href="#contact"
+                className={`px-8 py-3 text-base font-medium ${
+                  isDark
+                    ? "text-indigo-400 bg-gray-800 hover:bg-gray-700 border-gray-600"
+                    : "text-indigo-600 bg-white hover:bg-gray-50 border-indigo-200"
+                } border rounded-lg shadow-sm hover:shadow transition-all duration-300`}
+              >
+                Contact Us
+              </a>
+            </motion.div>
+          </motion.div>
         </div>
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+          className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
