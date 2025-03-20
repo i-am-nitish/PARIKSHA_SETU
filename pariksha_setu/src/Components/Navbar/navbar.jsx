@@ -59,8 +59,8 @@ const Navbar = () => {
   const navLinks = [
     { path: "/", label: language === "en" ? "Home" : "होम" },
     {
-      path: "/pariksha-yoga",
-      label: language === "en" ? "Pariksha Yoga" : "परीक्षा योग",
+      path: "/pariksha-yogya",
+      label: language === "en" ? "Pariksha Yogya" : "परीक्षा योग",
     },
     {
       path: "/pariksha-marg",
@@ -88,9 +88,24 @@ const Navbar = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                src="/logos/ps_banner.svg"
+                src="/logos/ps.svg"
                 alt="Pariksha Setu"
                 className="h-8 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src =
+                    "https://placehold.co/100x40/indigo/white?text=Pariksha+Setu";
+                }}
+              />
+            </Link>
+            <Link to="/" className=" ml-6 flex-shrink-0 group">
+              <motion.img
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                src="/logos/ps_name.svg"
+                alt="Pariksha Setu"
+                className="h-6 w-auto object-contain transition-all duration-300 group-hover:scale-105"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src =
@@ -186,7 +201,7 @@ const Navbar = () => {
               </motion.span>
             </motion.button>
 
-            {/* Language Toggle - smaller button */}
+            {/* Language Toggle - smaller button
             <motion.button
               onClick={toggleLanguage}
               className={`px-2 py-1 rounded-full text-xs font-medium shadow-sm hover:bg-gray-50 transition-colors duration-300 focus:outline-none ${
@@ -207,7 +222,7 @@ const Navbar = () => {
               >
                 → {language === "en" ? "हिं" : "EN"}
               </span>
-            </motion.button>
+            </motion.button> */}
           </div>
 
           {/* Mobile Menu Button */}

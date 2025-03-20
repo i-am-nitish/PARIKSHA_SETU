@@ -339,7 +339,8 @@ export const AnimatedBeamDemo: React.FC<AnimatedBeamDemoProps> = ({
   return (
     <div
       className={cn(
-        "relative flex w-full max-w-[1200px] mx-auto mb-4 items-center justify-center overflow-hidden",
+        // "relative flex w-full max-w-[600px] lg:max-w-[1000px] mx-auto mb-4 items-center justify-center overflow-hidden",
+        "relative flex max-w-[clamp(600px,80%,1200px)] mx-auto mb-4 items-center justify-center overflow-hidden",
         isDark ? "bg-transparent" : "bg-white",
         "p-4 sm:p-6 md:p-10", // Responsive padding
         className
