@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className={`relative overflow-hidden ${
+      className={`relative overflow-hidden${
         isDark
           ? "bg-gradient-to-b from-gray-900 to-gray-800"
           : "bg-gradient-to-b from-indigo-50 to-white"
@@ -46,7 +46,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
           {/* Hero Image */}
           <motion.div
@@ -159,7 +159,7 @@ const HeroSection = () => {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center"
+          className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center mt-4"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}

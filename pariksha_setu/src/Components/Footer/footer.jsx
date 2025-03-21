@@ -15,9 +15,11 @@ const Footer = () => {
       }`}
     >
       <div className="container mx-auto px-3 py-6 sm:px-4 sm:py-8 md:py-10 lg:px-8 lg:py-12">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-10">
+        {/* Mobile: About at top, QuickLinks and Company side by side */}
+        {/* Tablet/Desktop: Grid with proper column structure */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-10">
           {/* About */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="md:col-span-2">
             <div className="flex items-center mb-3 md:mb-4">
               <Link to="/" className="flex-shrink-0 group">
                 <img
@@ -36,8 +38,8 @@ const Footer = () => {
                   src="/logos/ps_name.svg"
                   alt="Pariksha Setu"
                   className={`h-5 sm:h-5 md:h-6 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${
-                  theme === "dark" ? "filter brightness-0 invert" : ""
-                }`}
+                    theme === "dark" ? "filter brightness-0 invert" : ""
+                  }`}
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
@@ -165,8 +167,133 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-span-1">
+          {/* Mobile: Quick Links and Company in a flex row */}
+          <div className="flex flex-row flex-wrap gap-6 sm:gap-8 md:hidden">
+            {/* Quick Links */}
+            <div className="flex-1 min-w-[140px]">
+              <h3
+                className={`text-base sm:text-lg font-semibold ${
+                  isDark ? "text-white" : "text-gray-900"
+                } mb-2 md:mb-4`}
+              >
+                {language === "en" ? "Quick Links" : "त्वरित लिंक"}
+              </h3>
+              <ul className="space-y-1 sm:space-y-2">
+                <li>
+                  <Link
+                    to="/"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Home" : "होम"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/pariksha-yoga"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Pariksha Yoga" : "परीक्षा योग"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/pariksha-marg"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Pariksha Marg" : "परीक्षा मार्ग"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/pariksha-gyan"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Pariksha Gyan" : "परीक्षा ज्ञान"}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div className="flex-1 min-w-[140px]">
+              <h3
+                className={`text-base sm:text-lg font-semibold ${
+                  isDark ? "text-white" : "text-gray-900"
+                } mb-2`}
+              >
+                {language === "en" ? "Company" : "कंपनी"}
+              </h3>
+              <ul className="space-y-1 sm:space-y-2">
+                <li>
+                  <Link
+                    to="/about"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "About Us" : "हमारे बारे में"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Contact" : "संपर्क"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/privacy-policy"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Privacy Policy" : "गोपनीयता नीति"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/terms"
+                    className={`${
+                      isDark
+                        ? "text-gray-300 hover:text-indigo-400"
+                        : "text-gray-600 hover:text-indigo-600"
+                    } transition-colors duration-300`}
+                  >
+                    {language === "en" ? "Terms of Service" : "सेवा की शर्तें"}
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          {/* Desktop: Quick Links as separate column */}
+          <div className="hidden md:block md:col-span-1">
             <h3
               className={`text-base sm:text-lg font-semibold ${
                 isDark ? "text-white" : "text-gray-900"
@@ -226,8 +353,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
-          <div className="col-span-1">
+          {/* Desktop: Company as separate column */}
+          <div className="hidden md:block md:col-span-1">
             <h3
               className={`text-base sm:text-lg font-semibold ${
                 isDark ? "text-white" : "text-gray-900"

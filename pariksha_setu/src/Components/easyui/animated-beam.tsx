@@ -33,35 +33,22 @@ const Icons = {
     />
   ),
   image3: () => (
-    <svg
-      version="1.1"
-      viewBox="0 0 1600 1596"
-      width="400"
-      height="399"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        transform="translate(387,820)"
-        d="m0 0h830l7 3 7 8 1 8v148l-1 11-2 4h-2l-1 4-2 3-3 1-594 1-7 3-8 9-7 12-19 29-11 17-10 16-32 49-16 25-10 15-22 34-9 14-15 23-12 19-12 18-14 23-13 18-6 7-2 1h-18l-5-3-5-6-2-4v-495l4-8 9-6z"
-        fill="#F07401"
-      />
-      <path
-        transform="translate(387,334)"
-        d="m0 0h10l11 5 31 16 22 12 31 16 22 12 46 24 22 12 52 27 21 12 16 8 25 13 22 12 29 15 24 13 21 11 7 2h7l15-6 27-14 19-10 26-14 28-15 23-12 22-12 15-8 16-8 28-15 40-21 18-10 16-8 26-14 20-10 18-10 19-10 16-9 12-4h7l8 4 5 6 2 7v148l-1 16-7 8-10 6-33 17-23 13-29 15-19 10-18 10-42 22-26 14-19 10-18 10-23 12-22 12-23 12-23 13-29 15-19 10-24 13-14 7-4 1h-9l-16-8-19-10-22-12-32-17-22-12-27-14-18-10-27-14-22-12-34-18-30-16-22-12-23-12-22-12-27-14-18-10-25-13-12-8-5-5-1-3-1-157 2-12 5-6z"
-        fill="#588BDD"
-      />
-    </svg>
+    <img
+      src="/logos/py.svg"
+      alt="Image 4"
+      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    />
   ),
   image4: () => (
     <img
-      src="/images/image4.png"
+      src="/logos/pm.svg"
       alt="Image 4"
       style={{ width: "100%", height: "100%", objectFit: "contain" }}
     />
   ),
   image5: () => (
     <img
-      src="/images/image5.png"
+      src="/logos/pg.svg"
       alt="Image 5"
       style={{ width: "100%", height: "100%", objectFit: "contain" }}
     />
@@ -339,22 +326,22 @@ export const AnimatedBeamDemo: React.FC<AnimatedBeamDemoProps> = ({
   return (
     <div>
       <div className="mt-6 mb-2 xs:mt-2 text-center text-3xl xs:text-3xl sm:text-4xl md:text-5xl font-bold">
-        In students life ...
+        In students life ....
       </div>
       <div
         className={cn(
-          "relative flex max-w-[clamp(430px,60%,1200px)] mx-auto mb-0 lg:mb-4 items-center justify-center overflow-hidden", // Full width on smallest screens
+          "relative flex h-[80%] max-w-[clamp(430px,70%,1200px)] mx-auto mb-0 lg:mb-4 items-center justify-center overflow-hidden", // Full width on smallest screens
           isDark ? "bg-transparent" : "bg-white",
-          "p-2 xs:p-4 sm:p-6 md:p-10", // Enhanced padding for mobile
+          "p-2 xs:p-4 sm:p-4 md:p-4", // Enhanced padding for mobile
           className
         )}
         ref={containerRef}
       >
-        <div className="flex h-full w-full flex-row items-stretch justify-between gap-1 xs:gap-3 sm:gap-6 md:gap-10">
+        <div className="flex h-full w-full flex-row items-stretch justify-between gap-1 xs:gap-3 sm:gap- md:gap-6">
           <div className="flex flex-col justify-center gap-5 xs:gap-1 sm:gap-1.5 md:gap-5">
             <Circle
               ref={div1Ref}
-              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-40"
               label="Pariksha Yogya"
             >
               {icons.image3()}
@@ -364,14 +351,14 @@ export const AnimatedBeamDemo: React.FC<AnimatedBeamDemoProps> = ({
               className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
               label="Pariksha Marg"
             >
-              {icons.image3()}
+              {icons.image4()}
             </Circle>
             <Circle
               ref={div3Ref}
               className="w-18 h-18 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
-              label="Pariksha ChatBot"
+              label="Pariksha Gyan"
             >
-              {icons.image3()}
+              {icons.image5()}
             </Circle>
           </div>
           <div className="flex flex-col justify-center">
