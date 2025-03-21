@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/navbar.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 import HomePage from "./Pages/Home/HomePage.jsx";
+import AboutUs from "./Pages/About/AboutUs.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import "./App.css";
 
@@ -17,7 +18,6 @@ function App() {
               path="/"
               element={
                 <>
-                  
                   <HomePage />
                 </>
               }
@@ -26,7 +26,6 @@ function App() {
               path="/pariksha-yoga"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Pariksha Yoga Coming Soon
                   </div>
@@ -37,7 +36,6 @@ function App() {
               path="/pariksha-marg"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Pariksha Marg Coming Soon
                   </div>
@@ -48,7 +46,6 @@ function App() {
               path="/pariksha-gyan"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Pariksha Gyan Coming Soon
                   </div>
@@ -59,10 +56,7 @@ function App() {
               path="/about"
               element={
                 <>
-                  
-                  <div className="pt-24 pb-16 text-center">
-                    About Us Coming Soon
-                  </div>
+                  <AboutUs />
                 </>
               }
             />
@@ -70,7 +64,6 @@ function App() {
               path="/contact"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Contact Us Coming Soon
                   </div>
@@ -81,7 +74,6 @@ function App() {
               path="/login"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Login Coming Soon
                   </div>
@@ -92,7 +84,6 @@ function App() {
               path="/register"
               element={
                 <>
-                  
                   <div className="pt-24 pb-16 text-center">
                     Register Coming Soon
                   </div>
