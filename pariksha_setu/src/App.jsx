@@ -11,7 +11,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen transition-colors duration-300">
+        
           <Navbar />
           <Routes>
             <Route
@@ -92,7 +92,7 @@ function App() {
             />
           </Routes>
           <Footer />
-        </div>
+        
       </Router>
     </ThemeProvider>
   );

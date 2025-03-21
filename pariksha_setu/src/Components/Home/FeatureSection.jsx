@@ -227,7 +227,7 @@ const FeatureSection = () => {
 
         {/* Feature Selector Tabs */}
         <motion.div
-          className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-6 lg:mb-12"
+          className="flex flex-row justify-center gap-2 lg:gap-4 mb-6 lg:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -237,7 +237,7 @@ const FeatureSection = () => {
             <button
               key={feature.id}
               onClick={() => setActiveFeature(feature.id)}
-              className={`px-3 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-base font-medium transition-all duration-300 flex items-center gap-1 md:gap-2 ${
+              className={`px-2 md:px-6 py-2 md:py-3 rounded-2xl text-xs md:text-base font-medium transition-all duration-300 flex items-center gap-1 md:gap-2 ${
                 activeFeature === feature.id
                   ? `${getColorClasses(feature, "bg")} ${getColorClasses(
                       feature,
