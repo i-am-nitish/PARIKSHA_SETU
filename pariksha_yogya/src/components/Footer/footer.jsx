@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -95,10 +96,10 @@ const Footer = () => {
 
           {/* Navigation Links with reduced spacing */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-1 mb-4 text-black-700 text-sm">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">About Us</a>
-            <a href="#" className="hover:underline">Contribution</a>
-            <a href="#" className="hover:underline">Contact Us</a>
+            <Link to="/" className="hover:underline">Home</Link>
+            <Link to="/about-us" className="hover:underline">About Us</Link>
+            <Link to="/contribution" className="hover:underline">Contribution</Link>
+            <Link to="/contact-us" className="hover:underline">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -108,8 +109,10 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center px-6 max-w-7xl mx-auto text-gray-600 text-sm">
           <div>Made with ❤️ for Aspirants</div>
           <div className="mt-1 sm:mt-0">
-            © {new Date().getFullYear()} | <a href="#" className="underline hover:text-gray-800">Privacy Policy</a> | <a href="#" className="underline hover:text-gray-800">Terms & Conditions</a> |
-            <a href="#" className="underline hover:text-gray-800">Refund Policy</a>
+            © {new Date().getFullYear()} | 
+            <Link to="/privacy-policy" className="underline hover:text-gray-800 ml-1">Privacy Policy</Link> | 
+            <Link to="/terms-and-conditions" className="underline hover:text-gray-800">Terms & Conditions</Link> |
+            <Link to="/refund-policy" className="underline hover:text-gray-800">Refund Policy</Link>
           </div>
         </div>
       </div>

@@ -10,6 +10,9 @@ import ContactPage from "./Pages/contactus";
 import AboutUs from "./Pages/aboutus";
 import Login from "./Pages/login";
 import Signup from "./Pages/signup";
+import PrivacyPolicy from "./Pages/privacypolicy";
+import TermsAndConditions from "./Pages/termsandconditions";
+import RefundPolicy from "./Pages/refundpolicy";
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
       </Routes>
     </HeroUIProvider>
   );
