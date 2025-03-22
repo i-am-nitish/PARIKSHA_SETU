@@ -103,7 +103,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Search Bar */}
-                <input
+                {/* <input
                   type="text"
                   placeholder="Search in site"
                   className="border px-2 py-1 rounded-md text-sm"
@@ -113,7 +113,7 @@ const Navbar = () => {
                 </a>
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
                   Try for Free
-                </button>
+                </button> */}
               </div>
 
               {/* Mobile Menu Button */}
