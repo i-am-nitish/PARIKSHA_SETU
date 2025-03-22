@@ -10,7 +10,7 @@ import ContactPage from "./Pages/contactus";
 import AboutUs from "./Pages/aboutus";
 import Login from "./Pages/login";
 import Signup from "./Pages/signup";
-import PrivacyPolicy from "./Pages/privacypolicy";
+// import PrivacyPolicy from "./Pages/privacypolicy";
 import TermsAndConditions from "./Pages/termsandconditions";
 import RefundPolicy from "./Pages/refundpolicy";
 
@@ -23,7 +23,6 @@ function App() {
         <div className="beam"></div>
         <div className="beam-vertical"></div>
         <div className="line-highlight"></div>
-       
       </div>
       <div className="w-full ">
         <Navbar />
@@ -34,11 +33,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/checknow" element={<FormPage />} />
         <Route path="/contribution" element={<ContributionPage />} />
-        <Route path="/contact-us" element={<ContactPage />} />
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
       </Routes>
