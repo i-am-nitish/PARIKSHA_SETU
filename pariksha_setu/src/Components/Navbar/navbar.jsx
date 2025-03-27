@@ -98,7 +98,7 @@ const Navbar = () => {
                 }}
               />
             </Link>
-            <Link to="/" className="ml-6 flex-shrink-0 group">
+            {/* <Link to="/" className="ml-6 flex-shrink-0 group">
               <motion.img
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -114,7 +114,7 @@ const Navbar = () => {
                     "https://placehold.co/100x40/indigo/white?text=Pariksha+Setu";
                 }}
               />
-            </Link>
+            </Link> */}
           </div>
 
           {/* Desktop Menu with adjusted spacing */}
