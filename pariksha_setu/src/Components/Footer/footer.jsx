@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="container mx-auto px-3 py-6 sm:px-4 sm:py-8 md:py-10 lg:px-8 lg:py-12">
         {/* Mobile: About at top, QuickLinks and Company side by side */}
         {/* Tablet/Desktop: Grid with proper column structure */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-6 md:gap-10">
           {/* About */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-3 md:mb-4">
@@ -78,24 +78,7 @@ const Footer = () => {
                   <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                className={`${
-                  isDark
-                    ? "text-gray-400 hover:text-red-400"
-                    : "text-gray-500 hover:text-red-600"
-                } transition-colors duration-300`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778C2.036 8.74 2 12 2 12s.036 3.26.437 4.813c.24.718.905 1.408 1.763 1.768 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.51 2.51 0 0 0 1.767-1.763C22.042 15.26 22 12 22 12s.036-3.26-.437-4.813l.03.016z" />
-                  <path d="M10 15V9l5.2 3-5.2 3z" fill="#fff" />
-                </svg>
-              </a>
+
               <a
                 href="#"
                 className={`${
@@ -113,23 +96,7 @@ const Footer = () => {
                   <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                className={`${
-                  isDark
-                    ? "text-gray-400 hover:text-blue-500"
-                    : "text-gray-500 hover:text-blue-700"
-                } transition-colors duration-300`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path d="M22 5.466V19a2 2 0 01-2 2H4a2 2 0 01-2-2V5.466l.496.496C4.025 7.49 6.5 9 9.5 9c1.41 0 2.715-.375 3.865-1.01A6.99 6.99 0 0116.5 9c3 0 5.475-1.51 7.004-3.038L24 5.466z" />
-                </svg>
-              </a>
+
               <a
                 href="#"
                 className={`${
@@ -291,9 +258,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          
+
           {/* Desktop: Quick Links as separate column */}
-          <div className="hidden md:block md:col-span-1">
+          <div className="hidden md:block md:col-span-[1/4]">
             <h3
               className={`text-base sm:text-lg font-semibold ${
                 isDark ? "text-white" : "text-gray-900"
@@ -413,7 +380,32 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="flex flex-row md:hidden">
+            <img
+              className="flex-1/4 aspect-3/2 h-[100px]"
+              src="/logos/msme.png"
+            ></img>
+            <img
+              className="flex-3/4 mt-5 aspect-3/2 h-[45px]"
+              src="/logos/udhmodya.png"
+            ></img>
+          </div>
+          <div className="hidden md:block md:col-span-2 md:col-start-5">
+            <div className="mt-10 flex items-center max-w-full overflow-hidden">
+              <img
+                className="max-h-[150px] w-auto max-w-[120px] aspect-[3/2]"
+                src="/logos/msme.png"
+                alt="MSME Logo"
+              />
+              <img
+                className="max-h-[60px] w-auto max-w-[250px]"
+                src="/logos/udhmodya.png"
+                alt="Udhmodya Logo"
+              />
+            </div>
+          </div>
         </div>
+        <div></div>
 
         {/* Copyright */}
         <div

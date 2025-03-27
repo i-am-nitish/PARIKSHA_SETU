@@ -32,8 +32,8 @@ const Navbar = () => {
   const navbarClasses = `fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
     scrolled
       ? theme === "light"
-        ? "bg-white/95 backdrop-blur-sm shadow-lg py-1"
-        : "bg-gray-900/95 backdrop-blur-sm shadow-lg py-1"
+        ? "bg-white/55 backdrop-blur-lg shadow-lg py-1"
+        : "bg-gray-900/55 backdrop-blur-lg shadow-lg py-1"
       : theme === "light"
       ? "bg-white py-1"
       : "bg-gray-900 py-1"
@@ -125,25 +125,129 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex items-center space-x-0.5 lg:space-x-1"
             >
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`${linkClasses} ${
-                    isActiveLink(link.path) ? activeLinkClasses : ""
-                  }`}
-                >
-                  {link.label}
-                  {isActiveLink(link.path) && (
-                    <motion.span
-                      layoutId="navIndicator"
-                      className={`absolute bottom-0 left-0 w-full h-0.5 ${
-                        theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
-                      }`}
-                    />
-                  )}
-                </Link>
-              ))}
+              {/* Home */}
+              <Link
+                to="/"
+                className={`${linkClasses} ${
+                  isActiveLink("/") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "Home" : "होम"}
+                {isActiveLink("/") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link>
+
+              {/* Pariksha Yogya */}
+              <a
+                href="https://yogya.psetu.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkClasses}`}
+              >
+                {language === "en" ? "Pariksha Yogya" : "परीक्षा योग"}
+              </a>
+              {/* <Link
+                to="/pariksha-yogya"
+                className={`${linkClasses} ${
+                  isActiveLink("/pariksha-yogya") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "Pariksha Yogya" : "परीक्षा योग"}
+                {isActiveLink("/pariksha-yogya") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link> */}
+
+              {/* Pariksha Marg */}
+              <a
+                href="https://marg.psetu.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkClasses}`}
+              >
+                {language === "en" ? "Pariksha Marg" : "परीक्षा मार्ग"}
+              </a>
+              {/* <Link
+                to="/pariksha-marg"
+                className={`${linkClasses} ${
+                  isActiveLink("/pariksha-marg") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "Pariksha Marg" : "परीक्षा मार्ग"}
+                {isActiveLink("/pariksha-marg") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link> */}
+
+              {/* Pariksha Gyan */}
+              <Link
+                to="/pariksha-gyan"
+                className={`${linkClasses} ${
+                  isActiveLink("/pariksha-gyan") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "Pariksha Gyan" : "परीक्षा ज्ञान"}
+                {isActiveLink("/pariksha-gyan") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link>
+
+              {/* About Us */}
+              <Link
+                to="/about"
+                className={`${linkClasses} ${
+                  isActiveLink("/about") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "About Us" : "हमारे बारे में"}
+                {isActiveLink("/about") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link>
+
+              {/* Contact */}
+              <Link
+                to="/contact"
+                className={`${linkClasses} ${
+                  isActiveLink("/contact") ? activeLinkClasses : ""
+                }`}
+              >
+                {language === "en" ? "Contact" : "संपर्क"}
+                {isActiveLink("/contact") && (
+                  <motion.span
+                    layoutId="navIndicator"
+                    className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                      theme === "light" ? "bg-indigo-600" : "bg-indigo-400"
+                    }`}
+                  />
+                )}
+              </Link>
             </motion.div>
           </div>
 
@@ -338,31 +442,45 @@ const Navbar = () => {
             className={`md:hidden shadow-lg ${
               scrolled
                 ? theme === "light"
-                  ? "bg-white/95 backdrop-blur-sm"
-                  : "bg-gray-900/95 backdrop-blur-sm"
+                  ? "bg-white/55 backdrop-blur-sm"
+                  : "bg-gray-900/55 backdrop-blur-sm"
                 : theme === "light"
                 ? "bg-white"
                 : "bg-gray-900"
             } ${theme === "light" ? "text-gray-700" : "text-gray-300"}`}
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`block px-3 py-2 rounded-md text-sm font-medium ${
-                    isActiveLink(link.path)
-                      ? theme === "light"
-                        ? "text-indigo-600 bg-indigo-50"
-                        : "text-indigo-400 bg-gray-800"
-                      : theme === "light"
-                      ? "hover:text-indigo-600 hover:bg-indigo-50"
-                      : "hover:text-indigo-400 hover:bg-gray-800"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {/* Individual mobile menu items */}
+              <Link
+                to="/"
+                className={`block px-3 py-2 rounded-md text-sm font-medium ${
+                  isActiveLink("/")
+                    ? theme === "light"
+                      ? "text-indigo-600 bg-indigo-50"
+                      : "text-indigo-400 bg-gray-800"
+                    : theme === "light"
+                    ? "hover:text-indigo-600 hover:bg-indigo-50"
+                    : "hover:text-indigo-400 hover:bg-gray-800"
+                }`}
+              >
+                {language === "en" ? "Home" : "होम"}
+              </Link>
+
+              {/* Add the remaining menu items following the same pattern */}
+
+              {/* Example external link */}
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block px-3 py-2 rounded-md text-sm font-medium ${
+                  theme === "light"
+                    ? "hover:text-indigo-600 hover:bg-indigo-50"
+                    : "hover:text-indigo-400 hover:bg-gray-800"
+                }`}
+              >
+                {language === "en" ? "External" : "बाहरी"}
+              </a>
             </div>
           </motion.div>
         )}
