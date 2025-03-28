@@ -1,11 +1,6 @@
 {
     "CDS": {
-      "posts_classes_courses_departments_academy": [
-        "Indian Military Academy (IMA)",
-        "Indian Naval Academy (INA)",
-        "Air Force Academy (AFA)",
-        "Officers' Training Academy (OTA)"
-      ],
+      "posts_classes_courses_departments_academy": "ALL COURSES",
       "gender": ["MALE", "FEMALE"],
       "marital_status": {
         "IMA": "UNMARRIED",
@@ -22,15 +17,15 @@
         "Citizens of Nepal",
         "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
       ],
-      "pwd_disabled_status": "NOT APPLICABLE",
+      "pwd_status": "NOT APPLICABLE",
       "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
-      "education_course": {
+      "eligibility_education_course": {
         "IMA": "Any Bachelor's Degree",
         "INA": "B.E./B.Tech Degree",
         "AFA": "B.E./B.Tech Degree or Bachelor's Degree with Physics and Mathematics at 10+2 level",
         "OTA": "Any Bachelor's Degree"
       },
-      "course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+      "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
       "eligibility_marks": "PASSED",
       "exam_sector": "DEFENSE EXAM",
       "age_criteria": {
@@ -141,8 +136,11 @@
         }
       },
       "exam_subjects": {
-        "IMA_INA_AFA": ["English", "General Knowledge", "Mathematics"],
-        "OTA": ["English", "General Knowledge"]
+        "IMA": ["English", "General Knowledge", "Mathematics"],
+        "INA": ["English", "General Knowledge", "Mathematics"],
+        "AFA": ["English", "General Knowledge", "Mathematics"],
+        "OTA(M)": ["English", "General Knowledge"],
+        "OTA(W)": ["English", "General Knowledge"]
       },
       "conducting_body": "Union Public Service Commission (UPSC)"
     }
