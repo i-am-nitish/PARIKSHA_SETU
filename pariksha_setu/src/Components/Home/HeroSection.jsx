@@ -85,7 +85,7 @@ const HeroSection = () => {
               />
 
               <img
-                src="/images/hero-students.svg"
+                src="/assets/ps.gif"
                 alt="Students preparing for exams"
                 className="relative z-10 rounded-xl shadow-2xl w-full object-cover max-h-[500px]"
                 onError={(e) => {

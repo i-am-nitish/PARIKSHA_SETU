@@ -5,7 +5,7 @@ import Header from "./Components/Header/header.jsx";
 import InfinityImgScroll from "./Components/InfinityImgScroll/InfinityImgScroll.jsx"; // Add this import
 import TimelineDemo from "./Components/Feature/Featuresdata.jsx";
 import AboutUs from "./Pages/AboutUs";
-import ExplorePage from "./Pages/explorepage.jsx"; // Ensure path is correct
+import ExplorePage from "./Pages/ExplorePage.jsx"; // Ensure path is correct
 import Footer from "./Components/Footer/footer.jsx";
 import FAQS from "./Components/FAQS/faqs.jsx";
 import InfinityExams from "./Components/Infinityexams/infinityexams.jsx"; // Add thi import
