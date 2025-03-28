@@ -1,6 +1,13 @@
 import React from 'react';
+import { getExamNames } from '../../Examsdata/codes';
 
 const StatsAnalytics = () => {
+  // Get the actual count of exams from the codes.jsx file
+  const examCount = getExamNames().length;
+  
+  // Telegram channel link
+  const telegramChannelLink = "https://t.me/pratiyogitasetu";
+  
   return (
     <div className="relative z-10 max-w-full mx-auto px-2 py-3 md:px-4 md:py-6 lg:px-6 lg:py-8">
       <div className="relative">
@@ -10,16 +17,22 @@ const StatsAnalytics = () => {
         
         {/* Stats grid for mobile, row for desktop */}
         <div className="grid grid-cols-3 sm:flex sm:flex-wrap justify-center items-stretch gap-2 md:gap-4 lg:gap-6">
-          {/* GitHub Stars */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative">
+          {/* Telegram Channel - now clickable */}
+          <a 
+            href={telegramChannelLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative cursor-pointer"
+          >
             <div className="absolute -right-4 -top-4 w-12 h-12 bg-blue-200 rounded-full opacity-30"></div>
             <div className="text-[10px] md:text-xs lg:text-sm mb-1 md:mb-2">
               <span className="bg-blue-600 text-white px-1.5 py-0.5 lg:px-3 lg:py-1.5 rounded-lg font-medium">7th</span>
               <span className="text-blue-700 ml-1.5 font-medium">of 28M</span>
             </div>
             <div className="text-sm md:text-2xl lg:text-4xl xl:text-5xl font-bold my-1 md:my-2 lg:my-3 text-blue-800">312K</div>
-            <div className="text-blue-600 text-[10px] md:text-xs lg:text-base font-medium">GitHub Stars</div>
-          </div>
+            <div className="text-blue-600 text-[10px] md:text-xs lg:text-base font-medium">Telegram Followers</div>
+            <div className="text-blue-500 text-[8px] md:text-[10px] lg:text-xs mt-1">Click to join</div>
+          </a>
 
           {/* Registered Users */}
           <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-indigo-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative">
@@ -65,14 +78,14 @@ const StatsAnalytics = () => {
             <div className="text-amber-600 text-[10px] md:text-xs lg:text-base font-medium">Eligible Aspirants</div>
           </div>
 
-          {/* Exams Covered */}
+          {/* Available Exams - now using dynamic count */}
           <div className="bg-gradient-to-br from-rose-50 to-rose-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-rose-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative">
             <div className="absolute -left-4 -bottom-4 w-12 h-12 bg-rose-200 rounded-full opacity-30"></div>
             <div className="text-[10px] md:text-xs lg:text-sm mb-1 md:mb-2">
               <span className="bg-rose-600 text-white px-1.5 py-0.5 lg:px-3 lg:py-1.5 rounded-lg font-medium">+25</span>
               <span className="text-rose-700 ml-1.5 font-medium">quarterly</span>
             </div>
-            <div className="text-sm md:text-2xl lg:text-4xl xl:text-5xl font-bold my-1 md:my-2 lg:my-3 text-rose-800">178</div>
+            <div className="text-sm md:text-2xl lg:text-4xl xl:text-5xl font-bold my-1 md:my-2 lg:my-3 text-rose-800">{examCount}</div>
             <div className="text-rose-600 text-[10px] md:text-xs lg:text-base font-medium">Exams Covered</div>
           </div>
         </div>
