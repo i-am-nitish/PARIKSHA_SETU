@@ -1,0 +1,149 @@
+{
+    "CDS": {
+      "posts_classes_courses_departments_academy": [
+        "Indian Military Academy (IMA)",
+        "Indian Naval Academy (INA)",
+        "Air Force Academy (AFA)",
+        "Officers' Training Academy (OTA)"
+      ],
+      "gender": ["MALE", "FEMALE"],
+      "marital_status": {
+        "IMA": "UNMARRIED",
+        "INA": "UNMARRIED",
+        "AFA": "UNMARRIED",
+        "OTA": {
+          "Men": "UNMARRIED",
+          "Women": ["UNMARRIED", "ISSUELESS WIDOW", "ISSUELESS DIVORCEE"]
+        }
+      },
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens",
+        "Citizens of Nepal",
+        "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+      ],
+      "pwd_disabled_status": "NOT APPLICABLE",
+      "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
+      "education_course": {
+        "IMA": "Any Bachelor's Degree",
+        "INA": "B.E./B.Tech Degree",
+        "AFA": "B.E./B.Tech Degree or Bachelor's Degree with Physics and Mathematics at 10+2 level",
+        "OTA": "Any Bachelor's Degree"
+      },
+      "course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+      "eligibility_marks": "PASSED",
+      "exam_sector": "DEFENSE EXAM",
+      "age_criteria": {
+        "CDS-I-2023": {
+          "IMA": "02 Jan 2000 - 01 Jan 2005",
+          "INA": "02 Jan 2000 - 01 Jan 2005",
+          "AFA": "02 Jan 2000 - 01 Jan 2004 (CPL: 02 Jan 1998 - 01 Jan 2004)",
+          "OTA(M)": "02 Jan 1999 - 01 Jan 2005",
+          "OTA(W)": "02 Jan 1999 - 01 Jan 2005"
+        },
+        "CDS-II-2023": {
+          "IMA": "02 Jul 2000 - 01 Jul 2005",
+          "INA": "02 Jul 2000 - 01 Jul 2005",
+          "AFA": "02 Jul 2000 - 01 Jul 2004 (CPL: 02 Jul 1998 - 01 Jul 2004)",
+          "OTA(M)": "02 Jul 1999 - 01 Jul 2005",
+          "OTA(W)": "02 Jul 1999 - 01 Jul 2005"
+        },
+        "CDS-I-2024": {
+          "IMA": "02 Jan 2001 - 01 Jan 2006",
+          "INA": "02 Jan 2001 - 01 Jan 2006",
+          "AFA": "02 Jan 2001 - 01 Jan 2005 (CPL: 02 Jan 1999 - 01 Jan 2005)",
+          "OTA(M)": "02 Jan 2000 - 01 Jan 2006",
+          "OTA(W)": "02 Jan 2000 - 01 Jan 2006"
+        },
+        "CDS-II-2024": {
+          "IMA": "02 Jul 2001 - 01 Jul 2006",
+          "INA": "02 Jul 2001 - 01 Jul 2006",
+          "AFA": "02 Jul 2001 - 01 Jul 2005 (CPL: 02 Jul 1999 - 01 Jul 2005)",
+          "OTA(M)": "02 Jul 2000 - 01 Jul 2006",
+          "OTA(W)": "02 Jul 2000 - 01 Jul 2006"
+        },
+        "CDS-I-2025": {
+          "IMA": "02 Jan 2002 - 01 Jan 2007",
+          "INA": "02 Jan 2002 - 01 Jan 2007",
+          "AFA": "02 Jan 2002 - 01 Jan 2006 (CPL: 02 Jan 2000 - 01 Jan 2006)",
+          "OTA(M)": "02 Jan 2001 - 01 Jan 2007",
+          "OTA(W)": "02 Jan 2001 - 01 Jan 2007"
+        },
+        "CDS-II-2025": {
+          "IMA": "02 Jul 2002 - 01 Jul 2007",
+          "INA": "02 Jul 2002 - 01 Jul 2007",
+          "AFA": "02 Jul 2002 - 01 Jul 2006 (CPL: 02 Jul 2000 - 01 Jul 2006)",
+          "OTA(M)": "02 Jul 2001 - 01 Jul 2007",
+          "OTA(W)": "02 Jul 2001 - 01 Jul 2007"
+        },
+        "CDS-I-2026": {
+          "IMA": "02 Jan 2003 - 01 Jan 2008",
+          "INA": "02 Jan 2003 - 01 Jan 2008",
+          "AFA": "02 Jan 2003 - 01 Jan 2007 (CPL: 02 Jan 2001 - 01 Jan 2007)",
+          "OTA(M)": "02 Jan 2002 - 01 Jan 2008",
+          "OTA(W)": "02 Jan 2002 - 01 Jan 2008"
+        },
+        "CDS-II-2026": {
+          "IMA": "02 Jul 2003 - 01 Jul 2008",
+          "INA": "02 Jul 2003 - 01 Jul 2008",
+          "AFA": "02 Jul 2003 - 01 Jul 2007 (CPL: 02 Jul 2001 - 01 Jul 2007)",
+          "OTA(M)": "02 Jul 2002 - 01 Jul 2008",
+          "OTA(W)": "02 Jul 2002 - 01 Jul 2008"
+        },
+        "CDS-I-2027": {
+          "IMA": "02 Jan 2004 - 01 Jan 2009",
+          "INA": "02 Jan 2004 - 01 Jan 2009",
+          "AFA": "02 Jan 2004 - 01 Jan 2008 (CPL: 02 Jan 2002 - 01 Jan 2008)",
+          "OTA(M)": "02 Jan 2003 - 01 Jan 2009",
+          "OTA(W)": "02 Jan 2003 - 01 Jan 2009"
+        },
+        "CDS-II-2027": {
+          "IMA": "02 Jul 2004 - 01 Jul 2009",
+          "INA": "02 Jul 2004 - 01 Jul 2009",
+          "AFA": "02 Jul 2004 - 01 Jul 2008 (CPL: 02 Jul 2002 - 01 Jul 2008)",
+          "OTA(M)": "02 Jul 2003 - 01 Jul 2009",
+          "OTA(W)": "02 Jul 2003 - 01 Jul 2009"
+        },
+        "CDS-I-2028": {
+          "IMA": "02 Jan 2005 - 01 Jan 2010",
+          "INA": "02 Jan 2005 - 01 Jan 2010",
+          "AFA": "02 Jan 2005 - 01 Jan 2009 (CPL: 02 Jan 2003 - 01 Jan 2009)",
+          "OTA(M)": "02 Jan 2004 - 01 Jan 2010",
+          "OTA(W)": "02 Jan 2004 - 01 Jan 2010"
+        },
+        "CDS-II-2028": {
+          "IMA": "02 Jul 2005 - 01 Jul 2010",
+          "INA": "02 Jul 2005 - 01 Jul 2010",
+          "AFA": "02 Jul 2005 - 01 Jul 2009 (CPL: 02 Jul 2003 - 01 Jul 2009)",
+          "OTA(M)": "02 Jul 2004 - 01 Jul 2010",
+          "OTA(W)": "02 Jul 2004 - 01 Jul 2010"
+        },
+        "CDS-I-2029": {
+          "IMA": "02 Jan 2006 - 01 Jan 2011",
+          "INA": "02 Jan 2006 - 01 Jan 2011",
+          "AFA": "02 Jan 2006 - 01 Jan 2010 (CPL: 02 Jan 2004 - 01 Jan 2010)",
+          "OTA(M)": "02 Jan 2005 - 01 Jan 2011",
+          "OTA(W)": "02 Jan 2005 - 01 Jan 2011"
+        },
+        "CDS-II-2029": {
+          "IMA": "02 Jul 2006 - 01 Jul 2011",
+          "INA": "02 Jul 2006 - 01 Jul 2011",
+          "AFA": "02 Jul 2006 - 01 Jul 2010 (CPL: 02 Jul 2004 - 01 Jul 2010)",
+          "OTA(M)": "02 Jul 2005 - 01 Jul 2011",
+          "OTA(W)": "02 Jul 2005 - 01 Jul 2011"
+        },
+        "CDS-I-2030": {
+          "IMA": "02 Jan 2007 - 01 Jan 2012",
+          "INA": "02 Jan 2007 - 01 Jan 2012",
+          "AFA": "02 Jan 2007 - 01 Jan 2011 (CPL: 02 Jan 2005 - 01 Jan 2011)",
+          "OTA(M)": "02 Jan 2006 - 01 Jan 2012",
+          "OTA(W)": "02 Jan 2006 - 01 Jan 2012"
+        }
+      },
+      "exam_subjects": {
+        "IMA_INA_AFA": ["English", "General Knowledge", "Mathematics"],
+        "OTA": ["English", "General Knowledge"]
+      },
+      "conducting_body": "Union Public Service Commission (UPSC)"
+    }
+}
