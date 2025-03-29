@@ -1,0 +1,70 @@
+{
+    "NEET": {
+      "posts_classes_courses_departments": "MBBS, BDS, AYUSH & Other Medical Courses",
+      "gender": ["MALE", "FEMALE"],
+      "marital_status": ["MARRIED", "UNMARRIED"],
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens",
+        "Overseas Citizens of India (OCI)",
+        "Non-Resident Indians (NRI)",
+        "Persons of Indian Origin (PIO)",
+        "Foreign Nationals"
+      ],
+      "pwd_disabled_status": "APPLICABLE",
+      "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+      "education_course": "Class 12 or Equivalent",
+      "course_year": "Passed / Appearing in Class 12 with Physics, Chemistry, Biology/Biotechnology & English from a Recognized Board.",
+      "eligibility_marks": {
+        "General": "50% Marks in PCB",
+        "OBC/EWS": "40% Marks in PCB",
+        "SC/ST/PH": "40% Marks in PCB"
+      },
+      "exam_sector": "UNDERGRADUATE MEDICAL ENTRANCE",
+      "age_criteria": {
+        "NEET-2023": {
+          "Minimum Age": "17 years as of December 31, 2023",
+          "Born on or before": "31.12.2006",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2024": {
+          "Minimum Age": "17 years as of December 31, 2024",
+          "Born on or before": "31.12.2007",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2025": {
+          "Minimum Age": "17 years as of December 31, 2025",
+          "Born on or before": "31.12.2008",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2026": {
+          "Minimum Age": "17 years as of December 31, 2026",
+          "Born on or before": "31.12.2009",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2027": {
+          "Minimum Age": "17 years as of December 31, 2027",
+          "Born on or before": "31.12.2010",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2028": {
+          "Minimum Age": "17 years as of December 31, 2028",
+          "Born on or before": "31.12.2011",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2029": {
+          "Minimum Age": "17 years as of December 31, 2029",
+          "Born on or before": "31.12.2012",
+          "Maximum Age": "No Upper Age Limit"
+        },
+        "NEET-2030": {
+          "Minimum Age": "17 years as of December 31, 2030",
+          "Born on or before": "31.12.2013",
+          "Maximum Age": "No Upper Age Limit"
+        }
+      },
+      "exam_subjects": ["Physics", "Chemistry", "Biology/Biotechnology"],
+      "conducting_body": "National Testing Agency (NTA)"
+    }
+  }
+  
