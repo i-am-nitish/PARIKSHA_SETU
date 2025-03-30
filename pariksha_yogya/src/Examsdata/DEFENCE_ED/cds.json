@@ -26,7 +26,11 @@
         "OTA": "Any Bachelor's Degree"
       },
       "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
-      "eligibility_marks": "PASSED",
+      "eligibility_marks": {
+        "General": "PASSED",
+        "OBC/EWS": "PASSED",
+        "SC/ST/PH": "PASSED"
+      },
       "exam_sector": "DEFENSE EXAM",
       "age_criteria": {
         "CDS-I-2023": {

@@ -1,8 +1,10 @@
 {
   "CUETPG": {
-    "posts_classes_courses_departments": "ALL COURSES",
+    "posts_classes_courses_departments_academy": "ALL COURSES",
     "gender": ["MALE", "FEMALE"],
-    "marital_status": ["MARRIED", "UNMARRIED"],
+    "marital_status": {
+      "ALL COURSES": ["MARRIED", "UNMARRIED"]
+    },
     "domicile": "PAN INDIA",
     "nationality": [
       "Indian citizens",
@@ -10,17 +12,32 @@
       "Tibetan refugees who landed in India before January 1, 1962",
       "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
     ],
-    "pwd_disabled_status": "APPLICABLE",
+    "pwd_status": "APPLICABLE",
     "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
-    "education_course": "BSC only",
-    "course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+    "eligibility_education_course": {
+      "ALL COURSES": "BSc only"
+    },
+    "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
     "eligibility_marks": {
-      "General_OBC": "55% Marks",
-      "SC_ST_PH": "50% Marks"
+      "General": "55% Marks",
+      "OBC/EWS": "55% Marks",
+      "SC/ST/PH": "50% Marks"
     },
     "exam_sector": "POST GRADUATION",
-    "age_criteria": "NO AGE LIMIT",
-    "exam_subjects": ["PCM"],
+    "age_criteria": {
+      "CUETPG-2023": {
+        "ALL COURSES": "NO AGE LIMIT"
+      },
+      "CUETPG-2024": {
+        "ALL COURSES": "NO AGE LIMIT"
+      },
+      "CUETPG-2025": {
+        "ALL COURSES": "NO AGE LIMIT"
+      }
+    },
+    "exam_subjects": {
+      "ALL COURSES": ["PCM"]
+    },
     "conducting_body": "National Testing Agency (NTA)"
   }
 }

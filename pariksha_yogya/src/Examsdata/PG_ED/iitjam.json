@@ -1,16 +1,16 @@
 {
   "IITJAM": {
-    "posts_classes_courses_departments": [
-      "BIOTECHNOLOGY",
-      "CHEMISTRY",
-      "ECONOMICS",
-      "GEOLOGY",
-      "MATHEMATICS",
-      "MATHEMATICAL STATISTICS",
-      "PHYSICS"
-    ],
+    "posts_classes_courses_departments_academy": "ALL COURSES",
     "gender": ["MALE", "FEMALE"],
-    "marital_status": ["MARRIED", "UNMARRIED"],
+    "marital_status": {
+      "BIOTECHNOLOGY": ["MARRIED", "UNMARRIED"],
+      "CHEMISTRY": ["MARRIED", "UNMARRIED"],
+      "ECONOMICS": ["MARRIED", "UNMARRIED"],
+      "GEOLOGY": ["MARRIED", "UNMARRIED"],
+      "MATHEMATICS": ["MARRIED", "UNMARRIED"],
+      "MATHEMATICAL STATISTICS": ["MARRIED", "UNMARRIED"],
+      "PHYSICS": ["MARRIED", "UNMARRIED"]
+    },
     "domicile": "PAN INDIA",
     "nationality": [
       "Indian citizens",
@@ -18,17 +18,44 @@
       "Tibetan refugees who landed in India before January 1, 1962",
       "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
     ],
-    "pwd_disabled_status": "APPLICABLE",
+    "pwd_status": "APPLICABLE",
     "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
-    "education_course": "BSC only",
-    "course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+    "eligibility_education_course": {
+      "BIOTECHNOLOGY": "BSc only",
+      "CHEMISTRY": "BSc only",
+      "ECONOMICS": "BSc only",
+      "GEOLOGY": "BSc only",
+      "MATHEMATICS": "BSc only",
+      "MATHEMATICAL STATISTICS": "BSc only",
+      "PHYSICS": "BSc only"
+    },
+    "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
     "eligibility_marks": {
-      "General_OBC": "55% Marks",
-      "SC_ST_PH": "50% Marks"
+      "General": "55% Marks",
+      "OBC/EWS": "55% Marks",
+      "SC/ST/PH": "50% Marks"
     },
     "exam_sector": "POST GRADUATION",
-    "age_criteria": "NO AGE LIMIT",
-    "exam_subjects": ["PCM"],
+    "age_criteria": {
+      "IITJAM-2023": {
+        "ALL COURSES": "NO AGE LIMIT"
+      },
+      "IITJAM-2024": {
+        "ALL COURSES": "NO AGE LIMIT"
+      },
+      "IITJAM-2025": {
+        "ALL COURSES": "NO AGE LIMIT"
+      }
+    },
+    "exam_subjects": {
+      "BIOTECHNOLOGY": ["PCM"],
+      "CHEMISTRY": ["PCM"],
+      "ECONOMICS": ["PCM"],
+      "GEOLOGY": ["PCM"],
+      "MATHEMATICS": ["PCM"],
+      "MATHEMATICAL STATISTICS": ["PCM"],
+      "PHYSICS": ["PCM"]
+    },
     "conducting_body": "Indian Institute of Technology IIT Delhi (IITD)"
   }
 }

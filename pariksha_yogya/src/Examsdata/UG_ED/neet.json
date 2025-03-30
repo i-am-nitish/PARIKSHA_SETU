@@ -1,8 +1,13 @@
 {
     "NEET": {
-      "posts_classes_courses_departments": "MBBS, BDS, AYUSH & Other Medical Courses",
+      "posts_classes_courses_departments_academy": "ALL COURSES",
       "gender": ["MALE", "FEMALE"],
-      "marital_status": ["MARRIED", "UNMARRIED"],
+      "marital_status": {
+        "MBBS": ["MARRIED", "UNMARRIED"],
+        "BDS": ["MARRIED", "UNMARRIED"],
+        "AYUSH": ["MARRIED", "UNMARRIED"],
+        "Other Medical Courses": ["MARRIED", "UNMARRIED"]
+      },
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens",
@@ -11,10 +16,15 @@
         "Persons of Indian Origin (PIO)",
         "Foreign Nationals"
       ],
-      "pwd_disabled_status": "APPLICABLE",
+      "pwd_status": "APPLICABLE",
       "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
-      "education_course": "Class 12 or Equivalent",
-      "course_year": "Passed / Appearing in Class 12 with Physics, Chemistry, Biology/Biotechnology & English from a Recognized Board.",
+      "eligibility_education_course": {
+        "MBBS": "Class 12 with PCB",
+        "BDS": "Class 12 with PCB",
+        "AYUSH": "Class 12 with PCB",
+        "Other Medical Courses": "Class 12 with PCB"
+      },
+      "eligibility_course_year": "Passed / Appearing in Class 12 with Physics, Chemistry, Biology/Biotechnology & English from a Recognized Board.",
       "eligibility_marks": {
         "General": "50% Marks in PCB",
         "OBC/EWS": "40% Marks in PCB",
@@ -25,17 +35,29 @@
         "NEET-2023": {
           "Minimum Age": "17 years as of December 31, 2023",
           "Born on or before": "31.12.2006",
-          "Maximum Age": "No Upper Age Limit"
+          "Maximum Age": "No Upper Age Limit",
+          "MBBS": "17 years as of December 31, 2023, No Upper Age Limit",
+          "BDS": "17 years as of December 31, 2023, No Upper Age Limit",
+          "AYUSH": "17 years as of December 31, 2023, No Upper Age Limit",
+          "Other Medical Courses": "17 years as of December 31, 2023, No Upper Age Limit"
         },
         "NEET-2024": {
           "Minimum Age": "17 years as of December 31, 2024",
           "Born on or before": "31.12.2007",
-          "Maximum Age": "No Upper Age Limit"
+          "Maximum Age": "No Upper Age Limit",
+          "MBBS": "17 years as of December 31, 2024, No Upper Age Limit",
+          "BDS": "17 years as of December 31, 2024, No Upper Age Limit",
+          "AYUSH": "17 years as of December 31, 2024, No Upper Age Limit",
+          "Other Medical Courses": "17 years as of December 31, 2024, No Upper Age Limit"
         },
         "NEET-2025": {
           "Minimum Age": "17 years as of December 31, 2025",
           "Born on or before": "31.12.2008",
-          "Maximum Age": "No Upper Age Limit"
+          "Maximum Age": "No Upper Age Limit",
+          "MBBS": "17 years as of December 31, 2025, No Upper Age Limit",
+          "BDS": "17 years as of December 31, 2025, No Upper Age Limit",
+          "AYUSH": "17 years as of December 31, 2025, No Upper Age Limit",
+          "Other Medical Courses": "17 years as of December 31, 2025, No Upper Age Limit"
         },
         "NEET-2026": {
           "Minimum Age": "17 years as of December 31, 2026",
@@ -63,8 +85,12 @@
           "Maximum Age": "No Upper Age Limit"
         }
       },
-      "exam_subjects": ["Physics", "Chemistry", "Biology/Biotechnology"],
+      "exam_subjects": {
+        "MBBS": ["Physics", "Chemistry", "Biology/Biotechnology"],
+        "BDS": ["Physics", "Chemistry", "Biology/Biotechnology"],
+        "AYUSH": ["Physics", "Chemistry", "Biology/Biotechnology"],
+        "Other Medical Courses": ["Physics", "Chemistry", "Biology/Biotechnology"]
+      },
       "conducting_body": "National Testing Agency (NTA)"
     }
-  }
-  
+}
