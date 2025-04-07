@@ -130,7 +130,7 @@ function Hero() {
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link to="/checknow">
+            <Link to="/Check/checknow">
               <Button size="lg" className="gap-4">
                 Check Now <MoveRight className="w-4 h-4" />
               </Button>

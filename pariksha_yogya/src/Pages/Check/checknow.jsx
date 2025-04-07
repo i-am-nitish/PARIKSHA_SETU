@@ -1,9 +1,208 @@
 import React, { useState } from 'react';
-import { getExamNames, getExamData } from '../Examsdata/codes';
-import FormInput from '../Components/FormInput';
-import ResultNow from './resultnow';
+import { getExamNames, getExamData } from '../../Examsdata/codes';
+import FormInput from './FormInput';
+import ResultNow from './ResultNow';
 import './FormStyles.css';
 
+// Function to check age eligibility
+const checkAgeEligibility = (examData, dateOfBirth) => {
+  if (!examData?.age_criteria || !dateOfBirth) return [];
+  
+  const birthDate = new Date(dateOfBirth);
+  const results = [];
+  
+  // Loop through each exam cycle
+  Object.entries(examData.age_criteria).forEach(([cycleName, cycleData]) => {
+    // For exams with NO AGE LIMIT
+    if (cycleData['ALL COURSES'] === "NO AGE LIMIT") {
+      results.push({
+        cycle: cycleName,
+        stream: 'ALL COURSES',
+        eligible: true,
+        message: 'No age limit applies'
+      });
+      return;
+    }
+    
+    // For NEET format
+    if (cycleData['Minimum Age'] && cycleData['Born on or before']) {
+      const cutoffYear = cycleData['Born on or before'].split('.')[2];
+      const userBirthYear = birthDate.getFullYear();
+      const eligible = userBirthYear <= parseInt(cutoffYear);
+      
+      results.push({
+        cycle: cycleName,
+        stream: 'ALL COURSES',
+        eligible,
+        message: eligible ? 
+          `Eligible (born before ${cycleData['Born on or before']})` : 
+          `Not eligible (must be born on/before ${cycleData['Born on or before']})`
+      });
+      return;
+    }
+    
+    // For CDS and other similar formats (date ranges)
+    Object.entries(cycleData).forEach(([stream, dateRange]) => {
+      if (stream === 'Minimum Age' || stream === 'Maximum Age' || stream === 'Born on or before') {
+        return; // Skip these fields for NEET
+      }
+      
+      // Parse date range (format: "02 Jan 2000 - 01 Jan 2005")
+      const matches = dateRange.match(/(\d{2} \w{3} \d{4}) - (\d{2} \w{3} \d{4})/);
+      
+      if (matches) {
+        const minDate = new Date(matches[1]);
+        const maxDate = new Date(matches[2]);
+        const eligible = birthDate >= minDate && birthDate <= maxDate;
+        
+        results.push({
+          cycle: cycleName,
+          stream: stream,
+          eligible,
+          message: eligible ? 
+            `Eligible (${dateRange})` : 
+            `Not eligible (must be born between ${matches[1]} and ${matches[2]})`
+        });
+      }
+    });
+  });
+  
+  return results;
+};
+
+// Check eligibility based on form data and exam criteria
+const checkEligibility = (formData, examData, getStreamOptions) => {
+  if (!examData) return false;
+  
+  // Set of eligibility criteria
+  let isEligible = false;
+  const reasons = [];
+  const examInfo = [];
+  const ageResults = checkAgeEligibility(examData, formData.dateOfBirth);
+  const eligibleStreams = [];
+  
+  // Get all possible streams
+  const allStreams = getStreamOptions();
+  
+  // Check each possible stream for eligibility
+  allStreams.forEach(stream => {
+    // Check age eligibility for this stream
+    const streamAgeEligible = ageResults.some(result => 
+      (result.stream === stream || result.stream === 'ALL COURSES') && result.eligible
+    );
+    
+    // Check education requirement for this stream
+    let educationEligible = false;
+    
+    if (examData.eligibility_education_course) {
+      // First check for direct match
+      let courseInfo = null;
+      
+      if (typeof examData.eligibility_education_course === 'object') {
+        // Direct match
+        if (examData.eligibility_education_course[stream]) {
+          courseInfo = examData.eligibility_education_course[stream];
+        } 
+        // Check for partial match (e.g., "OTA(M)" should match with "OTA")
+        else {
+          // Extract base name without parentheses
+          const baseStreamName = stream.split('(')[0].trim();
+          if (examData.eligibility_education_course[baseStreamName]) {
+            courseInfo = examData.eligibility_education_course[baseStreamName];
+          } else {
+            courseInfo = examData.eligibility_education_course['ALL COURSES'] || 
+                        Object.values(examData.eligibility_education_course)[0];
+          }
+        }
+      } else {
+        courseInfo = examData.eligibility_education_course;
+      }
+      
+      educationEligible = (formData.course === courseInfo);
+    }
+    
+    // If eligible for both age and education, add to eligible streams
+    if (streamAgeEligible && educationEligible) {
+      // Get the actual education requirement used for this stream
+      let actualRequirement;
+      if (typeof examData.eligibility_education_course === 'object') {
+        // First try direct match
+        if (examData.eligibility_education_course[stream]) {
+          actualRequirement = examData.eligibility_education_course[stream];
+        } 
+        // Then try partial match
+        else {
+          const baseStreamName = stream.split('(')[0].trim();
+          actualRequirement = examData.eligibility_education_course[baseStreamName] || 
+                            examData.eligibility_education_course['ALL COURSES'];
+        }
+      } else {
+        actualRequirement = examData.eligibility_education_course;
+      }
+      
+      eligibleStreams.push({
+        name: stream,
+        educationRequirement: actualRequirement
+      });
+    }
+  });
+  
+  // At least one stream is eligible
+  isEligible = eligibleStreams.length > 0;
+  
+  // Check percentage marks against eligibility criteria
+  let marksEligible = true;
+  if (examData.eligibility_marks && formData.percentageMarks) {
+    let requiredMarks = 0;
+    let actualMarks = parseFloat(formData.percentageMarks);
+    
+    if (formData.caste === 'SC' || formData.caste === 'ST' || formData.pwdStatus === 'Yes') {
+      const requirement = examData.eligibility_marks['SC/ST/PH'] || '';
+      requiredMarks = parseInt(requirement.replace(/[^0-9]/g, ''), 10) || 0;
+      reasons.push(`Required marks: ${requirement}`);
+    } else {
+      const requirement = examData.eligibility_marks['General'] || 
+                         examData.eligibility_marks['OBC/EWS'] || '';
+      requiredMarks = parseInt(requirement.replace(/[^0-9]/g, ''), 10) || 0;
+      reasons.push(`Required marks: ${requirement}`);
+    }
+    
+    if (actualMarks < requiredMarks) {
+      marksEligible = false;
+      isEligible = false;
+      reasons.push(`Your percentage (${actualMarks}%) is below the required minimum of ${requiredMarks}%`);
+    } else {
+      reasons.push(`Your percentage (${actualMarks}%) meets the required minimum of ${requiredMarks}%`);
+    }
+  }
+  
+  // Add exam info section
+  if (examData.exam_sector) {
+    examInfo.push(`Exam Sector: ${examData.exam_sector}`);
+  }
+  
+  if (examData.conducting_body) {
+    examInfo.push(`Conducted by: ${examData.conducting_body}`);
+  }
+  
+  // Add PWD status check
+  if (examData.pwd_status === "NOT APPLICABLE" && 
+      formData.pwdStatus !== "Not Applicable") {
+    isEligible = false;
+    reasons.push("PWD status is not applicable for this exam");
+  }
+  
+  return {
+    isEligible,
+    reasons,
+    examInfo,
+    ageResults,
+    eligibleStreams,
+    marksEligible
+  };
+};
+
+// Main Form Component
 const FormPage = () => {
   const [formData, setFormData] = useState({
     examTarget: '',
@@ -79,207 +278,9 @@ const FormPage = () => {
     });
   };
 
-  // Check age eligibility
-  const checkAgeEligibility = () => {
-    if (!examData?.age_criteria || !formData.dateOfBirth) return [];
-    
-    const birthDate = new Date(formData.dateOfBirth);
-    const results = [];
-    
-    // Loop through each exam cycle
-    Object.entries(examData.age_criteria).forEach(([cycleName, cycleData]) => {
-      // For exams with NO AGE LIMIT
-      if (cycleData['ALL COURSES'] === "NO AGE LIMIT") {
-        results.push({
-          cycle: cycleName,
-          stream: 'ALL COURSES',
-          eligible: true,
-          message: 'No age limit applies'
-        });
-        return;
-      }
-      
-      // For NEET format
-      if (cycleData['Minimum Age'] && cycleData['Born on or before']) {
-        const cutoffYear = cycleData['Born on or before'].split('.')[2];
-        const userBirthYear = birthDate.getFullYear();
-        const eligible = userBirthYear <= parseInt(cutoffYear);
-        
-        results.push({
-          cycle: cycleName,
-          stream: 'ALL COURSES',
-          eligible,
-          message: eligible ? 
-            `Eligible (born before ${cycleData['Born on or before']})` : 
-            `Not eligible (must be born on/before ${cycleData['Born on or before']})`
-        });
-        return;
-      }
-      
-      // For CDS and other similar formats (date ranges)
-      Object.entries(cycleData).forEach(([stream, dateRange]) => {
-        if (stream === 'Minimum Age' || stream === 'Maximum Age' || stream === 'Born on or before') {
-          return; // Skip these fields for NEET
-        }
-        
-        // Parse date range (format: "02 Jan 2000 - 01 Jan 2005")
-        const matches = dateRange.match(/(\d{2} \w{3} \d{4}) - (\d{2} \w{3} \d{4})/);
-        
-        if (matches) {
-          const minDate = new Date(matches[1]);
-          const maxDate = new Date(matches[2]);
-          const eligible = birthDate >= minDate && birthDate <= maxDate;
-          
-          results.push({
-            cycle: cycleName,
-            stream: stream,
-            eligible,
-            message: eligible ? 
-              `Eligible (${dateRange})` : 
-              `Not eligible (must be born between ${matches[1]} and ${matches[2]})`
-          });
-        }
-      });
-    });
-    
-    return results;
-  };
-
-  // Check eligibility based on form data and exam criteria
-  const checkEligibility = () => {
-    if (!examData) return false;
-    
-    // Set of eligibility criteria
-    let isEligible = false;
-    const reasons = [];
-    const examInfo = [];
-    const ageResults = checkAgeEligibility();
-    const eligibleStreams = [];
-    
-    // Get all possible streams
-    const allStreams = getStreamOptions();
-    
-    // Check each possible stream for eligibility
-    allStreams.forEach(stream => {
-      // Check age eligibility for this stream
-      const streamAgeEligible = ageResults.some(result => 
-        (result.stream === stream || result.stream === 'ALL COURSES') && result.eligible
-      );
-      
-      // Check education requirement for this stream
-      let educationEligible = false;
-      
-      if (examData.eligibility_education_course) {
-        // First check for direct match
-        let courseInfo = null;
-        
-        if (typeof examData.eligibility_education_course === 'object') {
-          // Direct match
-          if (examData.eligibility_education_course[stream]) {
-            courseInfo = examData.eligibility_education_course[stream];
-          } 
-          // Check for partial match (e.g., "OTA(M)" should match with "OTA")
-          else {
-            // Extract base name without parentheses
-            const baseStreamName = stream.split('(')[0].trim();
-            if (examData.eligibility_education_course[baseStreamName]) {
-              courseInfo = examData.eligibility_education_course[baseStreamName];
-            } else {
-              courseInfo = examData.eligibility_education_course['ALL COURSES'] || 
-                          Object.values(examData.eligibility_education_course)[0];
-            }
-          }
-        } else {
-          courseInfo = examData.eligibility_education_course;
-        }
-        
-        educationEligible = (formData.course === courseInfo);
-      }
-      
-      // If eligible for both age and education, add to eligible streams
-      if (streamAgeEligible && educationEligible) {
-        // Get the actual education requirement used for this stream
-        let actualRequirement;
-        if (typeof examData.eligibility_education_course === 'object') {
-          // First try direct match
-          if (examData.eligibility_education_course[stream]) {
-            actualRequirement = examData.eligibility_education_course[stream];
-          } 
-          // Then try partial match
-          else {
-            const baseStreamName = stream.split('(')[0].trim();
-            actualRequirement = examData.eligibility_education_course[baseStreamName] || 
-                              examData.eligibility_education_course['ALL COURSES'];
-          }
-        } else {
-          actualRequirement = examData.eligibility_education_course;
-        }
-        
-        eligibleStreams.push({
-          name: stream,
-          educationRequirement: actualRequirement
-        });
-      }
-    });
-    
-    // At least one stream is eligible
-    isEligible = eligibleStreams.length > 0;
-    
-    // Check percentage marks against eligibility criteria
-    let marksEligible = true;
-    if (examData.eligibility_marks && formData.percentageMarks) {
-      let requiredMarks = 0;
-      let actualMarks = parseFloat(formData.percentageMarks);
-      
-      if (formData.caste === 'SC' || formData.caste === 'ST' || formData.pwdStatus === 'Yes') {
-        const requirement = examData.eligibility_marks['SC/ST/PH'] || '';
-        requiredMarks = parseInt(requirement.replace(/[^0-9]/g, ''), 10) || 0;
-        reasons.push(`Required marks: ${requirement}`);
-      } else {
-        const requirement = examData.eligibility_marks['General'] || 
-                           examData.eligibility_marks['OBC/EWS'] || '';
-        requiredMarks = parseInt(requirement.replace(/[^0-9]/g, ''), 10) || 0;
-        reasons.push(`Required marks: ${requirement}`);
-      }
-      
-      if (actualMarks < requiredMarks) {
-        marksEligible = false;
-        isEligible = false;
-        reasons.push(`Your percentage (${actualMarks}%) is below the required minimum of ${requiredMarks}%`);
-      } else {
-        reasons.push(`Your percentage (${actualMarks}%) meets the required minimum of ${requiredMarks}%`);
-      }
-    }
-    
-    // Add exam info section
-    if (examData.exam_sector) {
-      examInfo.push(`Exam Sector: ${examData.exam_sector}`);
-    }
-    
-    if (examData.conducting_body) {
-      examInfo.push(`Conducted by: ${examData.conducting_body}`);
-    }
-    
-    // Add PWD status check
-    if (examData.pwd_status === "NOT APPLICABLE" && 
-        formData.pwdStatus !== "Not Applicable") {
-      isEligible = false;
-      reasons.push("PWD status is not applicable for this exam");
-    }
-    
-    return {
-      isEligible,
-      reasons,
-      examInfo,
-      ageResults,
-      eligibleStreams,
-      marksEligible
-    };
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    const eligibility = checkEligibility();
+    const eligibility = checkEligibility(formData, examData, getStreamOptions);
     setEligibilityResult(eligibility);
     setShowResults(true);
   };
@@ -383,7 +384,7 @@ const FormPage = () => {
                   requirement = examData.eligibility_education_course[baseStreamName];
                 } else {
                   requirement = examData.eligibility_education_course['ALL COURSES'] || 
-                               Object.values(examData.eligibility_education_course)[0];
+                              Object.values(examData.eligibility_education_course)[0];
                 }
               }
             } else {

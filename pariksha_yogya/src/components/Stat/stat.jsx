@@ -89,12 +89,23 @@ const StatsAnalytics = () => {
             <div className="text-amber-600 text-[10px] md:text-xs lg:text-base font-medium">Eligible Aspirants</div>
           </div>
 
-          {/* Available Exams - now showing main folders count */}
+          {/* Main Categories */}
+          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-yellow-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative">
+            <div className="absolute -left-4 -bottom-4 w-12 h-12 bg-yellow-200 rounded-full opacity-30"></div>
+            <div className="text-[10px] md:text-xs lg:text-sm mb-1 md:mb-2">
+              <span className="bg-yellow-600 text-white px-1.5 py-0.5 lg:px-3 lg:py-1.5 rounded-lg font-medium">+2</span>
+              <span className="text-yellow-700 ml-1.5 font-medium">quarterly</span>
+            </div>
+            <div className="text-sm md:text-2xl lg:text-4xl xl:text-5xl font-bold my-1 md:my-2 lg:my-3 text-yellow-800">{mainFolderCount}</div>
+            <div className="text-yellow-600 text-[10px] md:text-xs lg:text-base font-medium">Main Categories</div>
+          </div>
+
+          {/* Available Exams - now separate from main folders count */}
           <div className="bg-gradient-to-br from-rose-50 to-rose-100 flex flex-col items-center p-2 md:p-3 lg:p-5 border border-rose-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 min-w-[90px] md:min-w-[130px] lg:min-w-[160px] overflow-hidden relative">
             <div className="absolute -left-4 -bottom-4 w-12 h-12 bg-rose-200 rounded-full opacity-30"></div>
             <div className="text-[10px] md:text-xs lg:text-sm mb-1 md:mb-2">
-              <span className="bg-rose-600 text-white px-1.5 py-0.5 lg:px-3 lg:py-1.5 rounded-sm font-medium">{mainFolderCount}</span>
-              <span className="text-rose-700 ml-1.5 font-medium">Main Categories</span>
+              <span className="bg-rose-600 text-white px-1.5 py-0.5 lg:px-3 lg:py-1.5 rounded-lg font-medium">+15</span>
+              <span className="text-rose-700 ml-1.5 font-medium">monthly</span>
             </div>
             <div className="text-sm md:text-2xl lg:text-4xl xl:text-5xl font-bold my-1 md:my-2 lg:my-3 text-rose-800">{examCount}</div>
             <div className="text-rose-600 text-[10px] md:text-xs lg:text-base font-medium">Available Exams</div>

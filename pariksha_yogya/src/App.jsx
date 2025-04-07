@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "@/components/Navbar/navbar";
 import { HeroUIProvider } from "@heroui/react";
 import { Routes, Route } from "react-router-dom";
-import FormPage from "./Pages/checknow";
+import FormPage from "./Pages/Check/checknow";
 import ContributionPage from "./Pages/contribution";
 import Home from "./Pages/home";
 import ContactPage from "./Pages/contactus";
@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/checknow" element={<FormPage />} />
+        <Route path="/Check/checknow" element={<FormPage />} />
         <Route path="/contribution" element={<ContributionPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUs />} />
