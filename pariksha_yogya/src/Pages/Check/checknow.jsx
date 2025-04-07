@@ -430,186 +430,200 @@ const FormPage = () => {
   const domicileOptions = examData?.domicile ? [examData.domicile] : [];
 
   return (
-    <form className="styled-form" onSubmit={handleSubmit}>
-      <div className="container border-gradient p-5 mt-10 rounded-4xl">
-        <h2>Personal Information</h2>
-        
-        {/* Row with 4 inputs */}
-        <div className="form-row four-items">
-          <div className="form-item">
-            <FormInput 
-              label="ExamTarget" 
-              type="select" 
-              options={examTargetOptions} 
-              name="examTarget" 
-              required 
-              value={formData.examTarget}
-              onChange={handleExamChange}
-            />
+    <div className="py-6 dark:bg-gray-900">
+      <form className="styled-form" onSubmit={handleSubmit}>
+        <div className="container border-gradient p-5 mt-10 rounded-4xl dark:bg-gray-800 dark:border-blue-700">
+          <h2 className="dark:text-gray-100">Personal Information</h2>
+          
+          {/* Row with 4 inputs */}
+          <div className="form-row four-items">
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="ExamTarget" 
+                type="select" 
+                options={examTargetOptions} 
+                name="examTarget" 
+                required 
+                value={formData.examTarget}
+                onChange={handleExamChange}
+                darkMode={true}
+              />
+            </div>
+
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Date of Birth" 
+                type="date" 
+                name="dateOfBirth" 
+                required 
+                value={formData.dateOfBirth}
+                onChange={handleInputChange}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Gender" 
+                type="select" 
+                options={genderOptions} 
+                name="gender" 
+                required 
+                value={formData.gender}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Marital Status" 
+                type="select" 
+                options={maritalOptions} 
+                name="maritalStatus" 
+                required 
+                value={formData.maritalStatus}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+          </div>
+          
+          {/* Row with 2 inputs */}
+          <div className="form-row two-items">
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Nationality" 
+                type="select" 
+                options={nationalityOptions} 
+                name="nationality" 
+                required 
+                value={formData.nationality}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Domicile" 
+                type="select" 
+                options={domicileOptions} 
+                name="domicile" 
+                required 
+                value={formData.domicile}
+                onChange={handleInputChange}
+                disabled={true}
+                darkMode={true}
+              />
+            </div>
+          </div>
+          
+          {/* Row with 4 inputs */}
+          <div className="form-row four-items">
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Education Qualification" 
+                type="select" 
+                options={courseOptions} 
+                name="course" 
+                required 
+                value={formData.course}
+                onChange={handleInputChange}
+                disabled={!examData || courseOptions.length === 0}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Year" 
+                type="select" 
+                options={["Final Year", "Completed"]} 
+                name="yearSemester" 
+                required 
+                value={formData.yearSemester}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Caste/Category" 
+                type="select" 
+                options={casteOptions} 
+                name="caste" 
+                required 
+                value={formData.caste}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+          </div>
+          
+          {/* Row with 3 inputs */}
+          <div className="form-row three-items">
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="PWD/Disabled Status" 
+                type="select" 
+                options={pwdOptions} 
+                name="pwdStatus" 
+                required 
+                value={formData.pwdStatus}
+                onChange={handleInputChange}
+                disabled={!examData || examData?.pwd_status === "NOT APPLICABLE"}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              <FormInput 
+                label="Percentage Marks" 
+                type="number"
+                name="percentageMarks" 
+                required 
+                value={formData.percentageMarks}
+                onChange={handleInputChange}
+                disabled={!examData}
+                darkMode={true}
+              />
+            </div>
+            
+            <div className="form-item dark:bg-gray-700 dark:border-gray-600">
+              {/* Empty item to maintain layout */}
+            </div>
           </div>
 
-          <div className="form-item">
-            <FormInput 
-              label="Date of Birth" 
-              type="date" 
-              name="dateOfBirth" 
-              required 
-              value={formData.dateOfBirth}
-              onChange={handleInputChange}
-            />
-          </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Gender" 
-              type="select" 
-              options={genderOptions} 
-              name="gender" 
-              required 
-              value={formData.gender}
-              onChange={handleInputChange}
+          <div className="form-actions">
+            <button 
+              type="submit" 
+              className="submit-btn dark:bg-gradient-to-r dark:from-blue-700 dark:to-indigo-700"
               disabled={!examData}
-            />
+            >
+              Check Eligibility
+            </button>
           </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Marital Status" 
-              type="select" 
-              options={maritalOptions} 
-              name="maritalStatus" 
-              required 
-              value={formData.maritalStatus}
-              onChange={handleInputChange}
-              disabled={!examData}
-            />
-          </div>
-        </div>
-        
-        {/* Row with 2 inputs */}
-        <div className="form-row two-items">
-          <div className="form-item">
-            <FormInput 
-              label="Nationality" 
-              type="select" 
-              options={nationalityOptions} 
-              name="nationality" 
-              required 
-              value={formData.nationality}
-              onChange={handleInputChange}
-              disabled={!examData}
-            />
-          </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Domicile" 
-              type="select" 
-              options={domicileOptions} 
-              name="domicile" 
-              required 
-              value={formData.domicile}
-              onChange={handleInputChange}
-              disabled={true}
-            />
-          </div>
-        </div>
-        
-        {/* Row with 4 inputs */}
-        <div className="form-row four-items">
-          <div className="form-item">
-            <FormInput 
-              label="Education Qualification" 
-              type="select" 
-              options={courseOptions} 
-              name="course" 
-              required 
-              value={formData.course}
-              onChange={handleInputChange}
-              disabled={!examData || courseOptions.length === 0}
-            />
-          </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Year" 
-              type="select" 
-              options={["Final Year", "Completed"]} 
-              name="yearSemester" 
-              required 
-              value={formData.yearSemester}
-              onChange={handleInputChange}
-              disabled={!examData}
-            />
-          </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Caste/Category" 
-              type="select" 
-              options={casteOptions} 
-              name="caste" 
-              required 
-              value={formData.caste}
-              onChange={handleInputChange}
-              disabled={!examData}
-            />
-          </div>
-        </div>
-        
-        {/* Row with 3 inputs */}
-        <div className="form-row three-items">
-          <div className="form-item">
-            <FormInput 
-              label="PWD/Disabled Status" 
-              type="select" 
-              options={pwdOptions} 
-              name="pwdStatus" 
-              required 
-              value={formData.pwdStatus}
-              onChange={handleInputChange}
-              disabled={!examData || examData?.pwd_status === "NOT APPLICABLE"}
-            />
-          </div>
-          
-          <div className="form-item">
-            <FormInput 
-              label="Percentage Marks" 
-              type="number"
-              name="percentageMarks" 
-              required 
-              value={formData.percentageMarks}
-              onChange={handleInputChange}
-              disabled={!examData}
-            />
-          </div>
-          
-          <div className="form-item">
-            {/* Empty item to maintain layout */}
-          </div>
-        </div>
 
-        <div className="form-actions">
-          <button 
-            type="submit" 
-            className="submit-btn"
-            disabled={!examData}
-          >
-            Check Eligibility
-          </button>
+          {/* Display the results using the separate component */}
+          {showResults && (
+            <ResultNow 
+              eligibilityResult={eligibilityResult}
+              examData={examData}
+              formData={formData}
+              requiredPercentage={requiredPercentage}
+              darkMode={true}
+            />
+          )}
         </div>
-
-        {/* Display the results using the separate component */}
-        {showResults && (
-          <ResultNow 
-            eligibilityResult={eligibilityResult}
-            examData={examData}
-            formData={formData}
-            requiredPercentage={requiredPercentage}
-          />
-        )}
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 
