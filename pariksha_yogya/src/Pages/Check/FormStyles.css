@@ -253,17 +253,48 @@
 .styled-form .wave-group select {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232575fc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 8px center;
-  background-size: 10px;
-  padding-right: 20px;
+  background-size: 12px;
+  padding-right: 28px;
+}
+
+/* Remove native dropdown arrow in IE */
+.styled-form .wave-group select::-ms-expand {
+  display: none;
 }
 
 .dark .styled-form .wave-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+  padding-right: 28px;
   color-scheme: dark;
+}
+
+/* Ensure native dropdown arrow is hidden in dark mode */
+.dark .styled-form .wave-group select::-ms-expand {
+  display: none;
+}
+
+/* Style option elements for better dark mode compatibility */
+.styled-form .wave-group select option {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 4px 8px;
+}
+
+.dark .styled-form .wave-group select option {
+  background-color: #374151;
+  color: #e5e7eb;
+  padding: 4px 8px;
 }
 
 /* Enhanced Eligibility Results Styling */

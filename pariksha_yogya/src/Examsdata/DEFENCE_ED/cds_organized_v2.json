@@ -1,0 +1,170 @@
+{
+  "CDS_EXAM": {
+    "metadata": {
+      "exam_name": "Combined Defense Services Examination",
+      "conducting_body": "Union Public Service Commission (UPSC)",
+      "exam_sector": "DEFENSE EXAM",
+      "last_updated": "2025-09-13"
+    },
+    "base_eligibility": {
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens",
+        "Citizens of Nepal",
+        "Persons of Indian origin (specified countries)"
+      ],
+      "pwd_status": "NOT APPLICABLE",
+      "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
+      "course_requirement": "Bachelor's Degree (Passed/Appearing Final Year)",
+      "minimum_marks": "PASSED (all categories)"
+    },
+    "academy_types": {
+      "COMBAT_ARMS": {
+        "inherits": "base_eligibility",
+        "gender_restriction": "MALE_ONLY",
+        "marital_status": "UNMARRIED_ONLY",
+        "exam_pattern": {
+          "subjects": ["English", "General Knowledge", "Mathematics"],
+          "total_papers": 3
+        },
+        "age_pattern": {
+          "IMA_INA": {
+            "general_range": "19-24 years",
+            "calculation_basis": "Age on 1st Jan for CDS-I, 1st Jul for CDS-II"
+          },
+          "AFA": {
+            "general_range": "19-23 years (19-25 for CPL)",
+            "calculation_basis": "Age on 1st Jan for CDS-I, 1st Jul for CDS-II",
+            "special_category": "CPL holders get 2 additional years"
+          }
+        },
+        "academies": ["IMA", "INA", "AFA"]
+      },
+      "SUPPORT_SERVICES": {
+        "inherits": "base_eligibility", 
+        "gender_restriction": "BOTH_MALE_FEMALE",
+        "marital_status": {
+          "male": "UNMARRIED_ONLY",
+          "female": ["UNMARRIED", "ISSUELESS_WIDOW", "ISSUELESS_DIVORCEE"]
+        },
+        "exam_pattern": {
+          "subjects": ["English", "General Knowledge"],
+          "total_papers": 2
+        },
+        "age_pattern": {
+          "general_range": "18-25 years",
+          "calculation_basis": "Age on 1st Jan for CDS-I, 1st Jul for CDS-II"
+        },
+        "academies": ["OTA"]
+      }
+    },
+    "detailed_age_criteria": {
+      "by_exam_session": {
+        "CDS-I-2025": {
+          "IMA": "02 Jan 2002 - 01 Jan 2007",
+          "INA": "02 Jan 2002 - 01 Jan 2007",
+          "AFA": "02 Jan 2002 - 01 Jan 2006 (CPL: 02 Jan 2000 - 01 Jan 2006)",
+          "OTA": "02 Jan 2001 - 01 Jan 2007"
+        },
+        "CDS-II-2025": {
+          "IMA": "02 Jul 2002 - 01 Jul 2007",
+          "INA": "02 Jul 2002 - 01 Jul 2007",
+          "AFA": "02 Jul 2002 - 01 Jul 2006 (CPL: 02 Jul 2000 - 01 Jul 2006)",
+          "OTA": "02 Jul 2001 - 01 Jul 2007"
+        },
+        "CDS-I-2026": {
+          "IMA": "02 Jan 2003 - 01 Jan 2008",
+          "INA": "02 Jan 2003 - 01 Jan 2008",
+          "AFA": "02 Jan 2003 - 01 Jan 2007 (CPL: 02 Jan 2001 - 01 Jan 2007)",
+          "OTA": "02 Jan 2002 - 01 Jan 2008"
+        },
+        "CDS-II-2026": {
+          "IMA": "02 Jul 2003 - 01 Jul 2008",
+          "INA": "02 Jul 2003 - 01 Jul 2008",
+          "AFA": "02 Jul 2003 - 01 Jul 2007 (CPL: 02 Jul 2001 - 01 Jul 2007)",
+          "OTA": "02 Jul 2002 - 01 Jul 2008"
+        },
+        "CDS-I-2027": {
+          "IMA": "02 Jan 2004 - 01 Jan 2009",
+          "INA": "02 Jan 2004 - 01 Jan 2009",
+          "AFA": "02 Jan 2004 - 01 Jan 2008 (CPL: 02 Jan 2002 - 01 Jan 2008)",
+          "OTA": "02 Jan 2003 - 01 Jan 2009"
+        },
+        "CDS-II-2027": {
+          "IMA": "02 Jul 2004 - 01 Jul 2009",
+          "INA": "02 Jul 2004 - 01 Jul 2009",
+          "AFA": "02 Jul 2004 - 01 Jul 2008 (CPL: 02 Jul 2002 - 01 Jul 2008)",
+          "OTA": "02 Jul 2003 - 01 Jul 2009"
+        },
+        "CDS-I-2028": {
+          "IMA": "02 Jan 2005 - 01 Jan 2010",
+          "INA": "02 Jan 2005 - 01 Jan 2010",
+          "AFA": "02 Jan 2005 - 01 Jan 2009 (CPL: 02 Jan 2003 - 01 Jan 2009)",
+          "OTA": "02 Jan 2004 - 01 Jan 2010"
+        },
+        "CDS-II-2028": {
+          "IMA": "02 Jul 2005 - 01 Jul 2010",
+          "INA": "02 Jul 2005 - 01 Jul 2010",
+          "AFA": "02 Jul 2005 - 01 Jul 2009 (CPL: 02 Jul 2003 - 01 Jul 2009)",
+          "OTA": "02 Jul 2004 - 01 Jul 2010"
+        },
+        "CDS-I-2029": {
+          "IMA": "02 Jan 2006 - 01 Jan 2011",
+          "INA": "02 Jan 2006 - 01 Jan 2011",
+          "AFA": "02 Jan 2006 - 01 Jan 2010 (CPL: 02 Jan 2004 - 01 Jan 2010)",
+          "OTA": "02 Jan 2005 - 01 Jan 2011"
+        },
+        "CDS-II-2029": {
+          "IMA": "02 Jul 2006 - 01 Jul 2011",
+          "INA": "02 Jul 2006 - 01 Jul 2011",
+          "AFA": "02 Jul 2006 - 01 Jul 2010 (CPL: 02 Jul 2004 - 01 Jul 2010)",
+          "OTA": "02 Jul 2005 - 01 Jul 2011"
+        },
+        "CDS-I-2030": {
+          "IMA": "02 Jan 2007 - 01 Jan 2012",
+          "INA": "02 Jan 2007 - 01 Jan 2012",
+          "AFA": "02 Jan 2007 - 01 Jan 2011 (CPL: 02 Jan 2005 - 01 Jan 2011)",
+          "OTA": "02 Jan 2006 - 01 Jan 2012"
+        }
+      }
+    },
+    "academy_details": {
+      "IMA": {
+        "type": "COMBAT_ARMS",
+        "service_branch": "ARMY",
+        "full_name": "Indian Military Academy",
+        "location": "Dehradun",
+        "education_requirement": "Any Bachelor's Degree",
+        "age_range_years": "19-24"
+      },
+      "INA": {
+        "type": "COMBAT_ARMS", 
+        "service_branch": "NAVY",
+        "full_name": "Indian Naval Academy",
+        "location": "Ezhimala", 
+        "education_requirement": "B.E./B.Tech Degree",
+        "age_range_years": "19-24"
+      },
+      "AFA": {
+        "type": "COMBAT_ARMS",
+        "service_branch": "AIR_FORCE", 
+        "full_name": "Air Force Academy",
+        "location": "Hyderabad",
+        "education_requirement": "B.E./B.Tech OR Bachelor's with Physics & Math at 10+2",
+        "age_range_years": "19-23",
+        "special_category": {
+          "CPL": "19-25 (Commercial Pilot License holders)"
+        }
+      },
+      "OTA": {
+        "type": "SUPPORT_SERVICES",
+        "service_branch": "ALL_SERVICES",
+        "full_name": "Officers Training Academy", 
+        "location": "Chennai & Gaya",
+        "education_requirement": "Any Bachelor's Degree",
+        "age_range_years": "18-25",
+        "commission_type": "Short Service Commission"
+      }
+    }
+  }
+}

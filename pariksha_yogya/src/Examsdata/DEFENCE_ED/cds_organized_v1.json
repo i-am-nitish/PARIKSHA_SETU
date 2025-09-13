@@ -1,0 +1,166 @@
+{
+  "CDS_EXAM": {
+    "exam_info": {
+      "conducting_body": "Union Public Service Commission (UPSC)",
+      "exam_sector": "DEFENSE EXAM",
+      "exam_type": "Combined Defense Services",
+      "frequency": "Twice a year (CDS-I & CDS-II)"
+    },
+    "common_eligibility": {
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens",
+        "Citizens of Nepal", 
+        "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+      ],
+      "pwd_status": "NOT APPLICABLE",
+      "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
+      "course_year_requirement": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+      "minimum_marks": {
+        "General": "PASSED",
+        "OBC/EWS": "PASSED", 
+        "SC/ST/PH": "PASSED"
+      }
+    },
+    "academies": {
+      "IMA": {
+        "full_name": "Indian Military Academy",
+        "service": "Army",
+        "location": "Dehradun",
+        "gender_eligibility": ["MALE"],
+        "marital_status": ["UNMARRIED"],
+        "educational_qualification": "Any Bachelor's Degree",
+        "exam_subjects": ["English", "General Knowledge", "Mathematics"],
+        "age_criteria": {
+          "general_range": "19-24 years",
+          "detailed_by_exam": {
+            "CDS-I-2025": "02 Jan 2002 - 01 Jan 2007",
+            "CDS-II-2025": "02 Jul 2002 - 01 Jul 2007",
+            "CDS-I-2026": "02 Jan 2003 - 01 Jan 2008",
+            "CDS-II-2026": "02 Jul 2003 - 01 Jul 2008",
+            "CDS-I-2027": "02 Jan 2004 - 01 Jan 2009",
+            "CDS-II-2027": "02 Jul 2004 - 01 Jul 2009",
+            "CDS-I-2028": "02 Jan 2005 - 01 Jan 2010",
+            "CDS-II-2028": "02 Jul 2005 - 01 Jul 2010",
+            "CDS-I-2029": "02 Jan 2006 - 01 Jan 2011",
+            "CDS-II-2029": "02 Jul 2006 - 01 Jul 2011",
+            "CDS-I-2030": "02 Jan 2007 - 01 Jan 2012"
+          }
+        },
+        "special_notes": "Trains officers for the Indian Army"
+      },
+      "INA": {
+        "full_name": "Indian Naval Academy", 
+        "service": "Navy",
+        "location": "Ezhimala",
+        "gender_eligibility": ["MALE"],
+        "marital_status": ["UNMARRIED"],
+        "educational_qualification": "B.E./B.Tech Degree",
+        "exam_subjects": ["English", "General Knowledge", "Mathematics"],
+        "age_criteria": {
+          "general_range": "19-24 years",
+          "detailed_by_exam": {
+            "CDS-I-2025": "02 Jan 2002 - 01 Jan 2007",
+            "CDS-II-2025": "02 Jul 2002 - 01 Jul 2007",
+            "CDS-I-2026": "02 Jan 2003 - 01 Jan 2008",
+            "CDS-II-2026": "02 Jul 2003 - 01 Jul 2008",
+            "CDS-I-2027": "02 Jan 2004 - 01 Jan 2009",
+            "CDS-II-2027": "02 Jul 2004 - 01 Jul 2009",
+            "CDS-I-2028": "02 Jan 2005 - 01 Jan 2010",
+            "CDS-II-2028": "02 Jul 2005 - 01 Jul 2010",
+            "CDS-I-2029": "02 Jan 2006 - 01 Jan 2011",
+            "CDS-II-2029": "02 Jul 2006 - 01 Jul 2011",
+            "CDS-I-2030": "02 Jan 2007 - 01 Jan 2012"
+          }
+        },
+        "special_notes": "Requires technical background for naval engineering roles"
+      },
+      "AFA": {
+        "full_name": "Air Force Academy",
+        "service": "Air Force", 
+        "location": "Hyderabad",
+        "gender_eligibility": ["MALE"],
+        "marital_status": ["UNMARRIED"],
+        "educational_qualification": "B.E./B.Tech Degree or Bachelor's Degree with Physics and Mathematics at 10+2 level",
+        "exam_subjects": ["English", "General Knowledge", "Mathematics"],
+        "age_criteria": {
+          "general_range": "19-23 years (19-25 for CPL)",
+          "detailed_by_exam": {
+            "CDS-I-2025": "02 Jan 2002 - 01 Jan 2006 (CPL: 02 Jan 2000 - 01 Jan 2006)",
+            "CDS-II-2025": "02 Jul 2002 - 01 Jul 2006 (CPL: 02 Jul 2000 - 01 Jul 2006)",
+            "CDS-I-2026": "02 Jan 2003 - 01 Jan 2007 (CPL: 02 Jan 2001 - 01 Jan 2007)",
+            "CDS-II-2026": "02 Jul 2003 - 01 Jul 2007 (CPL: 02 Jul 2001 - 01 Jul 2007)",
+            "CDS-I-2027": "02 Jan 2004 - 01 Jan 2008 (CPL: 02 Jan 2002 - 01 Jan 2008)",
+            "CDS-II-2027": "02 Jul 2004 - 01 Jul 2008 (CPL: 02 Jul 2002 - 01 Jul 2008)",
+            "CDS-I-2028": "02 Jan 2005 - 01 Jan 2009 (CPL: 02 Jan 2003 - 01 Jan 2009)",
+            "CDS-II-2028": "02 Jul 2005 - 01 Jul 2009 (CPL: 02 Jul 2003 - 01 Jul 2009)",
+            "CDS-I-2029": "02 Jan 2006 - 01 Jan 2010 (CPL: 02 Jan 2004 - 01 Jan 2010)",
+            "CDS-II-2029": "02 Jul 2006 - 01 Jul 2010 (CPL: 02 Jul 2004 - 01 Jul 2010)",
+            "CDS-I-2030": "02 Jan 2007 - 01 Jan 2011 (CPL: 02 Jan 2005 - 01 Jan 2011)"
+          }
+        },
+        "special_categories": {
+          "CPL": "Commercial Pilot License holders get extended upper age limit"
+        },
+        "special_notes": "Different age criteria for Commercial Pilot License holders"
+      },
+      "OTA": {
+        "full_name": "Officers Training Academy",
+        "service": "All Services",
+        "location": "Chennai & Gaya",
+        "streams": {
+          "OTA_MALE": {
+            "gender_eligibility": ["MALE"],
+            "marital_status": ["UNMARRIED"],
+            "exam_subjects": ["English", "General Knowledge"],
+            "age_criteria": {
+              "general_range": "18-25 years",
+              "detailed_by_exam": {
+                "CDS-I-2025": "02 Jan 2001 - 01 Jan 2007",
+                "CDS-II-2025": "02 Jul 2001 - 01 Jul 2007",
+                "CDS-I-2026": "02 Jan 2002 - 01 Jan 2008",
+                "CDS-II-2026": "02 Jul 2002 - 01 Jul 2008",
+                "CDS-I-2027": "02 Jan 2003 - 01 Jan 2009",
+                "CDS-II-2027": "02 Jul 2003 - 01 Jul 2009",
+                "CDS-I-2028": "02 Jan 2004 - 01 Jan 2010",
+                "CDS-II-2028": "02 Jul 2004 - 01 Jul 2010",
+                "CDS-I-2029": "02 Jan 2005 - 01 Jan 2011",
+                "CDS-II-2029": "02 Jul 2005 - 01 Jul 2011",
+                "CDS-I-2030": "02 Jan 2006 - 01 Jan 2012"
+              }
+            }
+          },
+          "OTA_FEMALE": {
+            "gender_eligibility": ["FEMALE"],
+            "marital_status": ["UNMARRIED", "ISSUELESS WIDOW", "ISSUELESS DIVORCEE"],
+            "exam_subjects": ["English", "General Knowledge"],
+            "age_criteria": {
+              "general_range": "18-25 years",
+              "detailed_by_exam": {
+                "CDS-I-2025": "02 Jan 2001 - 01 Jan 2007",
+                "CDS-II-2025": "02 Jul 2001 - 01 Jul 2007",
+                "CDS-I-2026": "02 Jan 2002 - 01 Jan 2008",
+                "CDS-II-2026": "02 Jul 2002 - 01 Jul 2008",
+                "CDS-I-2027": "02 Jan 2003 - 01 Jan 2009",
+                "CDS-II-2027": "02 Jul 2003 - 01 Jul 2009",
+                "CDS-I-2028": "02 Jan 2004 - 01 Jan 2010",
+                "CDS-II-2028": "02 Jul 2004 - 01 Jul 2010",
+                "CDS-I-2029": "02 Jan 2005 - 01 Jan 2011",
+                "CDS-II-2029": "02 Jul 2005 - 01 Jul 2011",
+                "CDS-I-2030": "02 Jan 2006 - 01 Jan 2012"
+              }
+            }
+          }
+        },
+        "educational_qualification": "Any Bachelor's Degree",
+        "special_notes": "Short Service Commission for all three services"
+      }
+    },
+    "exam_schedule": {
+      "pattern": "Two exams per year",
+      "cds_1": "Usually conducted in February",
+      "cds_2": "Usually conducted in September",
+      "age_calculation_date": "January 1st for CDS-I, July 1st for CDS-II"
+    }
+  }
+}

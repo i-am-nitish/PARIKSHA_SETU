@@ -25,9 +25,13 @@ const FormInput = ({ label, type = "text", options = [], required = false, name,
             disabled={disabled}
             style={disabled ? { opacity: 0.6, cursor: 'not-allowed' } : {}}
           >
-            <option value="" disabled></option>
+            <option value="" disabled className={darkMode ? "dark:bg-gray-700 dark:text-gray-400" : ""}></option>
             {options.map((option, index) => (
-              <option key={index} value={option.value || option} className={darkMode ? "dark:bg-gray-700" : ""}>
+              <option 
+                key={index} 
+                value={option.value || option} 
+                className={darkMode ? "dark:bg-gray-700 dark:text-gray-200" : ""}
+              >
                 {option.label || option}
               </option>
             ))}

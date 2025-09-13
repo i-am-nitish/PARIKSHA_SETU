@@ -1,14 +1,19 @@
 {
     "CDS": {
-      "posts_classes_courses_departments_academy": "ALL COURSES",
-      "gender": ["MALE", "FEMALE"],
+      "posts_classes_courses_departments_academy": "ALL ACADEMIES",
+      "gender": {
+        "IMA": ["MALE"],
+        "INA": ["MALE"],
+        "AFA": ["MALE"],
+        "OTA": ["MALE", "FEMALE"]
+      },
       "marital_status": {
-        "IMA": "UNMARRIED",
-        "INA": "UNMARRIED",
-        "AFA": "UNMARRIED",
+        "IMA": "UNMARRIED MALE ONLY",
+        "INA": "UNMARRIED MALE ONLY",
+        "AFA": "UNMARRIED MALE ONLY",
         "OTA": {
-          "Men": "UNMARRIED",
-          "Women": ["UNMARRIED", "ISSUELESS WIDOW", "ISSUELESS DIVORCEE"]
+          "Men": "UNMARRIED MALE ONLY",
+          "Women": ["UNMARRIED FEMALE", "ISSUELESS WIDOW", "ISSUELESS DIVORCEE"]
         }
       },
       "domicile": "PAN INDIA",
@@ -140,11 +145,26 @@
         }
       },
       "exam_subjects": {
-        "IMA": ["English", "General Knowledge", "Mathematics"],
-        "INA": ["English", "General Knowledge", "Mathematics"],
-        "AFA": ["English", "General Knowledge", "Mathematics"],
-        "OTA(M)": ["English", "General Knowledge"],
-        "OTA(W)": ["English", "General Knowledge"]
+        "IMA": {
+          "subjects": ["English", "General Knowledge", "Mathematics"],
+          "eligibility": "MALE CANDIDATES ONLY"
+        },
+        "INA": {
+          "subjects": ["English", "General Knowledge", "Mathematics"],
+          "eligibility": "MALE CANDIDATES ONLY"
+        },
+        "AFA": {
+          "subjects": ["English", "General Knowledge", "Mathematics"],
+          "eligibility": "MALE CANDIDATES ONLY"
+        },
+        "OTA(M)": {
+          "subjects": ["English", "General Knowledge"],
+          "eligibility": "MALE CANDIDATES"
+        },
+        "OTA(W)": {
+          "subjects": ["English", "General Knowledge"],
+          "eligibility": "FEMALE CANDIDATES"
+        }
       },
       "conducting_body": "Union Public Service Commission (UPSC)"
     }
