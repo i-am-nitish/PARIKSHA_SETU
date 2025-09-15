@@ -1,171 +1,237 @@
 {
-    "CDS": {
-      "posts_classes_courses_departments_academy": "ALL ACADEMIES",
-      "gender": {
-        "IMA": ["MALE"],
-        "INA": ["MALE"],
-        "AFA": ["MALE"],
-        "OTA": ["MALE", "FEMALE"]
-      },
-      "marital_status": {
-        "IMA": "UNMARRIED MALE ONLY",
-        "INA": "UNMARRIED MALE ONLY",
-        "AFA": "UNMARRIED MALE ONLY",
-        "OTA": {
-          "Men": "UNMARRIED MALE ONLY",
-          "Women": ["UNMARRIED FEMALE", "ISSUELESS WIDOW", "ISSUELESS DIVORCEE"]
-        }
-      },
-      "domicile": "PAN INDIA",
-      "nationality": [
-        "Indian citizens",
-        "Citizens of Nepal",
-        "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
-      ],
-      "pwd_status": "NOT APPLICABLE",
-      "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
-      "eligibility_education_course": {
-        "IMA": "Any Bachelor's Degree",
-        "INA": "B.E./B.Tech Degree",
-        "AFA": "B.E./B.Tech Degree or Bachelor's Degree with Physics and Mathematics at 10+2 level",
-        "OTA": "Any Bachelor's Degree"
-      },
-      "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
-      "eligibility_marks": {
-        "General": "PASSED",
-        "OBC/EWS": "PASSED",
-        "SC/ST/PH": "PASSED"
-      },
-      "exam_sector": "DEFENSE EXAM",
-      "age_criteria": {
-        "CDS-I-2023": {
-          "IMA": "02 Jan 2000 - 01 Jan 2005",
-          "INA": "02 Jan 2000 - 01 Jan 2005",
-          "AFA": "02 Jan 2000 - 01 Jan 2004 (CPL: 02 Jan 1998 - 01 Jan 2004)",
-          "OTA(M)": "02 Jan 1999 - 01 Jan 2005",
-          "OTA(W)": "02 Jan 1999 - 01 Jan 2005"
+  "CDS": {
+    "exam_name": "Combined Defense Services Examination",
+    "exam_sector": "DEFENSE EXAM",
+    "conducting_body": "Union Public Service Commission (UPSC)",
+    "posts_classes_courses_departments_academies": "ALL ACADEMIES, IMA, INA, AFA, OTA",
+    "academies": {
+      "IMA": {
+        "full_form": "Indian Military Academy",
+        "gender": ["MALE"],
+        "marital_status": "UNMARRIED MALE",
+        "pwd_status": "NOT APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal",
+          "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+        ],
+        "caste_category": [
+          "General",
+          "OBC",
+          "EWS",
+          "SC",
+          "ST"
+        ],
+        "eligibility_education_course": "Any Bachelor's Degree",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+        "eligibility_marks": {
+          "General": "PASSED",
+          "OBC/EWS": "PASSED",
+          "SC/ST/PH": "PASSED"
         },
-        "CDS-II-2023": {
-          "IMA": "02 Jul 2000 - 01 Jul 2005",
-          "INA": "02 Jul 2000 - 01 Jul 2005",
-          "AFA": "02 Jul 2000 - 01 Jul 2004 (CPL: 02 Jul 1998 - 01 Jul 2004)",
-          "OTA(M)": "02 Jul 1999 - 01 Jul 2005",
-          "OTA(W)": "02 Jul 1999 - 01 Jul 2005"
-        },
-        "CDS-I-2024": {
-          "IMA": "02 Jan 2001 - 01 Jan 2006",
-          "INA": "02 Jan 2001 - 01 Jan 2006",
-          "AFA": "02 Jan 2001 - 01 Jan 2005 (CPL: 02 Jan 1999 - 01 Jan 2005)",
-          "OTA(M)": "02 Jan 2000 - 01 Jan 2006",
-          "OTA(W)": "02 Jan 2000 - 01 Jan 2006"
-        },
-        "CDS-II-2024": {
-          "IMA": "02 Jul 2001 - 01 Jul 2006",
-          "INA": "02 Jul 2001 - 01 Jul 2006",
-          "AFA": "02 Jul 2001 - 01 Jul 2005 (CPL: 02 Jul 1999 - 01 Jul 2005)",
-          "OTA(M)": "02 Jul 2000 - 01 Jul 2006",
-          "OTA(W)": "02 Jul 2000 - 01 Jul 2006"
-        },
-        "CDS-I-2025": {
-          "IMA": "02 Jan 2002 - 01 Jan 2007",
-          "INA": "02 Jan 2002 - 01 Jan 2007",
-          "AFA": "02 Jan 2002 - 01 Jan 2006 (CPL: 02 Jan 2000 - 01 Jan 2006)",
-          "OTA(M)": "02 Jan 2001 - 01 Jan 2007",
-          "OTA(W)": "02 Jan 2001 - 01 Jan 2007"
-        },
-        "CDS-II-2025": {
-          "IMA": "02 Jul 2002 - 01 Jul 2007",
-          "INA": "02 Jul 2002 - 01 Jul 2007",
-          "AFA": "02 Jul 2002 - 01 Jul 2006 (CPL: 02 Jul 2000 - 01 Jul 2006)",
-          "OTA(M)": "02 Jul 2001 - 01 Jul 2007",
-          "OTA(W)": "02 Jul 2001 - 01 Jul 2007"
-        },
-        "CDS-I-2026": {
-          "IMA": "02 Jan 2003 - 01 Jan 2008",
-          "INA": "02 Jan 2003 - 01 Jan 2008",
-          "AFA": "02 Jan 2003 - 01 Jan 2007 (CPL: 02 Jan 2001 - 01 Jan 2007)",
-          "OTA(M)": "02 Jan 2002 - 01 Jan 2008",
-          "OTA(W)": "02 Jan 2002 - 01 Jan 2008"
-        },
-        "CDS-II-2026": {
-          "IMA": "02 Jul 2003 - 01 Jul 2008",
-          "INA": "02 Jul 2003 - 01 Jul 2008",
-          "AFA": "02 Jul 2003 - 01 Jul 2007 (CPL: 02 Jul 2001 - 01 Jul 2007)",
-          "OTA(M)": "02 Jul 2002 - 01 Jul 2008",
-          "OTA(W)": "02 Jul 2002 - 01 Jul 2008"
-        },
-        "CDS-I-2027": {
-          "IMA": "02 Jan 2004 - 01 Jan 2009",
-          "INA": "02 Jan 2004 - 01 Jan 2009",
-          "AFA": "02 Jan 2004 - 01 Jan 2008 (CPL: 02 Jan 2002 - 01 Jan 2008)",
-          "OTA(M)": "02 Jan 2003 - 01 Jan 2009",
-          "OTA(W)": "02 Jan 2003 - 01 Jan 2009"
-        },
-        "CDS-II-2027": {
-          "IMA": "02 Jul 2004 - 01 Jul 2009",
-          "INA": "02 Jul 2004 - 01 Jul 2009",
-          "AFA": "02 Jul 2004 - 01 Jul 2008 (CPL: 02 Jul 2002 - 01 Jul 2008)",
-          "OTA(M)": "02 Jul 2003 - 01 Jul 2009",
-          "OTA(W)": "02 Jul 2003 - 01 Jul 2009"
-        },
-        "CDS-I-2028": {
-          "IMA": "02 Jan 2005 - 01 Jan 2010",
-          "INA": "02 Jan 2005 - 01 Jan 2010",
-          "AFA": "02 Jan 2005 - 01 Jan 2009 (CPL: 02 Jan 2003 - 01 Jan 2009)",
-          "OTA(M)": "02 Jan 2004 - 01 Jan 2010",
-          "OTA(W)": "02 Jan 2004 - 01 Jan 2010"
-        },
-        "CDS-II-2028": {
-          "IMA": "02 Jul 2005 - 01 Jul 2010",
-          "INA": "02 Jul 2005 - 01 Jul 2010",
-          "AFA": "02 Jul 2005 - 01 Jul 2009 (CPL: 02 Jul 2003 - 01 Jul 2009)",
-          "OTA(M)": "02 Jul 2004 - 01 Jul 2010",
-          "OTA(W)": "02 Jul 2004 - 01 Jul 2010"
-        },
-        "CDS-I-2029": {
-          "IMA": "02 Jan 2006 - 01 Jan 2011",
-          "INA": "02 Jan 2006 - 01 Jan 2011",
-          "AFA": "02 Jan 2006 - 01 Jan 2010 (CPL: 02 Jan 2004 - 01 Jan 2010)",
-          "OTA(M)": "02 Jan 2005 - 01 Jan 2011",
-          "OTA(W)": "02 Jan 2005 - 01 Jan 2011"
-        },
-        "CDS-II-2029": {
-          "IMA": "02 Jul 2006 - 01 Jul 2011",
-          "INA": "02 Jul 2006 - 01 Jul 2011",
-          "AFA": "02 Jul 2006 - 01 Jul 2010 (CPL: 02 Jul 2004 - 01 Jul 2010)",
-          "OTA(M)": "02 Jul 2005 - 01 Jul 2011",
-          "OTA(W)": "02 Jul 2005 - 01 Jul 2011"
-        },
-        "CDS-I-2030": {
-          "IMA": "02 Jan 2007 - 01 Jan 2012",
-          "INA": "02 Jan 2007 - 01 Jan 2012",
-          "AFA": "02 Jan 2007 - 01 Jan 2011 (CPL: 02 Jan 2005 - 01 Jan 2011)",
-          "OTA(M)": "02 Jan 2006 - 01 Jan 2012",
-          "OTA(W)": "02 Jan 2006 - 01 Jan 2012"
-        }
-      },
-      "exam_subjects": {
-        "IMA": {
-          "subjects": ["English", "General Knowledge", "Mathematics"],
+        "exam_subjects": {
+          "subjects": [
+            "English",
+            "General Knowledge",
+            "Mathematics"
+          ],
           "eligibility": "MALE CANDIDATES ONLY"
         },
-        "INA": {
-          "subjects": ["English", "General Knowledge", "Mathematics"],
-          "eligibility": "MALE CANDIDATES ONLY"
-        },
-        "AFA": {
-          "subjects": ["English", "General Knowledge", "Mathematics"],
-          "eligibility": "MALE CANDIDATES ONLY"
-        },
-        "OTA(M)": {
-          "subjects": ["English", "General Knowledge"],
-          "eligibility": "MALE CANDIDATES"
-        },
-        "OTA(W)": {
-          "subjects": ["English", "General Knowledge"],
-          "eligibility": "FEMALE CANDIDATES"
+        "age_criteria": {
+          "CDS-I-2023": "02 Jan 2000 - 01 Jan 2005",
+          "CDS-II-2023": "02 Jul 2000 - 01 Jul 2005",
+          "CDS-I-2024": "02 Jan 2001 - 01 Jan 2006",
+          "CDS-II-2024": "02 Jul 2001 - 01 Jul 2006",
+          "CDS-I-2025": "02 Jan 2002 - 01 Jan 2007",
+          "CDS-II-2025": "02 Jul 2002 - 01 Jul 2007",
+          "CDS-I-2026": "02 Jan 2003 - 01 Jan 2008",
+          "CDS-II-2026": "02 Jul 2003 - 01 Jul 2008",
+          "CDS-I-2027": "02 Jan 2004 - 01 Jan 2009",
+          "CDS-II-2027": "02 Jul 2004 - 01 Jul 2009",
+          "CDS-I-2028": "02 Jan 2005 - 01 Jan 2010",
+          "CDS-II-2028": "02 Jul 2005 - 01 Jul 2010",
+          "CDS-I-2029": "02 Jan 2006 - 01 Jan 2011",
+          "CDS-II-2029": "02 Jul 2006 - 01 Jul 2011",
+          "CDS-I-2030": "02 Jan 2007 - 01 Jan 2012"
         }
       },
-      "conducting_body": "Union Public Service Commission (UPSC)"
+      "INA": {
+        "full_form": "Indian Naval Academy",
+        "gender": ["MALE"],
+        "marital_status": "UNMARRIED MALE",
+        "pwd_status": "NOT APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal",
+          "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+        ],
+        "caste_category": [
+          "General",
+          "OBC",
+          "EWS",
+          "SC",
+          "ST"
+        ],
+        "eligibility_education_course": "B.E./B.Tech Degree",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+        "eligibility_marks": {
+          "General": "PASSED",
+          "OBC/EWS": "PASSED",
+          "SC/ST/PH": "PASSED"
+        },
+        "exam_subjects": {
+          "subjects": [
+            "English",
+            "General Knowledge",
+            "Mathematics"
+          ],
+          "eligibility": "MALE CANDIDATES ONLY"
+        },
+        "age_criteria": {
+          "CDS-I-2023": "02 Jan 2000 - 01 Jan 2005",
+          "CDS-II-2023": "02 Jul 2000 - 01 Jul 2005",
+          "CDS-I-2024": "02 Jan 2001 - 01 Jan 2006",
+          "CDS-II-2024": "02 Jul 2001 - 01 Jul 2006",
+          "CDS-I-2025": "02 Jan 2002 - 01 Jan 2007",
+          "CDS-II-2025": "02 Jul 2002 - 01 Jul 2007",
+          "CDS-I-2026": "02 Jan 2003 - 01 Jan 2008",
+          "CDS-II-2026": "02 Jul 2003 - 01 Jul 2008",
+          "CDS-I-2027": "02 Jan 2004 - 01 Jan 2009",
+          "CDS-II-2027": "02 Jul 2004 - 01 Jul 2009",
+          "CDS-I-2028": "02 Jan 2005 - 01 Jan 2010",
+          "CDS-II-2028": "02 Jul 2005 - 01 Jul 2010",
+          "CDS-I-2029": "02 Jan 2006 - 01 Jan 2011",
+          "CDS-II-2029": "02 Jul 2006 - 01 Jul 2011",
+          "CDS-I-2030": "02 Jan 2007 - 01 Jan 2012"
+        }
+      },
+      "AFA": {
+        "full_form": "Air Force Academy",
+        "gender": ["MALE"],
+        "marital_status": "UNMARRIED MALE",
+        "pwd_status": "NOT APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal",
+          "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+        ],
+        "caste_category": [
+          "General",
+          "OBC",
+          "EWS",
+          "SC",
+          "ST"
+        ],
+        "eligibility_education_course": "B.E./B.Tech Degree or Bachelor's Degree with Physics and Mathematics at 10+2 level",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+        "eligibility_marks": {
+          "General": "PASSED",
+          "OBC/EWS": "PASSED",
+          "SC/ST/PH": "PASSED"
+        },
+        "exam_subjects": {
+          "subjects": [
+            "English",
+            "General Knowledge",
+            "Mathematics"
+          ],
+          "eligibility": "MALE CANDIDATES ONLY"
+        },
+        "age_criteria": {
+          "regular_candidates": {
+            "CDS-I-2023": "02 Jan 2000 - 01 Jan 2004",
+            "CDS-II-2023": "02 Jul 2000 - 01 Jul 2004",
+            "CDS-I-2024": "02 Jan 2001 - 01 Jan 2005",
+            "CDS-II-2024": "02 Jul 2001 - 01 Jul 2005",
+            "CDS-I-2025": "02 Jan 2002 - 01 Jan 2006",
+            "CDS-II-2025": "02 Jul 2002 - 01 Jul 2006",
+            "CDS-I-2026": "02 Jan 2003 - 01 Jan 2007",
+            "CDS-II-2026": "02 Jul 2003 - 01 Jul 2007",
+            "CDS-I-2027": "02 Jan 2004 - 01 Jan 2008",
+            "CDS-II-2027": "02 Jul 2004 - 01 Jul 2008",
+            "CDS-I-2028": "02 Jan 2005 - 01 Jan 2009",
+            "CDS-II-2028": "02 Jul 2005 - 01 Jul 2009",
+            "CDS-I-2029": "02 Jan 2006 - 01 Jan 2010",
+            "CDS-II-2029": "02 Jul 2006 - 01 Jul 2010",
+            "CDS-I-2030": "02 Jan 2007 - 01 Jan 2011"
+          },
+          "CPL_holders": {
+            "CDS-I-2023": "02 Jan 1998 - 01 Jan 2004",
+            "CDS-II-2023": "02 Jul 1998 - 01 Jul 2004",
+            "CDS-I-2024": "02 Jan 1999 - 01 Jan 2005",
+            "CDS-II-2024": "02 Jul 1999 - 01 Jul 2005",
+            "CDS-I-2025": "02 Jan 2000 - 01 Jan 2006",
+            "CDS-II-2025": "02 Jul 2000 - 01 Jul 2006",
+            "CDS-I-2026": "02 Jan 2001 - 01 Jan 2007",
+            "CDS-II-2026": "02 Jul 2001 - 01 Jul 2007",
+            "CDS-I-2027": "02 Jan 2002 - 01 Jan 2008",
+            "CDS-II-2027": "02 Jul 2002 - 01 Jul 2008",
+            "CDS-I-2028": "02 Jan 2003 - 01 Jan 2009",
+            "CDS-II-2028": "02 Jul 2003 - 01 Jul 2009",
+            "CDS-I-2029": "02 Jan 2004 - 01 Jan 2010",
+            "CDS-II-2029": "02 Jul 2004 - 01 Jul 2010",
+            "CDS-I-2030": "02 Jan 2005 - 01 Jan 2011"
+          }
+        }
+      },
+      "OTA": {
+        "full_form": "Officers Training Academy",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": [
+          "UNMARRIED MALE",
+          "UNMARRIED FEMALE",
+          "ISSUELESS WIDOW",
+          "ISSUELESS DIVORCEE"
+        ],
+        "pwd_status": "NOT APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal",
+          "Persons of Indian origin who have migrated from Pakistan, Burma, Sri Lanka, and East African countries of Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, and Ethiopia or Vietnam with the intention of permanently settling in India"
+        ],
+        "caste_category": [
+          "General",
+          "OBC",
+          "EWS",
+          "SC",
+          "ST"
+        ],
+        "eligibility_education_course": "Any Bachelor's Degree",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject from Any Recognized University in India",
+        "eligibility_marks": {
+          "General": "PASSED",
+          "OBC/EWS": "PASSED",
+          "SC/ST/PH": "PASSED"
+        },
+        "exam_subjects": {
+          "subjects": [
+            "English",
+            "General Knowledge"
+          ],
+          "eligibility": "MALE AND FEMALE CANDIDATES"
+        },
+        "age_criteria": {
+          "CDS-I-2023": "02 Jan 1999 - 01 Jan 2005",
+          "CDS-II-2023": "02 Jul 1999 - 01 Jul 2005",
+          "CDS-I-2024": "02 Jan 2000 - 01 Jan 2006",
+          "CDS-II-2024": "02 Jul 2000 - 01 Jul 2006",
+          "CDS-I-2025": "02 Jan 2001 - 01 Jan 2007",
+          "CDS-II-2025": "02 Jul 2001 - 01 Jul 2007",
+          "CDS-I-2026": "02 Jan 2002 - 01 Jan 2008",
+          "CDS-II-2026": "02 Jul 2002 - 01 Jul 2008",
+          "CDS-I-2027": "02 Jan 2003 - 01 Jan 2009",
+          "CDS-II-2027": "02 Jul 2003 - 01 Jul 2009",
+          "CDS-I-2028": "02 Jan 2004 - 01 Jan 2010",
+          "CDS-II-2028": "02 Jul 2004 - 01 Jul 2010",
+          "CDS-I-2029": "02 Jan 2005 - 01 Jan 2011",
+          "CDS-II-2029": "02 Jul 2005 - 01 Jul 2011",
+          "CDS-I-2030": "02 Jan 2006 - 01 Jan 2012"
+        }
+      }
     }
+  }
 }

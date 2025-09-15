@@ -1,61 +1,220 @@
 {
   "IITJAM": {
-    "posts_classes_courses_departments_academy": "ALL COURSES",
-    "gender": ["MALE", "FEMALE"],
-    "marital_status": {
-      "BIOTECHNOLOGY": ["MARRIED", "UNMARRIED"],
-      "CHEMISTRY": ["MARRIED", "UNMARRIED"],
-      "ECONOMICS": ["MARRIED", "UNMARRIED"],
-      "GEOLOGY": ["MARRIED", "UNMARRIED"],
-      "MATHEMATICS": ["MARRIED", "UNMARRIED"],
-      "MATHEMATICAL STATISTICS": ["MARRIED", "UNMARRIED"],
-      "PHYSICS": ["MARRIED", "UNMARRIED"]
-    },
-    "domicile": "PAN INDIA",
-    "nationality": [
-      "Indian citizens",
-      "Citizens of Nepal and Bhutan",
-      "Tibetan refugees who landed in India before January 1, 1962",
-      "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
-    ],
-    "pwd_status": "APPLICABLE",
-    "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
-    "eligibility_education_course": {
-      "BIOTECHNOLOGY": "BSc only",
-      "CHEMISTRY": "BSc only",
-      "ECONOMICS": "BSc only",
-      "GEOLOGY": "BSc only",
-      "MATHEMATICS": "BSc only",
-      "MATHEMATICAL STATISTICS": "BSc only",
-      "PHYSICS": "BSc only"
-    },
-    "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
-    "eligibility_marks": {
-      "General": "55% Marks",
-      "OBC/EWS": "55% Marks",
-      "SC/ST/PH": "50% Marks"
-    },
+    "exam_name": "Joint Admission Test for Masters",
     "exam_sector": "POST GRADUATION",
-    "age_criteria": {
-      "IITJAM-2023": {
-        "ALL COURSES": "NO AGE LIMIT"
+    "conducting_body": "Indian Institute of Technology IIT Delhi (IITD)",
+    "posts_classes_courses_departments_academies": "ALL COURSES",
+    "courses": {
+      "BIOTECHNOLOGY": {
+        "full_form": "Biotechnology",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "BIOTECHNOLOGY"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
       },
-      "IITJAM-2024": {
-        "ALL COURSES": "NO AGE LIMIT"
+      "CHEMISTRY": {
+        "full_form": "Chemistry",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "CHEMISTRY"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
       },
-      "IITJAM-2025": {
-        "ALL COURSES": "NO AGE LIMIT"
+      "ECONOMICS": {
+        "full_form": "Economics",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "ECONOMICS"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
+      },
+      "GEOLOGY": {
+        "full_form": "Geology",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "GEOLOGY"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
+      },
+      "MATHEMATICS": {
+        "full_form": "Mathematics",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "MATHEMATICS"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
+      },
+      "MATHEMATICAL_STATISTICS": {
+        "full_form": "Mathematical Statistics",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "MATHEMATICAL_STATISTICS"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
+      },
+      "PHYSICS": {
+        "full_form": "Physics",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": ["MARRIED", "UNMARRIED"],
+        "pwd_status": "APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": [
+          "Indian citizens",
+          "Citizens of Nepal and Bhutan",
+          "Tibetan refugees who landed in India before January 1, 1962",
+          "Individuals who have permanently relocated to India from Pakistan, Burma, Sri Lanka, Kenya, Uganda, Tanzania, Zambia, Malawi, Zaire, Ethiopia, and Vietnam"
+        ],
+        "caste_category": ["General", "OBC", "EWS", "SC", "ST", "PH"],
+        "eligibility_education_course": "BSc only",
+        "eligibility_course_year": "Passed / Appearing Final Year Bachelor Degree in Related Subject in Any Recognized University in India and eligible nationalities.",
+        "eligibility_marks": {
+          "General": "55% Marks",
+          "OBC/EWS": "55% Marks",
+          "SC/ST/PH": "50% Marks"
+        },
+        "exam_subjects": {
+          "subjects": ["PCM"],
+          "eligibility": "PHYSICS"
+        },
+        "age_criteria": {
+          "IITJAM-2023": "NO AGE LIMIT",
+          "IITJAM-2024": "NO AGE LIMIT",
+          "IITJAM-2025": "NO AGE LIMIT"
+        }
       }
-    },
-    "exam_subjects": {
-      "BIOTECHNOLOGY": ["PCM"],
-      "CHEMISTRY": ["PCM"],
-      "ECONOMICS": ["PCM"],
-      "GEOLOGY": ["PCM"],
-      "MATHEMATICS": ["PCM"],
-      "MATHEMATICAL STATISTICS": ["PCM"],
-      "PHYSICS": ["PCM"]
-    },
-    "conducting_body": "Indian Institute of Technology IIT Delhi (IITD)"
+    }
   }
 }

@@ -73,24 +73,36 @@ const ResultNow = ({
                 <h4 className={darkMode ? 'dark:text-gray-200' : ''}>Eligible Streams ({eligibilityResult.eligibleStreams.length})</h4>
               </div>
               <div className="streams-grid">
-                {eligibilityResult.eligibleStreams.map((stream, index) => (
-                  <div key={index} className={`stream-card ${darkMode ? 'dark:bg-gray-800 dark:border-blue-700' : ''}`}>
-                    <div className="stream-title">
-                      <FaUserGraduate className={`stream-icon ${darkMode ? 'dark:text-blue-400' : ''}`} /> 
-                      <span className={darkMode ? 'dark:text-gray-200' : ''}>{stream.name}</span>
-                    </div>
-                    {examData.exam_subjects && examData.exam_subjects[stream.name] && (
+                {eligibilityResult.eligibleStreams.map((stream, index) => {
+                  // Get course data from new structure
+                  const courseData = examData.courses || examData.academies || {};
+                  const course = courseData[stream.name];
+                  
+                  return (
+                    <div key={index} className={`stream-card ${darkMode ? 'dark:bg-gray-800 dark:border-blue-700' : ''}`}>
+                      <div className="stream-title">
+                        <FaUserGraduate className={`stream-icon ${darkMode ? 'dark:text-blue-400' : ''}`} /> 
+                        <span className={darkMode ? 'dark:text-gray-200' : ''}>{course?.full_form || stream.name}</span>
+                      </div>
+                      {course?.exam_subjects && (
+                        <div className="stream-detail">
+                          <MdSubject className={`detail-icon ${darkMode ? 'dark:text-gray-400' : ''}`} /> 
+                          <span className={darkMode ? 'dark:text-gray-400' : ''}>
+                            {Array.isArray(course.exam_subjects.subjects) ? 
+                              course.exam_subjects.subjects.join(', ') : 
+                              course.exam_subjects.subjects || 'Not specified'}
+                          </span>
+                        </div>
+                      )}
                       <div className="stream-detail">
-                        <MdSubject className={`detail-icon ${darkMode ? 'dark:text-gray-400' : ''}`} /> 
+                        <MdSchool className={`detail-icon ${darkMode ? 'dark:text-gray-400' : ''}`} /> 
                         <span className={darkMode ? 'dark:text-gray-400' : ''}>
-                          {Array.isArray(examData.exam_subjects[stream.name]) ? 
-                            examData.exam_subjects[stream.name].join(', ') : 
-                            examData.exam_subjects[stream.name]}
+                          Education: {course?.eligibility_education_course || stream.educationRequirement}
                         </span>
                       </div>
-                    )}
-                  </div>
-                ))}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
