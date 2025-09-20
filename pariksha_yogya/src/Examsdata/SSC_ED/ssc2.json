@@ -1,0 +1,500 @@
+{
+    "SSC": {
+      "SSC GD Constable": {
+        "posts_classes_courses_departments_academy": "Constable (General Duty) in CAPFs (BSF, CISF, CRPF, ITBP, SSB), Rifleman (Assam Rifles), Sepoy (NCB) etc.; post-wise vacancies and suitability in SSC CAPF/Central Police forces notice annexures.",
+        "gender": ["MALE", "FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "POST-WISE (see notification annexure for PwBD suitability per post)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Matriculation (10th class) pass or equivalent (essential qualification in recent SSC GD notices).",
+        "eligibility_course_year": "Must have passed by cut-off date in notification",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "LAW ENFORCEMENT / DEFENCE SUPPORT",
+        "age_criteria": {"Minimum":"17/18 years (as per notification)","Maximum":"Varies by recruitment year/post; relaxations as per government rules","Relaxation":"As per notification"},
+        "exam_subjects": {
+          "Written Exam": ["Elementary Arithmetic","General Intelligence & Reasoning","General Knowledge & Awareness"],
+          "Physical Test": "PET/PST (post-wise standards specified in notification)",
+          "Medical": "As per user-department standards"
+        },
+        "selection_process": ["Computer Based Examination (CBE)","Physical Endurance & Measurement Test (PE&MT)","Medical","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC) — official CAPF/GD notices (see sources).",
+        "note": "See SSC GD notification annexures for post-wise physical standards and PwBD suitability."
+      },
+
+      "SSC CGL": {
+        "posts_classes_courses_departments_academy": "Multiple Group B & C posts (Statistical Investigator, Inspector, Auditor, Assistant, Tax Assistant, etc.) across Central Government Ministries/Departments; post-wise EQs in notification annexures.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise as per notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Graduate (Bachelor's degree) from a recognized University (post-wise exceptions shown in annexures).",
+        "eligibility_course_year": "PASSED / final-year condition varies by notification",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "GOVERNMENT (ADMINISTRATIVE/FINANCE/STATISTICAL/TECHNICAL POSTS)",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by post and recruitment year (commonly 27/30/32)","Relaxation":"As per government rules and notification"},
+        "exam_subjects": {
+          "Tier I": ["General Intelligence & Reasoning","General Awareness","Quantitative Aptitude","English Comprehension"],
+          "Tier II": ["Paper II (Statistics) or Paper III (Finance/Economics) where applicable"],
+          "Skill Tests": "Typing/Computer Proficiency/Descriptive as per post"
+        },
+        "selection_process": ["Tier I (CBT)","Tier II (subject papers)","Skill/Typing where applicable","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC)."
+      },
+
+      "SSC CHSL": {
+        "posts_classes_courses_departments_academy": "LDC/JSA, Postal Assistant/Sorting Assistant, Data Entry Operator (DEO) Grade A & B and similar Group C posts across Central Departments.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "AS PER NOTIFICATION (post-wise)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "12th Standard pass (or equivalent) — DEO specific computer qualification where specified.",
+        "eligibility_course_year": "Passed by the cut-off date",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "GOVERNMENT (CLERICAL / DATA ENTRY)",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Typically around 27 years (varies by recruitment year)","Relaxation":"As per notification"},
+        "exam_subjects": {
+          "Tier I": ["English Language","Quantitative Aptitude","General Intelligence","General Awareness"],
+          "Tier II": ["Descriptive Paper (English/Hindi) for LDC/JSA"],
+          "Skill Test/Typing": "Where applicable"
+        },
+        "selection_process": ["Tier I (CBT)","Tier II (Descriptive)","Skill Test/Typing","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC)."
+      },
+
+      "SSC Selection Post": {
+        "posts_classes_courses_departments_academy": "Various Group C (and some Group B) posts in different Ministries/Departments advertised under SSC 'Selection Posts' notices; see the specific selection-post notice for post-wise EQs and vacancy table.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA or as specified in the notice",
+        "nationality": "standard national list",
+        "pwd_status": "POST-WISE (see notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Post-wise essential qualifications (see annexures in notice).",
+        "eligibility_course_year": "As per post requirement",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "GOVERNMENT",
+        "age_criteria": {"Minimum":"Varies by post","Maximum":"Varies by post — see notification annexure","Relaxation":"As per notification"},
+        "exam_subjects": {
+          "Selection Test": "Written / Computer Based Test (post-wise syllabus in notice)",
+          "Skill/Trade/Typing": "Wherever applicable"
+        },
+        "selection_process": ["CBT/Written","Skill/Trade/Typing where applicable","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission (SSC)",
+        "note": "Each Selection Post advertisement has post-wise essential qualifications and vacancy table in its Annexures."
+      },
+
+      "SSC CPO (SI in CAPFs & Delhi Police)": {
+        "posts_classes_courses_departments_academy": "Sub-Inspector (SI) posts in Central Police Organizations and Delhi Police (post titles vary); post-wise EQs and vacancy numbers in SSC CPO notification.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise as per notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Bachelor's degree (commonly required for SI posts); verify specific notice for exceptions.",
+        "eligibility_course_year": "PASSED / final year allowances are notification-specific",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "LAW ENFORCEMENT",
+        "age_criteria": {"Minimum":"20 years (typical)","Maximum":"Varies by post (commonly mid-20s to 30 depending on post)","Relaxation":"As per notification"},
+        "exam_subjects": {
+          "Paper I": ["General Intelligence & Reasoning","General Knowledge & Awareness","Quantitative Aptitude","English Comprehension"],
+          "Paper II": ["English Language & Comprehension (where prescribed)"],
+          "Physical Test/Medical": "PET/PST and DME as per notification"
+        },
+        "selection_process": ["Paper I (CBT)","Paper II/Descriptive (if applicable)","Physical Standards & Endurance Test","Medical","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "SSC MTS": {
+        "posts_classes_courses_departments_academy": "Multi Tasking Staff (non-technical support staff) and Havaldar (in some departments) posts across Central Government organisations as notified.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Matriculation (10th pass) or equivalent (as per latest notices).",
+        "eligibility_course_year": "Passed by the cut-off date",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "GOVERNMENT (SUPPORT STAFF)",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Typically 25 years (varies by notice)","Relaxation":"As per government rules and notification"},
+        "exam_subjects": {
+          "Tier I": ["General Intelligence & Reasoning","Numerical Aptitude","General English","General Awareness"],
+          "Tier II": "Where applicable (post specific)"
+        },
+        "selection_process": ["CBT/Objective Test","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "Delhi Police Constable": {
+        "posts_classes_courses_departments_academy": "Constable (Executive), Driver and other constabulary posts in Delhi Police; recruitment notices & batch details published on Delhi Police site and SSC CEDP notices.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA (see Delhi Police notices for domicile specifics)",
+        "nationality": "standard national list",
+        "pwd_status": "POST-WISE (some posts unsuitable for certain PwBDs — see annexures)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Matriculation / 10th pass (commonly required for constable posts) — verify the specific year’s notification.",
+        "eligibility_course_year": "Passed by cut-off date specified in notice",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "LAW ENFORCEMENT / POLICE",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by recruitment year & post; see notification","Relaxation":"As per government rules and notification"},
+        "exam_subjects": {
+          "Computer Based Exam (CBE)": ["General Intelligence & Reasoning","General Knowledge","Numerical Ability","General English/Hindi"],
+          "PE&MT": "Physical Endurance & Measurement Test",
+          "DME/Medical": "As per Delhi Police norms"
+        },
+        "selection_process": ["CBE","PE&MT/Physical","Detailed Medical Examination (DME)","Document Verification"],
+        "conducting_body": "Delhi Police (in collaboration with SSC for some drives) — see Delhi Police recruitment pages."
+      },
+
+      "Delhi Police Head Constable (Ministerial / Technical posts)": {
+        "posts_classes_courses_departments_academy": "Head Constable (Ministerial), Head Constable (Technical) posts — notices published by Delhi Police/SSC with post-wise EQs.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA (or as specified in notice)",
+        "nationality": "standard national list",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "12th pass / Diploma / Graduate depending on post (as per the specific notice).",
+        "eligibility_course_year": "As per notification",
+        "eligibility_marks": {"General":"PASSED","OBC":"PASSED","SC/ST/PH":"PASSED"},
+        "exam_sector": "LAW ENFORCEMENT / POLICE",
+        "age_criteria": {"Minimum":"Varies","Maximum":"Varies (see notification)","Relaxation":"As per government rules"},
+        "exam_subjects": {
+          "Written/CBE": ["Subject areas as per notice (General Awareness, English/Hindi, Reasoning)"],
+          "Skill/Trade/Typing": "As applicable (Ministerial posts often require typing/skill tests)"
+        },
+        "selection_process": ["CBE/Written","Skill/Typing/Trade","Document Verification","Medical"],
+        "conducting_body": "Delhi Police / Staff Selection Commission (as per notice)"
+      },
+
+      "SSC HeadConstable AWO TPO": {
+        "posts_classes_courses_departments_academy": "Head Constable (Air Wing Officer? / AWO) and Technical/Traffic Police Officer (TPO) style posts — treat as Head Constable / specialized categories; post-wise EQ & responsibilities are in the specific SSC/Delhi Police advertisement.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Post-wise (12th/Diploma/Graduate depending on role); check exact post advertisement.",
+        "exam_sector": "LAW ENFORCEMENT / TECHNICAL",
+        "age_criteria": {"Minimum":"Varies by post","Maximum":"Varies by post — see notice","Relaxation":"As per notification"},
+        "selection_process": ["CBE/Written","Physical/Skill","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission / Delhi Police (per the advertisement)",
+        "note": "Full post-wise details in the relevant SSC/DPC notice annexures."
+      },
+
+      "SSC Junior Engineer (JE) - Civil (CE)": {
+        "posts_classes_courses_departments_academy": "Junior Engineer (Civil) posts across CPWD, MES and other Central Ministries — EQ: Degree/Diploma in Civil Engineering (post-wise differences are in notification annexures).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": {"Degree_option":"Degree in Civil Engineering","Diploma_option":"Three-year Diploma in Civil Engineering (see post details)"},
+        "eligibility_course_year": "As per notification",
+        "exam_sector": "TECHNICAL / ENGINEERING",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by post (see notification)","Relaxation":"As per government rules"},
+        "exam_subjects": {"Paper I":["General Intelligence & Reasoning","General Awareness","General Engineering (Civil)"],"Paper II":["Discipline specific questions / descriptive where applicable"]},
+        "selection_process": ["CBT/Written","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "SSC Junior Engineer (JE) - Electrical (EE)": {
+        "posts_classes_courses_departments_academy": "Junior Engineer (Electrical) posts across Central Departments; EQ: Degree/Diploma in Electrical Engineering as per post.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": {"Degree_option":"Degree in Electrical Engineering","Diploma_option":"Three-year Diploma in Electrical Engineering (see post annexures)"},
+        "eligibility_course_year": "As per notification",
+        "exam_sector": "TECHNICAL / ENGINEERING",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by post","Relaxation":"As per government rules"},
+        "exam_subjects": {"Paper I":["General Intelligence & Reasoning","General Awareness","General Engineering (Electrical)"],"Paper II":["Discipline specific/technical questions"]},
+        "selection_process": ["CBT/Written","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "SSC Junior Engineer (JE) - Mechanical (ME)": {
+        "posts_classes_courses_departments_academy": "Junior Engineer (Mechanical) posts across central user departments; EQ: Degree/Diploma in Mechanical Engineering per post.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": {"Degree_option":"Degree in Mechanical Engineering","Diploma_option":"Three-year Diploma in Mechanical Engineering (see annexure)"},
+        "eligibility_course_year": "As per notification",
+        "exam_sector": "TECHNICAL / ENGINEERING",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by post","Relaxation":"As per government rules"},
+        "exam_subjects": {"Paper I":["General Intelligence & Reasoning","General Awareness","General Engineering (Mechanical)"],"Paper II":["Discipline specific/technical questions"]},
+        "selection_process": ["CBT/Written","Document Verification","Medical"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "RSMSSB JE": {
+        "posts_classes_courses_departments_academy": "Junior Engineer (Civil/Electrical/Mechanical/Agriculture) posts in Rajasthan state departments — EQ: Diploma/Degree in relevant engineering discipline as per post advertisement; many posts require Rajasthan domicile (see notice).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "Rajasthan domicile often required (verify post notice)",
+        "nationality": "Indian citizens",
+        "pwd_status": "APPLICABLE (per RSMSSB notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": {"Degree_option":"Degree in relevant engineering discipline","Diploma_option":"Diploma in relevant discipline (see annexure)"},
+        "eligibility_course_year": "PASSED / as per post",
+        "exam_sector": "STATE GOVERNMENT / TECHNICAL",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies (Rajasthan government rules)","Relaxation":"As per state rules and notification"},
+        "exam_subjects": {"Written Exam":["Discipline specific technical questions","General Knowledge (state specific)","Reasoning/Arithmetic"]},
+        "selection_process": ["Written/CBT","Document Verification","Medical"],
+        "conducting_body": "Rajasthan Subordinate & Ministerial Services Selection Board (RSMSSB)"
+      },
+
+      "SSC JHT (Junior Hindi Translator / Junior Translator / Senior Hindi Translator)": {
+        "posts_classes_courses_departments_academy": "Translator & language posts across Central Departments — JHT/JT/SHT; exact EQs depend on post (Master's in Hindi/English or equivalent qualifications often required).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (per notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Master's degree in Hindi/English or Bachelor's plus translation/experience as specified in SSC JHT notification.",
+        "eligibility_course_year": "Passed by cut-off date",
+        "exam_sector": "GOVERNMENT / LANGUAGE SERVICES",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies (see SSC JHT notification)","Relaxation":"As per notification"},
+        "exam_subjects": {"Paper I":["Objective: General Awareness, English/Hindi, Reasoning"],"Paper II":["Translation (Hindi↔English) / Descriptive tasks"]},
+        "selection_process": ["Paper I (CBT)","Paper II (Translation/Descriptive)","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "CSIR ASO / SO (CSIR CASE style recruitments)": {
+        "posts_classes_courses_departments_academy": "Assistant Section Officer (ASO) and Section Officer (SO) posts in CSIR labs / units — administrative posts; EQs vary by grade and post.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "APPLICABLE (post-wise, as per CASE notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": {"ASO":"Bachelor's Degree in any discipline (or as specified)","SO":"Bachelor's/Equivalent plus specified experience where applicable"},
+        "eligibility_course_year": "As per notification cut-off",
+        "exam_sector": "GOVERNMENT / SCIENTIFIC ADMINISTRATION",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by post","Relaxation":"As per notification"},
+        "exam_subjects": {"Stage I (CBT)":["General Intelligence & Reasoning","Quantitative Aptitude","English","General Awareness"],"Stage II":"Skill/Descriptive/Practical where specified"},
+        "selection_process": ["CBT","Skill/Trade/Practical","Document Verification","Medical"],
+        "conducting_body": "Council of Scientific & Industrial Research (CSIR) / CASE portal"
+      },
+
+      "IB ACIO (Assistant Central Intelligence Officer Grade II / Executive)": {
+        "posts_classes_courses_departments_academy": "ACIO-II (Executive) posts in the Intelligence Bureau (IB) — large central recruitment drives; EQ: Bachelor's degree (typical).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens (MHA/IB notifications)",
+        "pwd_status": "APPLICABLE (per MHA/IB notification)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Graduate (Bachelor's degree) from recognized university (check latest IB ACIO notification for any further specifics).",
+        "eligibility_course_year": "Passed by cut-off date as in notification",
+        "exam_sector": "INTELLIGENCE / INTERNAL SECURITY",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Typically 27 years (recent notices); relaxations apply as per government rules","Relaxation":"As per MHA/IB notification"},
+        "exam_subjects": {"Tier I":["Objective: General Awareness, Quantitative Aptitude, Logical/Analytical Reasoning, English"],"Tier II":["Descriptive (Essay/Precis/Comprehension)"],"Tier III":"Interview/Personality Test"},
+        "selection_process": ["Tier I (Objective Online)","Tier II (Descriptive)","Interview/Personality Test","Document Verification","Medical"],
+        "conducting_body": "Ministry of Home Affairs / Intelligence Bureau (IB)"
+      },
+
+      "SSC Scientific Assistant": {
+        "posts_classes_courses_departments_academy": "Scientific/Technical Assistant roles in user departments (NABL/NBE/CSIR/other labs) — EQ: Degree/Diploma in relevant science/technical disciplines; post-wise specifics in the notification annexures.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "standard national list",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Degree/Diploma in specified science/technical discipline (post dependent).",
+        "eligibility_course_year": "Passed by cut-off date",
+        "exam_sector": "TECHNICAL / SCIENTIFIC",
+        "age_criteria": {"Minimum":"Varies by post","Maximum":"Varies (see notification)","Relaxation":"As per notification"},
+        "exam_subjects": {"Written":["Discipline specific technical questions","General Awareness","Reasoning"],"Practical":"Post-specific where applicable"},
+        "selection_process": ["CBT/Written","Practical/Skill Test where applicable","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC) / respective user department"
+      },
+
+      "IB Security Assistant": {
+        "posts_classes_courses_departments_academy": "Security Assistant/Executive (Group C) posts in IB subsidiary bureaux — older vacancy circulars and deputation/DR adverts appear on MHA site (see sources for sample vacancy circular).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "AS PER VACANCY CIRCULAR",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "12th pass (or equivalent) for Security Assistant/Executive posts in past vacancy circulars; verify latest vacancy circular.",
+        "eligibility_course_year": "As per circular",
+        "exam_sector": "INTELLIGENCE / SECURITY",
+        "age_criteria": {"Minimum":"18 years","Maximum":"As per vacancy circular (varied historically)","Relaxation":"As per notification"},
+        "exam_subjects": {"Written Exam":["General Intelligence","General Awareness","Arithmetic","English"],"Skill/Trade":"As per circular"},
+        "selection_process": ["Written/Online Test","Interview/Document Verification","Medical"],
+        "conducting_body": "Ministry of Home Affairs / Intelligence Bureau (IB)",
+        "note": "Refer to MHA vacancy circulars for Security Assistant for exact EQ and vacancy breakup."
+      },
+
+      "Supreme Court Junior Court Assistant": {
+        "posts_classes_courses_departments_academy": "Junior Court Assistant (JCA) and similar administrative posts in the Supreme Court Registry; recruitment notices and interview schedules are published on the Supreme Court of India website.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens (see Supreme Court notices)",
+        "pwd_status": "APPLICABLE (as per the Supreme Court recruitment notice)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "As per Supreme Court recruitment notification (commonly Graduate / 12th / skill requirements depending on post).",
+        "eligibility_course_year": "As per notification",
+        "exam_sector": "JUDICIAL / COURT ADMINISTRATION",
+        "age_criteria": {"Minimum":"As per notification","Maximum":"As per recruitment notice","Relaxation":"As per notification"},
+        "exam_subjects": {"Descriptive / Written / Skill Tests":["English Language (Descriptive) and job-specific tasks"],"Interview":"For shortlisted candidates where applicable"},
+        "selection_process": ["Written/Descriptive Test","Interview/Skill Test","Document Verification"],
+        "conducting_body": "Supreme Court of India (Registry) — recruitment page"
+      },
+
+      "Supreme Court Law Clerk": {
+        "posts_classes_courses_departments_academy": "Law Clerks / Judicial Law Researchers (short-term contractual) positions assisting Hon'ble Judges; recruitment and empanelment are per Supreme Court portal notices.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "APPLICABLE (per notice)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "LLB / law postgraduate / academic standing and writing sample requirements as per Supreme Court notice.",
+        "eligibility_course_year": "As per notice",
+        "exam_sector": "JUDICIAL / LEGAL RESEARCH",
+        "age_criteria": {"As per notice":"See Supreme Court recruitment notice"},
+        "exam_subjects": {"Selection components":["Writing sample/essay","Interview/Discussion","Academic criteria review"]},
+        "selection_process": ["Application review","Test/Interview/Empanelment","Document verification"],
+        "conducting_body": "Supreme Court of India (Registry)"
+      },
+
+      "Delhi Forest Guard": {
+        "posts_classes_courses_departments_academy": "Forest Guard (state/central variations exist) — many state forest departments run separate recruitments; if you mean the Delhi Forest Department, check Delhi govt / DUSIB or State forest recruitment portal for the specific notice.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "State-specific (often candidate must satisfy state domicile rules) — verify the particular recruitment notice",
+        "nationality": "Indian citizens",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Minimum educational qualification commonly 10th/12th pass (varies by state and posting)",
+        "eligibility_course_year": "As per notification",
+        "exam_sector": "FORESTRY / STATE GOVERNMENT",
+        "age_criteria": {"Minimum":"18 years","Maximum":"Varies by recruitment","Relaxation":"As per notification"},
+        "exam_subjects": {"Written/CBT":["General knowledge, Arithmetic, Reasoning"],"Physical Test":"As per state standards","Interview/Document Verification":"As per notice"},
+        "selection_process": ["CBT/Written","Physical test","Document verification","Medical"],
+        "conducting_body": "State Forest Department / Recruiting agency (see the specific recruitment notice)"
+      },
+
+      "NBE (National Board of Examinations) recruitment": {
+        "posts_classes_courses_departments_academy": "Recruitment drives for administrative/technical posts (Section Officer, Assistant Director, Senior Assistant, etc.) — NBE posts are advertised on natboard.edu.in with vacancy formats and selection criteria.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "APPLICABLE (per NBE vacancy notice)",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Post-wise (e.g., Graduate/PG/experience for administrative posts); check the specific NBE vacancy notice.",
+        "eligibility_course_year": "As per vacancy circular",
+        "exam_sector": "MEDICAL EDUCATION / EXAMINATION BODY",
+        "age_criteria": {"Minimum":"As per circular","Maximum":"As per circular","Relaxation":"As per government rules"},
+        "exam_subjects": {"Written / Interview":["As specified in the vacancy notice (may include interview/written)"]},
+        "selection_process": ["Walk-in interview / Written / Interview / Document verification (per vacancy)"],
+        "conducting_body": "National Board of Examinations (NBE) / NBEMS"
+      },
+
+      "SSC JE (general consolidated entry)": {
+        "posts_classes_courses_departments_academy": "Junior Engineer posts generally (CE/EE/ME) — already included above as three separate entries; repeated here for indexing.",
+        "conducting_body": "Staff Selection Commission (SSC)"
+      },
+
+      "SSC Havaldar": {
+        "posts_classes_courses_departments_academy": "Havaldar posts (e.g., CBIC/CBN Havaldar) as notified by SSC or department; typically Class-10/12 with specific physical/age criteria.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "10th/12th pass depending on cadre (see specific notification)",
+        "eligibility_course_year": "As per notice",
+        "exam_sector": "GOVERNMENT / CUSTOMS / EXCISE (example cadres)",
+        "age_criteria": {"Minimum":"As per notice","Maximum":"As per notice","Relaxation":"As per rules"},
+        "exam_subjects": {"Written":["General knowledge, arithmetic, reasoning"],"Physical/Trade":"As specified"},
+        "selection_process": ["Written/CBT","Physical/Trade","Document Verification"],
+        "conducting_body": "Staff Selection Commission (SSC) / user department"
+      },
+
+      "NTA ARPIT (Annual Refresher Programme in Teaching)": {
+        "posts_classes_courses_departments_academy": "ARPIT is an NTA-administered refresher programme / CBT for higher education teachers and content developers for SWAYAM; not a traditional recruitment but a certification/exam (100 marks CBT in discipline streams).",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NOT APPLICABLE",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens (or as per ARPIT guidelines)",
+        "pwd_status": "APPLICABLE",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Faculty / higher education teachers or learners as per ARPIT information bulletin for the discipline.",
+        "eligibility_course_year": "As per ARPIT information",
+        "exam_sector": "ACADEMIA / FACULTY DEVELOPMENT",
+        "age_criteria": "NO SPECIFIC AGE LIMIT (as per ARPIT information)",
+        "exam_subjects": "Discipline specific CBT (100 MCQs, 3 hours; format per ARPIT information bulletin)",
+        "selection_process": ["Online CBT/assessment","Certification via SWAYAM for successful candidates"],
+        "conducting_body": "National Testing Agency (NTA) — ARPIT portal"
+      },
+
+      "Delhi Police MTS": {
+        "posts_classes_courses_departments_academy": "Multi Tasking Staff posts for Delhi Police units (sanitary, clerical support, etc.) — advertised in Delhi Police recruitment notices.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "10th/12th pass depending on post; check Delhi Police recruitment notice.",
+        "exam_sector": "LAW ENFORCEMENT / SUPPORT",
+        "selection_process": ["Written/CBT","Skill/Trade","Document verification"],
+        "conducting_body": "Delhi Police / Recruiting agency"
+      },
+
+      "Delhi Police Driver": {
+        "posts_classes_courses_departments_academy": "Driver Constable / Driver posts in Delhi Police (DRIVER) — driver licence & experience requirements are often specified in the notice.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA",
+        "nationality": "Indian citizens",
+        "pwd_status": "AS PER NOTIFICATION",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "10th/12th pass and valid driving licence / prescribed years of driving experience (post-wise conditions in notification)",
+        "exam_sector": "LAW ENFORCEMENT / TECHNICAL",
+        "selection_process": ["CBT/Written","Driving/Skill Test","PE&MT/Medical","Document Verification"],
+        "conducting_body": "Delhi Police / SSC (as per recruitment advertisement)"
+      },
+
+      "NTA Delhi University Non-Teaching": {
+        "posts_classes_courses_departments_academy": "NTA (on behalf of DU) conducts recruitment for Non-Teaching posts (Group B & C) for Delhi University — Information Bulletins are published on NTA and DU portals with full syllabus/eligibility.",
+        "gender": ["MALE","FEMALE"],
+        "marital_status": "NO RESTRICTION",
+        "domicile": "PAN INDIA (or DU specific eligibility as per notice)",
+        "nationality": "Indian citizens",
+        "pwd_status": "APPLICABLE",
+        "caste_category": ["General","OBC","SC","ST","EWS"],
+        "eligibility_education_course": "Post-wise: e.g., Female Staff Nurse, ASO, Audit Assistant, Legal Assistant, Junior Translation Officer, Stenographer, Computer Operator etc. (see NTA/DU information bulletin).",
+        "exam_sector": "HIGHER EDUCATION / ADMINISTRATION",
+        "age_criteria": {"As per notice":"See NTA information bulletin for DU Non-Teaching drive"},
+        "exam_subjects": {"Stage I (CBT)":["Objective test: General awareness, English, Relevant domain knowledge"],"Stage II":"Descriptive/Skill/Trade where applicable"},
+        "selection_process": ["CBT","Descriptive/Skill Test","Document Verification"],
+        "conducting_body": "National Testing Agency (NTA) on behalf of University of Delhi (DU)"
+      }
+    }
+}
+

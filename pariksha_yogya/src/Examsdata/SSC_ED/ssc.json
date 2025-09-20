@@ -1086,7 +1086,7 @@
             },
             "exam_sector": "JUDICIAL / LEGAL RESEARCH",
             "age_criteria": {
-                "General": "Often upper age limit \~30 years (varies by notification)",
+                "General": "Often upper age limit \\~30 years (varies by notification)",
                 "Relaxation": "As per rules and notification"
             },
             "exam_subjects": {
