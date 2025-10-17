@@ -1,14 +1,12 @@
-
 {
   "MBA_EXAMS": {
     "CAT Exam": {
-      "posts_classes_courses_departments_academy": "MBA/PGDM programs in IIMs and other leading B-Schools.",
+      "posts_classes_courses_departments_academy": "MBA/PGDM programs in IIMs and other top B-Schools.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
-        "Indian citizens",
-        "Foreign Nationals (via GMAT/GRE/TOEFL/IELTS, as applicable for IIM admissions)"
+        "Indian citizens"
       ],
       "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
       "caste_category": [
@@ -19,8 +17,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree (min. 3 years duration) or a Professional Degree (CA/CS/ICWA/FIAI).",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to result submission before a specified date).",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years) or professional degree (CA/CS/ICWA).",
+      "eligibility_course_year": "Passed or appearing in final year (results to be submitted by a specified deadline).",
       "eligibility_marks": {
         "General": "50%",
         "EWS/OBC (NC-OBC)": "50%",
@@ -36,10 +34,10 @@
         "Paper 1": "Verbal Ability & Reading Comprehension (VARC)",
         "Paper 2": "Data Interpretation & Logical Reasoning (DILR)",
         "Paper 3": "Quantitative Ability (QA)",
-        "Interview": "Group Discussion/Personal Interview (GD/PI) by individual IIMs/B-Schools, not part of CAT exam.",
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
-      "conducting_body": "One of the IIMs (Indian Institutes of Management) on a rotational basis"
+      "conducting_body": "Rotationally by one of the Indian Institutes of Management (IIMs)"
     },
     "CMAT Exam": {
       "posts_classes_courses_departments_academy": "MBA/PGDM programs in AICTE-approved institutions.",
@@ -58,89 +56,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree in any discipline.",
-      "eligibility_course_year": "Passed or Appearing final year (subject to result submission before a specified date).",
-      "eligibility_marks": {
-        "General": "50%",
-        "Reserved": "45%"
-      },
-      "exam_sector": "POST GRADUATION",
-      "age_criteria": {
-        "Minimum": "No Restriction",
-        "Maximum": "No Restriction",
-        "Relaxation": "N/A"
-      },
-      "exam_subjects": {
-        "Paper 1": "Quantitative Techniques & Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, Innovation & Entrepreneurship.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "N/A",
-        "eligibility": "All eligible candidates"
-      },
-      "conducting_body": "National Testing Agency (NTA)"
-    },
-    "MAH MBA CET": {
-      "posts_classes_courses_departments_academy": "MBA/MMS programs in Institutes in Maharashtra.",
-      "gender": {},
-      "marital_status": "NO RESTRICTION",
-      "domicile": "Maharashtra (for State Quota) / PAN INDIA (for All India Quota)",
-      "nationality": [
-        "Indian citizens",
-        "PIOs",
-        "NRIs",
-        "Foreign Nationals (under specific categories)"
-      ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
-      "caste_category": [
-        "General",
-        "OBC",
-        "EWS",
-        "SC",
-        "ST",
-        "SEBC",
-        "PwD"
-      ],
-      "eligibility_education_course": "Bachelor's Degree in any discipline of minimum 3 years duration.",
-      "eligibility_course_year": "Passed or Appearing final year/semester.",
-      "eligibility_marks": {
-        "General": "50%",
-        "Reserved (Maharashtra Domicile/PwD)": "45%"
-      },
-      "exam_sector": "POST GRADUATION",
-      "age_criteria": {
-        "Minimum": "No Restriction",
-        "Maximum": "No Restriction",
-        "Relaxation": "N/A"
-      },
-      "exam_subjects": {
-        "Paper 1": "Logical Reasoning, Abstract Reasoning, Quantitative Aptitude, Verbal Ability & Reading Comprehension.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Common Admission Process (CAP) conducted by the Directorate of Technical Education, Maharashtra.",
-        "eligibility": "All eligible candidates"
-      },
-      "conducting_body": "State Common Entrance Test Cell, Maharashtra"
-    },
-    "XAT Exam": {
-      "posts_classes_courses_departments_academy": "Admission to XLRI and XAT Associate Member Institutes.",
-      "gender": {},
-      "marital_status": "NO RESTRICTION",
-      "domicile": "PAN INDIA",
-      "nationality": [
-        "Indian citizens",
-        "International Candidates"
-      ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
-      "caste_category": [
-        "General",
-        "OBC",
-        "EWS",
-        "SC",
-        "ST",
-        "PwD"
-      ],
-      "eligibility_education_course": "Recognized Bachelor's Degree of minimum 3 years duration.",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion by a specified date).",
+      "eligibility_education_course": "Bachelor's degree in any discipline.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General": "PASSED",
         "Reserved": "PASSED"
@@ -152,22 +69,98 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Verbal and Logical Ability, Decision Making, Quantitative Ability and Data Interpretation, General Knowledge.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Discussion/Personal Interview (GD/PI) by XLRI/Individual Institutes.",
+        "Paper 1": "Quantitative Techniques & Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, Innovation & Entrepreneurship",
+
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
-      "conducting_body": "XLRI - Xavier School of Management"
+      "conducting_body": "National Testing Agency (NTA)"
     },
-    "SNAP Exam": {
-      "posts_classes_courses_departments_academy": "MBA programs in Symbiosis International (Deemed University) affiliated institutions.",
+    "MAH MBA CET": {
+      "posts_classes_courses_departments_academy": "MBA/MMS programs in institutes in Maharashtra.",
+      "gender": {},
+      "marital_status": "NO RESTRICTION",
+      "domicile": "Maharashtra (for State Quota) / PAN INDIA (for All-India Quota)",
+      "nationality": [
+        "Indian citizens"
+      ],
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
+      "caste_category": [
+        "General",
+        "OBC",
+        "EWS",
+        "SC",
+        "ST",
+        "SBC",
+        "SEBC",
+        "PwD"
+      ],
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years).",
+      "eligibility_course_year": "Passed or appearing in final year/semester.",
+      "eligibility_marks": {
+        "General": "50%",
+        "Reserved (Maharashtra State/PwD)": "45%"
+      },
+      "exam_sector": "POST GRADUATION",
+      "age_criteria": {
+        "Minimum": "No Restriction",
+        "Maximum": "No Restriction",
+        "Relaxation": "N/A"
+      },
+      "exam_subjects": {
+        "Paper 1": "Logical Reasoning, Abstract Reasoning, Quantitative Aptitude, Verbal Ability & Reading Comprehension",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
+        "eligibility": "All eligible candidates"
+      },
+      "conducting_body": "State Common Entrance Test Cell, Maharashtra"
+    },
+    "XAT Exam": {
+      "posts_classes_courses_departments_academy": "Admission to XLRI and XAT Associate Member Institutes.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
-        "Indian citizens",
-        "International Candidates (under specific categories)"
+        "Indian citizens"
+      ],
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
+      "caste_category": [
+        "General",
+        "OBC",
+        "EWS",
+        "SC",
+        "ST",
+        "PwD"
+      ],
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years).",
+      "eligibility_course_year": "Passed or appearing in final year (degree to be completed by specified date).",
+      "eligibility_marks": {
+        "General": "PASSED",
+        "Reserved": "PASSED"
+      },
+      "exam_sector": "POST GRADUATION",
+      "age_criteria": {
+        "Minimum": "No Restriction",
+        "Maximum": "No Restriction",
+        "Relaxation": "N/A"
+      },
+      "exam_subjects": {
+        "Paper 1": "Verbal and Logical Ability, Decision Making, Quantitative Ability & Data Interpretation, General Knowledge",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
+        "eligibility": "All eligible candidates"
+      },
+      "conducting_body": "XLRI – Xavier School of Management"
+    },
+    "SNAP Exam": {
+      "posts_classes_courses_departments_academy": "MBA programs in Symbiosis International (Deemed) University institutes.",
+      "gender": {},
+      "marital_status": "NO RESTRICTION",
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens"
       ],
       "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
       "caste_category": [
@@ -176,8 +169,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Graduate from any recognized/statutory University.",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion by a specified date).",
+      "eligibility_education_course": "Graduation from any recognized university.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General": "50%",
         "SC/ST": "45%"
@@ -189,19 +182,19 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "General English (RC, Verbal Reasoning, Verbal Ability), Quantitative, Data Interpretation & Data Sufficiency, Analytical & Logical Reasoning.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Exercise (GE), Personal Interview (PI), and Writing Ability Test (WAT) by individual Symbiosis Institutes.",
+        "Paper 1": "General English (Reading Comprehension, Verbal Reasoning, Verbal Ability), Analytical & Logical Reasoning, Quantitative & Data Interpretation & Data Sufficiency",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
-      "conducting_body": "Symbiosis International (Deemed University)"
+      "conducting_body": "Symbiosis International University (SIU)"
     },
     "Karnataka PGCET": {
-      "posts_classes_courses_departments_academy": "MBA/MCA/M.Tech programs in Government, University, Private aided and Private un-aided Institutions in Karnataka.",
+      "posts_classes_courses_departments_academy": "MBA/MCA/M.Tech programs in Karnataka institutions.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
-      "domicile": "Karnataka (for reservation/quota) / PAN INDIA (for General merit seats)",
+      "domicile": "Karnataka (for state quota) / PAN INDIA (for general quota)",
       "nationality": [
         "Indian citizens"
       ],
@@ -210,14 +203,15 @@
         "General",
         "SC",
         "ST",
-        "Category 1 (of Karnataka)",
-        "OBC"
+        "Category 1 (Karnataka)",
+        "OBC",
+        "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree of minimum 3 years duration (in any stream).",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion by a specified date).",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years) in any stream.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General": "50%",
-        "Reserved (of Karnataka)": "45%"
+        "Reserved (Karnataka SC/ST/Category I)": "45%"
       },
       "exam_sector": "POST GRADUATION",
       "age_criteria": {
@@ -226,19 +220,19 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Proficiency in English Language, General Knowledge, Test of Reasoning and General Intelligence, Quantitative Analysis.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "N/A",
+        "Paper 1": "Proficiency in English Language, General Knowledge, Reasoning & General Intelligence, Quantitative Analysis",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "Karnataka Examinations Authority (KEA)"
     },
     "TANCET": {
-      "posts_classes_courses_departments_academy": "Admission to MBA/MCA/M.E./M.Tech./M.Arch./M.Plan. programs in Tamil Nadu.",
+      "posts_classes_courses_departments_academy": "Admission to MBA/MCA/M.E./M.Tech/M.Arch/M.Plan programs in Tamil Nadu.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
-      "domicile": "Tamilnadu (for reservation) / PAN INDIA (for General seats)",
+      "domicile": "Tamil Nadu (for state reservation) / PAN INDIA (for general seats)",
       "nationality": [
         "Indian citizens"
       ],
@@ -252,11 +246,11 @@
         "SCA",
         "ST"
       ],
-      "eligibility_education_course": "Bachelor's Degree of minimum 3 years duration (10+2+3/4/5 years pattern OR 10+3 years Diploma + 2/3 years pattern).",
-      "eligibility_course_year": "A pass in the qualifying degree exam.",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years) or equivalent.",
+      "eligibility_course_year": "Passed the qualifying degree exam.",
       "eligibility_marks": {
         "General": "50%",
-        "BC/BCM/MBC/SC/SCA/ST (Tamilnadu)": "45%"
+        "Reserved (BC/BCM/MBC/SC/SCA/ST TN)": "45%"
       },
       "exam_sector": "POST GRADUATION",
       "age_criteria": {
@@ -265,16 +259,15 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Analysis of Business Situations, Quantitative Ability, Data Sufficiency, English Usage, Reading Comprehension.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "N/A",
+        "Paper 1": "Analysis of Business Situations, Reading Comprehension, Quantitative Ability, Data Sufficiency, English Usage",
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "Anna University, Chennai"
     },
     "KMAT Kerala": {
-      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AICTE approved B-Schools in Kerala.",
+      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AICTE-approved institutes in Kerala.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "Kerala (primarily) / PAN INDIA",
@@ -289,10 +282,10 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree of minimum 3 years duration.",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results.",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years).",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
-        "General/OBC": "50%",
+        "General/SEBC": "50%",
         "SC/ST/PwD": "45%"
       },
       "exam_sector": "POST GRADUATION",
@@ -302,22 +295,22 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "English Usage & Reading Comprehension, Quantitative Aptitude, Data Sufficiency & Logical Reasoning, General Knowledge & Contemporary Business Scenario.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "N/A",
+        "Paper 1": "English Language & Reading Comprehension, Quantitative Aptitude, Data Sufficiency & Logical Reasoning, General Knowledge & Business Scenario",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "Kerala University of Fisheries and Ocean Studies (KUFOS) on behalf of KPPGCA"
     },
     "NMAT Exam": {
-      "posts_classes_courses_departments_academy": "MBA programs in NMIMS and other NMAT accepting B-schools.",
+      "posts_classes_courses_departments_academy": "MBA programs at NMIMS and other NMAT-accepting B-schools.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens",
-        "International Candidates"
+        "International candidates"
       ],
       "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
       "caste_category": [
@@ -328,8 +321,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree (min. 3 years duration).",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion before a specified date).",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years).",
+      "eligibility_course_year": "Passed or appearing in final year (degree to be completed by deadline).",
       "eligibility_marks": {
         "General/Reserved": "50%"
       },
@@ -340,22 +333,22 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Language Skills, Quantitative Skills, Logical Reasoning.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Discussion/Personal Interview (GD/PI) by individual NMAT-accepting B-Schools.",
+        "Paper 1": "Language Skills, Quantitative Skills, Logical Reasoning",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "GMAC (Graduate Management Admission Council)"
     },
     "MAT Exam": {
-      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AICTE approved institutions (Accepted by 600+ B-schools).",
+      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AICTE-approved institutions (accepted by 600+ B-schools).",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens",
-        "Foreign Nationals"
+        "Foreign nationals"
       ],
       "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
       "caste_category": [
@@ -366,10 +359,11 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree in any discipline.",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion before a specified date).",
+      "eligibility_education_course": "Bachelor's degree in any discipline.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
-        "General/Reserved": "PASSED"
+        "General": "50%",
+        "SC/ST/PwD": "45%"
       },
       "exam_sector": "POST GRADUATION",
       "age_criteria": {
@@ -378,16 +372,16 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Language Comprehension, Mathematical Skills, Data Analysis & Sufficiency, Intelligence & Critical Reasoning, Indian & Global Environment.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Discussion/Personal Interview (GD/PI) by individual MAT-accepting B-Schools.",
+        "Paper 1": "Language Comprehension, Mathematical Skills, Data Analysis & Sufficiency, Intelligence & Critical Reasoning, Indian & Global Environment",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "AIMA (All India Management Association)"
     },
     "ATMA Exam": {
-      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AIMS member institutions.",
+      "posts_classes_courses_departments_academy": "MBA/PGDM programs in AIMS-member institutions.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
@@ -402,7 +396,7 @@
         "PwD"
       ],
       "eligibility_education_course": "Graduation from a recognized university.",
-      "eligibility_course_year": "Passed or Appearing final year/awaiting results (subject to degree completion before a specified date).",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General": "50%",
         "SC/ST/PwD": "45%"
@@ -414,16 +408,16 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Analytical Reasoning Skills I & II, Verbal Skills I & II, Quantitative Skills I & II.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Discussion/Personal Interview (GD/PI) by individual ATMA-accepting B-Schools.",
+        "Paper 1": "Analytical Reasoning I & II, Verbal Skills I & II, Quantitative Skills I & II",
+
+        
+        "Interview": "N/A  , GE/PI are part of institute admissions",
         "eligibility": "All eligible candidates"
       },
       "conducting_body": "AIMS (Association of Indian Management Schools)"
     },
     "PGDBA Exam": {
-      "posts_classes_courses_departments_academy": "Post Graduate Diploma in Business Analytics (PGDBA) offered jointly by IIM Calcutta, IIT Kharagpur, and ISI Kolkata.",
+      "posts_classes_courses_departments_academy": "Post Graduate Diploma in Business Analytics (joint IIM Calcutta, IIT Kharagpur, ISI Kolkata).",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
@@ -439,11 +433,11 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "B.Tech./B.E./M.Sc./M.Com. or equivalent with 10+2+4 or 10+2+5 or 10+2+3+2 years of education. CA/CS/ICWA (Intermediate & Final) are also eligible.",
-      "eligibility_course_year": "Passed or Appearing final year (subject to result submission by 30 June 2025).",
+      "eligibility_education_course": "B.Tech./B.E./M.Sc./M.Com. (10+2+4/5 pattern) or equivalent; CA/CS/ICWA (Inter & Final) also eligible.",
+      "eligibility_course_year": "Passed or appearing in final year (results by deadline).",
       "eligibility_marks": {
-        "General/OBC/EWS": "60% or CGPA 6.5/10 in Qualifying Degree.",
-        "SC/ST/PwD": "55% or CGPA 6.0/10 in Qualifying Degree."
+        "General/OBC/EWS": "60%",
+        "SC/ST/PwD": "55%"
       },
       "exam_sector": "TECHNICAL",
       "age_criteria": {
@@ -452,16 +446,17 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "Quantitative Aptitude, Logical Reasoning, Data Interpretation, Verbal Ability and English Comprehension.",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Personal Interview of shortlisted candidates.",
+        "Paper 1": "Quantitative Aptitude, Logical Reasoning, Data Interpretation, Verbal Ability & English Comprehension",
+
+        
+        "Interview": "Personal Interview of shortlisted candidates",
         "eligibility": "All eligible candidates"
       },
-      "conducting_body": "Jointly conducted by IIM Calcutta, IIT Kharagpur, and ISI Kolkata"
+      "conducting_body": "Jointly by IIM Calcutta, IIT Kharagpur, and ISI Kolkata"
     },
+    "doubt" : true,
     "TISSNET Exam": {
-      "posts_classes_courses_departments_academy": "Admission to M.A./M.Sc./MPH/etc. programs (Currently TISS PG Admissions mostly use **CUET PG** score).",
+      "posts_classes_courses_departments_academy": "Admissions to TISS M.A./M.Sc./MPH programs (via CUET PG scores).",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
@@ -477,8 +472,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree (min. 3 years duration) or equivalent.",
-      "eligibility_course_year": "Passed or Appearing final year (subject to degree completion before a specified date).",
+      "eligibility_education_course": "Bachelor's degree (min. 3 years) or equivalent.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General/Reserved": "PASSED"
       },
@@ -489,16 +484,17 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "CUET PG Subjects for TISS PG Admission.",
-        "Paper 2": "TISS Specific Test for certain programs (e.g., HR/ODCL).",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Personal Interview (PI) of shortlisted candidates.",
+        "Paper 1": "CUET PG subjects for TISS PG admission",
+        "Paper 2": "TISS-specific test for certain programs (if applicable)",
+        
+        "Interview": "Personal Interview of shortlisted candidates",
         "eligibility": "All eligible candidates"
       },
-      "conducting_body": "National Testing Agency (NTA) for CUET PG / Tata Institute of Social Sciences (for TISS-specific processes)"
+      "conducting_body": "National Testing Agency (for CUET PG) / Tata Institute of Social Sciences"
     },
+    "doubt" : true,
     "IIFT MBA Exam": {
-      "posts_classes_courses_departments_academy": "MBA (International Business) and MBA (Business Analytics) at the Indian Institute of Foreign Trade (IIFT).",
+      "posts_classes_courses_departments_academy": "MBA (International Business/Business Analytics) at Indian Institute of Foreign Trade.",
       "gender": {},
       "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
@@ -515,8 +511,8 @@
         "ST",
         "PwD"
       ],
-      "eligibility_education_course": "Bachelor's Degree of minimum 3 years duration in any discipline.",
-      "eligibility_course_year": "Passed or Appearing final year (subject to degree completion by a specified date).",
+      "eligibility_education_course": "Bachelor's degree (minimum 3 years) in any discipline.",
+      "eligibility_course_year": "Passed or appearing in final year.",
       "eligibility_marks": {
         "General": "50%",
         "SC/ST/PwD": "45%"
@@ -528,13 +524,13 @@
         "Relaxation": "N/A"
       },
       "exam_subjects": {
-        "Paper 1": "CAT Score (IIFT shortlists candidates based on the CAT score and conducts its own selection process).",
-        "Paper 2": "N/A",
-        "Physical Test": "NOT APPLICABLE",
-        "Interview": "Group Discussion/Essay Writing/Personal Interview (GD/WAT/PI) for shortlisted candidates.",
-        "eligibility": "Candidates with a valid CAT score"
+        "Paper 1": "CAT score (IIFT shortlists candidates based on CAT performance)",
+
+        
+        "Interview": "GD/WAT/PI for shortlisted candidates",
+        "eligibility": "Candidates must have a valid CAT score"
       },
-      "conducting_body": "Indian Institute of Foreign Trade (IIFT) uses the CAT score for shortlisting"
+      "conducting_body": "Indian Institute of Foreign Trade (IIFT; uses CAT for shortlisting)"
     }
   }
 }

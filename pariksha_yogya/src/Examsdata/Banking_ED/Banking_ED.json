@@ -238,7 +238,7 @@
       "age_as_on_date": "01.01.2025 ",
       "exam_subjects": {
         "eligibility": "AS PER NOTIFICATION"
-      },// TO be improved
+      },"To be improved" : true,
       "conducting_body": "Bank of India (BOI)"
     },
     "SBI Apprentice": {
@@ -266,7 +266,7 @@
       "age_as_on_date": "AS PER NOTIFICATION",
       "exam_subjects": {
         "eligibility": "AS PER NOTIFICATION"
-      },// TO be improved
+      },"To be improved" : true,
       "conducting_body": "State Bank of India (SBI)"
     },
     "SIDBI Assistant Manager": {
@@ -578,7 +578,7 @@
         "Maximum": "50 years"
       },
       "age_as_on_date": "01/01/2006 ",
-      "exam_subjects": {},// TO be improved
+      "exam_subjects": {},"To be improved" : true,
       "conducting_body": "Kerala Public Service Commission (KPSC) / Cooperative Service Examination Board (CSEB)"
     },
     "PSCB Clerk Cum DEO": {
@@ -646,7 +646,7 @@
     "age_as_on_date": "",
     "exam_subjects": {
       "Recruitment Test": "General English, Indian Freedom Struggle, Current Events and Developmental Issues, Indian Polity & Economy, Industrial Relations & Labour Laws, General Accounting Principles, General Mental Ability & Quantitative Aptitude, Social Security in India"
-    },// TO be improved
+    },"To be improved" : true,
     "conducting_body": "Union Public Service Commission (UPSC)"
     },
     "EPFO APFC": {
@@ -675,7 +675,7 @@
     "age_as_on_date": "",
     "exam_subjects": {
       "Recruitment Test": "General English, Indian Culture, Indian Polity & Economy, General Accounting Principles, Industrial Relations & Labour Laws, Social Security in India, General Mental Ability & Quantitative Aptitude, General Science & Knowledge of Computer Applications, Current Events & Developmental Issues"
-    },// TO be improved
+    },"To be improved" : true,
     "conducting_body": "Union Public Service Commission (UPSC)"
     },
     "MP Cooperative BankPO" : {
@@ -697,7 +697,7 @@
         "Maximum": "35 years"
       },
       "age_as_on_date": "September 5, 2024 ",
-      "exam_subjects": {},// TO be improved
+      "exam_subjects": {},"To be improved" : true,
       "conducting_body": "Madhya Pradesh State Co-operative Bank"
     },
     "HPSCB Assistant Manager": {
