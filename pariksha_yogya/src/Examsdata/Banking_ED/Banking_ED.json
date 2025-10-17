@@ -1,20 +1,20 @@
 {
   "BANKING_ED": {
     "SBI Clerk": {
-      "posts_classes_courses_departments_academy": "Junior Associate (Customer Support & Sales) in Clerical Cadre (6589 vacancies for 2025 cycle) [1]",
-      "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string to standard value
+      "posts_classes_courses_departments_academy": "Junior Associate (Customer Support & Sales) in Clerical Cadre (6589 vacancies for 2025 cycle) ",
+      "gender": ["MALE", "FEMALE"],
+      "marital_status": "NO RESTRICTION",
       "domicile": "State/UT-wise Vacancy (Local Language Proficiency Test is mandatory)",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string to standard banking exam value
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard caste categories for government banking exams
-      "eligibility_education_course": "Graduation in any discipline from a recognised university [2]",
-      "eligibility_course_year": "Final year students not eligible unless they can produce proof of graduation by the cut-off date [2]",
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation in any discipline from a recognised university ",
+      "eligibility_course_year": "Final year students may also apply provisionally, subject to passing by 31.12.2025:",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard value when no specific percentage mentioned
-        "OBC": "PASSED", 
+        "General": "PASSED",
+        "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
       "exam_sector": "GOVERNMENT",
@@ -22,29 +22,62 @@
         "Minimum": "20 years",
         "Maximum": "28 years"
       },
-      "age_as_on_date": "01.04.2025 [2]",
+      "age_as_on_date": "01.04.2025 ",
       "exam_subjects": {
-        "Phase 1 (Preliminary)": "English Language, Numerical Ability, Reasoning Ability", // Added standard SBI Clerk subjects
-        "Phase 2 (Main)": "General English, Reasoning Ability & Computer Aptitude, Quantitative Aptitude, General/Financial Awareness",
-        "Phase 3": "Language Proficiency Test (LPT)"
+        "Phase 1 (Preliminary)": "English Language, Numerical Ability, Reasoning Ability",
+        "Phase 2 (Main)": "General/Financial Awareness, General English, Quantitative Aptitude, Reasoning & Computer Aptitude:",
+        "Phase 3": "Local Language Proficiency Test (LLPT)"
       },
       "conducting_body": "State Bank of India (SBI)",
-      "selection_process": "Prelims, Mains Exam, and a Language Proficiency Test (LPT) [1]"
+      "selection_process": "Prelims, Mains Exam, and a Local Language Proficiency Test (LLPT) "
     },
     "SBI PO": {
-      "posts_classes_courses_departments_academy": "Probationary Officer (PO) in Officer Cadre (541 vacancies for 2025 cycle) [3]",
-      "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
-      "domicile": "PAN INDIA (Candidates subject to posting anywhere in India) [3]",
+      "posts_classes_courses_departments_academy": "Probationary Officer (PO) in Officer Cadre (541 vacancies for 2025 cycle) ",
+      "gender": ["MALE", "FEMALE"],
+      "marital_status": "NO RESTRICTION",
+      "domicile": "PAN INDIA (posted anywhere in India):",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "Graduation in any discipline from a recognized University [4]",
-      "eligibility_course_year": "Passed", // Changed from empty string to standard value
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation in any discipline from a recognized University ",
+      "eligibility_course_year": "Final year students may also apply provisionally, subject to passing by 31.12.2025:",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
+        "OBC": "PASSED",
+        "SC/ST/PH": "PASSED"
+      },
+      "exam_sector": "GOVERNMENT",
+      "age_criteria": {
+        "Minimum": "21 years",
+        "Maximum": "30 years",
+        "Relaxation": "SC/ST: 5 years, OBC: 3 years"
+      },
+      "age_as_on_date": "01.04.2025 ",
+      "exam_subjects": {
+        "Phase 1 (Preliminary)": "English Language, Quantitative Aptitude, Reasoning Ability:",
+        "Phase 2 (Main - Objective)": "General Awareness/Economy/Banking Knowledge, General English, Quantitative Aptitude, Reasoning & Computer Aptitude:",
+        "Phase 2 (Main - Descriptive)": "Communication Skills: Emails, Reports, Situation Analysis & Precis Writing:",
+        "Phase 3": "Group Exercise & Interview:"
+      },
+      "conducting_body": "State Bank of India (SBI)",
+      "selection_process": "Preliminary Examination, Main Examination, Group Exercise and Interview "
+    },
+    "IBPS PO": {
+      "posts_classes_courses_departments_academy": "Probationary Officer/Management Trainee (PO/MT) in Participating Public Sector Banks (CRP-PO/MTs-XV) ",
+      "gender": {},
+      "marital_status": "NO RESTRICTION",
+      "domicile": "PAN INDIA",
+      "nationality": [
+        "Indian citizens"
+      ],
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation in any discipline from a recognized university",
+      "eligibility_course_year": "",
+      "eligibility_marks": {
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
@@ -53,59 +86,28 @@
         "Minimum": "20 years",
         "Maximum": "30 years"
       },
-      "age_as_on_date": "AS PER NOTIFICATION", // Changed from empty string
+      "age_as_on_date": "AS PER NOTIFICATION",
       "exam_subjects": {
-        "Phase 1 (Preliminary)": "English Language, Quantitative Aptitude, Reasoning Ability", // Added standard SBI PO subjects
-        "Phase 2 (Main)": "Reasoning & Computer Aptitude, Data Analysis & Interpretation, General/Economy/Banking Awareness, English Language",
-        "Phase 3": "Group Discussion and Interview"
-      },
-      "conducting_body": "State Bank of India (SBI)",
-      "selection_process": "Preliminary Examination, Main Examination, Group Discussion and Interview [4]"
-    },
-    "IBPS PO": {
-      "posts_classes_courses_departments_academy": "Probationary Officer/Management Trainee (PO/MT) in Participating Public Sector Banks (CRP- PO/MTs-XV) [5]",
-      "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
-      "domicile": "PAN INDIA",
-      "nationality": [
-        "Indian citizens"
-      ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "Graduation in any discipline from a recognized university", // Added standard IBPS PO requirement
-      "eligibility_course_year": "Passed", // Changed from empty string
-      "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
-        "OBC": "PASSED",
-        "SC/ST/PH": "PASSED"
-      },
-      "exam_sector": "GOVERNMENT",
-      "age_criteria": {
-        "Minimum": "20 years", // Added standard IBPS PO age criteria
-        "Maximum": "30 years"
-      },
-      "age_as_on_date": "AS PER NOTIFICATION", // Changed from empty string
-      "exam_subjects": {
-        "Phase 1 (Preliminary)": "English Language, Quantitative Aptitude, Reasoning Ability", // Added standard IBPS PO subjects
+        "Phase 1 (Preliminary)": "English Language, Quantitative Aptitude, Reasoning Ability",
         "Phase 2 (Main)": "Reasoning & Computer Aptitude, Data Analysis & Interpretation, General/Economy/Banking Awareness, English Language",
         "Phase 3": "Common Interview"
       },
       "conducting_body": "Institute of Banking Personnel Selection (IBPS)"
     },
     "IBPS Clerk": {
-      "posts_classes_courses_departments_academy": "Customer Service Associate (CSA) in Clerical Cadre (CRP CSA-XV, 10277 vacancies) [4]",
+      "posts_classes_courses_departments_academy": "Customer Service Associate (CSA) in Clerical Cadre (CRP CSA-XV, 10277 vacancies) ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
-      "domicile": "PAN INDIA (State-wise Vacancy, Local Language Proficiency required) [6]",
+      "marital_status": "NO RESTRICTION",
+      "domicile": "PAN INDIA (State-wise Vacancy, Local Language Proficiency required) ",
       "nationality": [
-        "Indian citizens" // Added standard nationality array
+        "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "Graduation from any discipline or any equivalent qualification from a recognised university [6]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation from any discipline or any equivalent qualification from a recognised university ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
@@ -114,88 +116,88 @@
         "Minimum": "20 years",
         "Maximum": "28 years"
       },
-      "age_as_on_date": "1-8-2025 [7]",
+      "age_as_on_date": "01.08.2025 ",
       "exam_subjects": {
-        "Phase 1 (Preliminary)": "English Language, Numerical Ability, Reasoning Ability", // Added missing Phase 1 subjects
-        "Phase 2 (Main)": "General English, Reasoning Ability, General / Financial Awareness, Quantitative Aptitude, Computer Knowledge" // Completed the subject list
+        "Phase 1 (Preliminary)": "English Language, Numerical Ability, Reasoning Ability",
+        "Phase 2 (Main)": "General English, Reasoning Ability, General/Financial Awareness, Quantitative Aptitude, Computer Knowledge"
       },
       "conducting_body": "Institute of Banking Personnel Selection (IBPS)"
     },
     "RRB Office Assistant": {
       "posts_classes_courses_departments_academy": "Office Assistants (Multipurpose) - Group 'B' (CRP-RRBs-XIV)",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
-      "domicile": "RRB/State-specific requirements apply (due to local language proficiency) [8]",
+      "marital_status": "NO RESTRICTION", 
+      "domicile": "RRB/State-specific requirements apply (due to local language proficiency) ",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) [8]",
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "A Degree in any discipline from a recognized University or its equivalent [8]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "A Degree in any discipline from a recognized University or its equivalent ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
-      "other_mandatory_skills": "Proficiency in the local language (Proof of study up to Class X/XII is required) [8]",
+      "other_mandatory_skills": "Proficiency in the local language (Proof of study up to Class X/XII is required) ",
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "18 years",
         "Maximum": "28 years"
       },
-      "age_as_on_date": "01.09.2025 [8]",
+      "age_as_on_date": "01.09.2025 ",
       "exam_subjects": {
-        "Phase 1 (Preliminary)": "Reasoning (40 Q, 40 M), Numerical Ability (40 Q, 40 M) [8]",
-        "Phase 2 (Main)": "Reasoning, Computer Knowledge, General Awareness, Language (English/Hindi Choice), Numerical Ability (Total 200 Q, 200 M). Penalty: 0.25 marks per wrong answer. [8]"
+        "Phase 1 (Preliminary)": "Reasoning (40 Q, 40 M), Numerical Ability (40 Q, 40 M) ",
+        "Phase 2 (Main)": "Reasoning, Computer Knowledge, General Awareness, Language (English/Hindi Choice), Numerical Ability (Total 200 Q, 200 M). Penalty: 0.25 marks per wrong answer. "
       },
       "conducting_body": "Institute of Banking Personnel Selection (IBPS)"
     },
     "RRB OFFicer Scale -I": {
-      "posts_classes_courses_departments_academy": "Officer Scale I (Assistant Manager) - Group 'A' (CRP-RRBs-XIV). Preference for degrees in Agriculture, IT, Law, Economics, or Accountancy [8]",
+      "posts_classes_courses_departments_academy": "Officer Scale I (Assistant Manager) - Group 'A' (CRP-RRBs-XIV). Preference for degrees in Agriculture, IT, Law, Economics, or Accountancy ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
-      "domicile": "RRB/State-specific requirements apply (due to local language proficiency) [8]",
+      "marital_status": "NO RESTRICTION",
+      "domicile": "RRB/State-specific requirements apply (due to local language proficiency) ",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) [8]",
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "A Degree in any discipline from a recognized University or its equivalent [8]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "A Degree in any discipline from a recognized University or its equivalent ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
-      "other_mandatory_skills": "Proficiency in the local language (Proof of study up to Class X/XII is required) [8]",
+      "other_mandatory_skills": "Proficiency in the local language (Proof of study up to Class X/XII is required) ",
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "Above 18 years",
         "Maximum": "Below 30 years"
       },
-      "age_as_on_date": "01.09.2025 [8]",
+      "age_as_on_date": "01.09.2025 ",
       "exam_subjects": {
-        "Phase 1 (Preliminary)": "Reasoning (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M) [8]",
-        "Phase 2 (Main)": "Reasoning, Computer Knowledge, General Awareness, Language (English/Hindi Choice), Quantitative Aptitude (Total 200 Q, 200 M). Penalty: 0.25 marks per wrong answer. [8]",
-        "Phase 3": "Common Interview [8]"
+        "Phase 1 (Preliminary)": "Reasoning (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M) ",
+        "Phase 2 (Main)": "Reasoning, Computer Knowledge, General Awareness, Language (English/Hindi Choice), Quantitative Aptitude (Total 200 Q, 200 M). Penalty: 0.25 marks per wrong answer. ",
+        "Phase 3": "Common Interview "
       },
       "conducting_body": "Institute of Banking Personnel Selection (IBPS)"
     },
     "IDBI Executive": {
-      "posts_classes_courses_departments_academy": "Executive – Sales and Operations (ESO) (on Contract) [9]",
+      "posts_classes_courses_departments_academy": "Executive – Sales and Operations (ESO) (on Contract) ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
+      "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
-        "Indian citizens" // Added standard nationality array
+        "Indian citizens"
       ],
-      "pwd_status": "Relaxation applicable (General: 10 years) [9]",
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "A Graduate from a recognized university in any discipline [9]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "Relaxation applicable (General: 10 years) ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "A Graduate from a recognized university in any discipline ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
@@ -204,27 +206,27 @@
         "Minimum": "20 years",
         "Maximum": "25 years"
       },
-      "age_as_on_date": "October 01, 2024 [9]",
+      "age_as_on_date": "October 01, 2024 ",
       "exam_subjects": {
-        "Online Test": "Logical Reasoning, Data Analysis & Interpretation (60 Q, 60 M), English Language (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M), General/Economy/Banking Awareness/ Computer/IT (60 Q, 60 M) (Total 200 Q, 200 M, 120 minutes. Penalty: 0.25 deduction) [9]"
+        "Online Test": "Logical Reasoning, Data Analysis & Interpretation (60 Q, 60 M), English Language (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M), General/Economy/Banking Awareness/ Computer/IT (60 Q, 60 M) (Total 200 Q, 200 M, 120 minutes. Penalty: 0.25 deduction) "
       },
       "conducting_body": "IDBI Bank Ltd.",
-      "selection_process": "Online Exam, Document Verification, Personal Interview (PI) [9]"
+      "selection_process": "Online Exam, Document Verification, Personal Interview (PI) "
     },
     "Bank of India PO": {
-      "posts_classes_courses_departments_academy": "Officers in various streams (Project No. 2024-25/1) [10]",
+      "posts_classes_courses_departments_academy": "Officers in various streams (Project No. 2024-25/1) ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
+      "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "A Degree (Graduation) in any discipline from a University recognised by the Govt. of India (for Credit Officers) [11]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "A Degree (Graduation) in any discipline from a University recognised by the Govt. of India (for Credit Officers) ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
@@ -233,241 +235,241 @@
         "Minimum": "20 years",
         "Maximum": "29 years"
       },
-      "age_as_on_date": "01.01.2025 [10]",
+      "age_as_on_date": "01.01.2025 ",
       "exam_subjects": {
-        "eligibility": "AS PER NOTIFICATION" // Added standard placeholder when subjects not specified
-      },
+        "eligibility": "AS PER NOTIFICATION"
+      },// TO be improved
       "conducting_body": "Bank of India (BOI)"
     },
     "SBI Apprentice": {
-      "posts_classes_courses_departments_academy": "Apprentice positions in various departments", // Added general description
+      "posts_classes_courses_departments_academy": "Apprentice positions in various departments",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
+      "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "Graduation in any discipline", // Added general requirement
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation in any discipline",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
-        "Minimum": "20 years", // Added standard apprentice age criteria
+        "Minimum": "20 years",
         "Maximum": "28 years"
       },
-      "age_as_on_date": "AS PER NOTIFICATION", // Changed from empty string
+      "age_as_on_date": "AS PER NOTIFICATION",
       "exam_subjects": {
-        "eligibility": "AS PER NOTIFICATION" // Added standard placeholder
-      },
+        "eligibility": "AS PER NOTIFICATION"
+      },// TO be improved
       "conducting_body": "State Bank of India (SBI)"
     },
     "SIDBI Assistant Manager": {
-      "posts_classes_courses_departments_academy": "Assistant Manager (Grade A) and Manager (Grade B) (76 vacancies) [12]",
+      "posts_classes_courses_departments_academy": "Assistant Manager (Grade A) and Manager (Grade B) (76 vacancies) ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
+      "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", // Changed from empty string
-      "caste_category": ["General", "OBC", "SC", "ST"], // Added standard categories
-      "eligibility_education_course": "Graduation in any discipline from a recognized university", // Added standard requirement
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Graduation in any discipline from a recognized university",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
-        "General": "PASSED", // Added standard marks criteria
+        "General": "PASSED",
         "OBC": "PASSED",
         "SC/ST/PH": "PASSED"
       },
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
-        "Minimum": "21 years", // Added standard SIDBI age criteria
+        "Minimum": "21 years",
         "Maximum": "30 years"
       },
-      "age_as_on_date": "November 08, 2024 [13]",
+      "age_as_on_date": "November 08, 2024 ",
       "exam_subjects": {
-        "Phase 1": "Reasoning Ability, English Language, Quantitative Aptitude, General Awareness", // Added standard SIDBI subjects
+        "Phase 1": "Reasoning Ability, English Language, Quantitative Aptitude, General Awareness",
         "Phase 2": "Professional Knowledge, Essay Writing, Precis Writing"
       },
       "conducting_body": "Small Industries Development Bank of India (SIDBI)",
-      "selection_process": "Phase 1 Examination (Dec 22, 2024), Phase 2 Examination (Jan 19, 2025), Group Discussion and Interview (Feb 2025) [13, 12]"
+      "selection_process": "Phase 1 Examination (Dec 22, 2024), Phase 2 Examination (Jan 19, 2025), Group Discussion and Interview (Feb 2025) "
     },
     "RBI Grade B": {
-      "posts_classes_courses_departments_academy": "Officers in Grade 'B' (Direct Recruit - General) (DR) (83 vacancies for General Stream) [14]",
+      "posts_classes_courses_departments_academy": "Officers in Grade 'B' (Direct Recruit - General) (DR) (83 vacancies for General Stream) ",
       "gender": {},
-      "marital_status": "NO RESTRICTION", // Changed from empty string
+      "marital_status": "NO RESTRICTION",
       "domicile": "PAN INDIA",
       "nationality": [
-        "Indian citizens", // Added standard nationality array
+        "Indian citizens",
         "Citizens of Nepal",
         "Citizens of Bhutan"
       ],
-      "pwd_status": "Relaxation applicable (General: 10 years, SC/ST: 15 years, OBC: 13 years) [15]",
-      "caste_category": ["General", "OBC", "EWS", "SC", "ST"], // Added EWS for recent RBI exams
-      "eligibility_education_course": "Bachelor's Degree in any discipline [16]",
-      "eligibility_course_year": "Passed", // Changed from empty string
+      "pwd_status": "Relaxation applicable (General: 10 years, SC/ST: 15 years, OBC: 13 years) ",
+      "caste_category": ["General", "OBC", "EWS", "SC", "ST"],
+      "eligibility_education_course": "Bachelor's Degree in any discipline ",
+      "eligibility_course_year": "Passed",
       "eligibility_marks": {
         "General": "60% aggregate",
         "OBC": "60% aggregate",
         "EWS": "60% aggregate",
         "SC/ST/PH": "50% aggregate"
       },
-      "max_attempts": "General & EWS: 6; SC/ST/OBC/PwBD: No limit [17]",
+      "max_attempts": "General & EWS: 6; SC/ST/OBC/PwBD: No limit ",
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "21 years",
         "Maximum": "30 years",
-        "Relaxation": "SC/ST: 5 years, OBC: 3 years, M.Phil: up to 32 years, Ph.D.: up to 34 years [15, 16]"
+        "Relaxation": "SC/ST: 5 years, OBC: 3 years, M.Phil: up to 32 years, Ph.D.: up to 34 years "
       },
-      "age_as_on_date": "01 Sep 2025 [16]",
+      "age_as_on_date": "01 Sep 2025 ",
       "exam_subjects": {
-        "Phase 1 (Objective)": "General Awareness (80 M), Reasoning Ability (60 M), English (30 M), Quantitative Aptitude (30 M) (Total 200 M, 120 minutes) [17]",
-        "Phase 2": "Paper 1: Economic and Social Issues (Objective & Descriptive), Paper 2: Descriptive English, Paper 3: Finance and Management (Objective & Descriptive) [17]"
+        "Phase 1 (Objective)": "General Awareness (80 M), Reasoning Ability (60 M), English (30 M), Quantitative Aptitude (30 M) (Total 200 M, 120 minutes) ",
+        "Phase 2": "Paper 1: Economic and Social Issues (Objective & Descriptive), Paper 2: Descriptive English, Paper 3: Finance and Management (Objective & Descriptive) "
       },
       "conducting_body": "Reserve Bank of India (RBI)",
-      "application_fee": "General/OBC/EWS: Rs. 850/-; SC/ST/PWD: Rs 100/- [18]",
-      "selection_process": "Phase 1 (Online), Phase 2 (Online/Written), Interview [19]"
+      "application_fee": "General/OBC/EWS: Rs. 850/-; SC/ST/PWD: Rs 100/- ",
+      "selection_process": "Phase 1 (Online), Phase 2 (Online/Written), Interview "
     },
     "MP Cooperative Bank Committee...": {
-      "posts_classes_courses_departments_academy": "Committee Managers/ Society Managers (1358 vacancies for 2022 cycle) [20]",
+      "posts_classes_courses_departments_academy": "Committee Managers/ Society Managers (1358 vacancies for 2022 cycle) ",
       "gender": {},
-      "marital_status": "",
-      "domicile": "MADHYA PRADESH (State-specific requirements) [21]",
+      "marital_status": "NO RESTRICTION", 
+      "domicile": "MADHYA PRADESH (State-specific requirements) ",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduate degree + one-year diploma course (For Clerical/Banking Assistant) [22]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "Graduate degree + one-year diploma course (For Clerical/Banking Assistant) ",
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "PASSED" }, 
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "18 years",
         "Maximum": "35 years"
       },
-      "age_as_on_date": "September 5, 2024 [21]",
-      "exam_subjects": {},
+      "age_as_on_date": "",
+      "exam_subjects": { "Online Test": "Reasoning, Computer Knowledge, General Awareness, English, and Numerical Ability" }, 
       "conducting_body": "Madhya Pradesh State Co-operative Bank",
-      "application_fee": "General/OBC/EWS: INR 500 + GST; SC/ST/PH: INR 250 + GST (2022 Cycle) [20]"
+      "application_fee": "General/OBC/EWS: INR 500 + GST; SC/ST/PH: INR 250 + GST (2022 Cycle) "
     },
     "EPFO Stenographer": {
-      "posts_classes_courses_departments_academy": "Stenographer (Group C) (185 vacancies for 2023 cycle) [23]",
+      "posts_classes_courses_departments_academy": "Stenographer (Group C) (185 vacancies for 2023 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PAN INDIA",
-      "nationality":,
-      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) [23]",
-      "caste_category":,
-      "eligibility_education_course": "12th class pass from a recognized Board [23]",
-      "eligibility_course_year": "Passed (Awaiting results should not apply) [23]",
-      "eligibility_marks": {},
+      "nationality": ["Indian citizens"], 
+      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) ",
+      "caste_category": ["SC", "ST", "OBC", "EWS"], 
+      "eligibility_education_course": "12th class pass from a recognized Board ",
+      "eligibility_course_year": "Passed (Awaiting results should not apply) ",
+      "eligibility_marks": { "General": "PASSED" }, 
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "18 years",
         "Maximum": "27 years"
       },
-      "age_as_on_date": "As of the closing date of the Online Application form [23]",
+      "age_as_on_date": "As of the closing date of the Online Application form ",
       "exam_subjects": {
-        "Stage 1 (Phase-I)": "Computer Based Examination (Subjects not detailed in snippets) [23]",
-        "Stage II (Skill Test)": "Stenography Skill Test (Dictation: Ten minutes at 80 words per minute) [23]"
+        "Stage 1 (Phase-I)": "Computer Based Examination (Subjects not detailed in snippets) ",
+        "Stage II (Skill Test)": "Stenography Skill Test (Dictation: Ten minutes at 80 words per minute) "
       },
       "conducting_body": "Employee Provident Fund Organisation (EPFO) / National Testing Agency (NTA)",
-      "selection_process": "Computer Based Examination (Phase-I), Skill Test in Stenography (Phase-II) [23]"
+      "selection_process": "Computer Based Examination (Phase-I), Skill Test in Stenography (Phase-II) "
     },
     "ECGC PO": {
-      "posts_classes_courses_departments_academy": "Probationary Officer (Executive Officers Specialist Cadre) (17 vacancies for 2023-24 cycle) [24]",
+      "posts_classes_courses_departments_academy": "Probationary Officer (Executive Officers Specialist Cadre) (17 vacancies for 2023-24 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PAN INDIA",
-      "nationality":,
-      "pwd_status": "Relaxation applicable (10 years) [24]",
-      "caste_category":,
+      "nationality": ["Indian citizens"], 
+      "pwd_status": "Relaxation applicable (10 years) ",
+      "caste_category": ["SC", "ST", "OBC", "EWS", "PwBD"], 
       "eligibility_education_course": "Discipline-specific specialized qualifications",
-      "eligibility_course_year": "Final result declared on or before 01.04.2023 [24]",
-      "eligibility_marks": {},
+      "eligibility_course_year": "Final result declared on or before 01.04.2023 ",
+      "eligibility_marks": { "General": "60% minimum", "SC/ST": "55% minimum" }, 
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "21 years",
         "Maximum": "30 years",
-        "Relaxation": "SC/ST: 5 years, OBC: 3 years, PwBD: 10 years [24]"
+        "Relaxation": "SC/ST: 5 years, OBC: 3 years, PwBD: 10 years "
       },
-      "age_as_on_date": "01.04.2023 [24]",
+      "age_as_on_date": "01.04.2023 ",
       "exam_subjects": {
-        "Objective Test": "Reasoning Ability, English Language, Computer Knowledge, General Awareness, Quantitative Aptitude (200 Q, 200 M, sectional timing) [25]",
-        "Descriptive Paper": ""
+        "Objective Test": "Reasoning Ability, English Language, Computer Knowledge, General Awareness, Quantitative Aptitude (200 Q, 200 M, sectional timing) ",
+        "Descriptive Paper": "Descriptive Paper in English" 
       },
       "conducting_body": "Export Credit Guarantee Corporation of India (ECGC) Limited",
-      "selection_process": "Online Examination (Scheduled for 15th July 2023), Interview [24]",
+      "selection_process": "Online Examination (Scheduled for 15th July 2023), Interview ",
       "specialized_posts": {
         "Accounts (CA)": {
-          "eligibility_education_course": "Associate member of ICAI, ICWA, or Chartered Financial Analyst (CFA) [24]"
+          "eligibility_education_course": "Associate member of ICAI, ICWA, or Chartered Financial Analyst (CFA) "
         },
         "Legal": {
-          "eligibility_education_course": "Bachelor of Law (LLB) from a recognized Indian University/Institution [24]"
+          "eligibility_education_course": "Bachelor of Law (LLB) from a recognized Indian University/Institution "
         },
         "IT/CISO": {
-          "eligibility_education_course": "B Tech/BE in CS/IT/CE/E&I & ME/MTech/MS in CS/IT/IS/Cyber Security. Preference for CISSP/CISM/etc. [24]"
+          "eligibility_education_course": "B Tech/BE in CS/IT/CE/E&I & ME/MTech/MS in CS/IT/IS/Cyber Security. Preference for CISSP/CISM/etc. "
         },
         "Rajbhasha/Hindi": {
-          "eligibility_education_course": "Master’s degree in Hindi or English (with 60% for others/55% for SC/ST), coupled with specific core/elective subjects at the Bachelor’s Degree level [24]"
+          "eligibility_education_course": "Master’s degree in Hindi or English (with 60% for others/55% for SC/ST), coupled with specific core/elective subjects at the Bachelor’s Degree level "
         }
       }
     },
     "Nainital Bank PO": {
-      "posts_classes_courses_departments_academy": "",
+      "posts_classes_courses_departments_academy": "Probationary Officers (PO)", 
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": [], 
+      "eligibility_education_course": "A graduate or postgraduate degree", 
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "50% minimum" },"doubt":true,
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "21 years", "Maximum": "32 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Online Test": "Reasoning, English Language, General Awareness (with special reference to Banking), and Quantitative Aptitude" }, 
       "conducting_body": "Nainital Bank Ltd."
     },
     "Nainital BankClerk": {
-      "posts_classes_courses_departments_academy": "Clerk (25 vacancies for 2024 cycle) [26, 27]",
+      "posts_classes_courses_departments_academy": "Clerk (25 vacancies for 2024 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduates [27]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": [], 
+      "eligibility_education_course": "Graduates ",
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "50% minimum" }, 
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "21 years", "Maximum": "32 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Online Test": "Reasoning, English Language, General Awareness, Computer Knowledge, and Quantitative Aptitude" }, 
       "conducting_body": "Nainital Bank Ltd.",
-      "selection_process": "Online test and Interview [26]"
+      "selection_process": "Online test and Interview "
     },
     "IDBI Assistant Manager": {
-      "posts_classes_courses_departments_academy": "Junior Assistant Manager (JAM), Grade 'O' (Assistant Manager Post PGDBF) [28]",
+      "posts_classes_courses_departments_academy": "Junior Assistant Manager (JAM), Grade 'O' (Assistant Manager Post PGDBF) ",
       "gender": {},
-      "marital_status": "",
-      "domicile": "Zone-Specific Domicile (Required for Generalist Post) [28]",
-      "nationality":,
-      "pwd_status": "Relaxation applicable (General: 10 years) [28]",
-      "caste_category":,
-      "eligibility_education_course": "A Bachelor's degree in any discipline [28]",
-      "eligibility_course_year": "",
+      "marital_status": "NO RESTRICTION", 
+      "domicile": "Zone-Specific Domicile (Required for Generalist Post) ",
+      "nationality": ["Indian citizens"], 
+      "pwd_status": "Relaxation applicable (General: 10 years) ",
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "A Bachelor's degree in any discipline ",
+      "eligibility_course_year": "", 
       "eligibility_marks": {
         "General": "60% minimum",
         "OBC": "60% minimum",
@@ -479,53 +481,53 @@
         "Minimum": "20 years",
         "Maximum": "25 years"
       },
-      "age_as_on_date": "March 01, 2025 [28]",
+      "age_as_on_date": "March 01, 2025 ",
       "exam_subjects": {
-        "Online Test": "Logical Reasoning, Data Analysis & Interpretation (60 Q, 60 M), English Language (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M), General/Economy/Banking Awareness/ Computer/IT (60 Q, 60 M) (Total 200 Q, 200 M, 120 minutes. Penalty: 0.25 deduction) [28]"
+        "Online Test": "Logical Reasoning, Data Analysis & Interpretation (60 Q, 60 M), English Language (40 Q, 40 M), Quantitative Aptitude (40 Q, 40 M), General/Economy/Banking Awareness/ Computer/IT (60 Q, 60 M) (Total 200 Q, 200 M, 120 minutes. Penalty: 0.25 deduction) "
       },
       "conducting_body": "IDBI Bank Ltd.",
-      "selection_process": "Online Test, Personal Interview (PI) [28]"
+      "selection_process": "Online Test, Personal Interview (PI) "
     },
     "MP Cooperative Bank Clerk": {
-      "posts_classes_courses_departments_academy": "Banking Assistant (Clerks/Computer Operators) (896 posts for 2022 cycle) [29]",
+      "posts_classes_courses_departments_academy": "Banking Assistant (Clerks/Computer Operators) (896 posts for 2022 cycle) ",
       "gender": {},
-      "marital_status": "",
-      "domicile": "MADHYA PRADESH (State-specific requirements) [21]",
+      "marital_status": "NO RESTRICTION", 
+      "domicile": "MADHYA PRADESH (State-specific requirements)",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduate degree + Computer Course (For Banking Assistant) [21]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "Graduate degree + Computer Course (For Banking Assistant) ",
+      "eligibility_course_year": "Passed (As per notification's cutoff date)", 
+      "eligibility_marks": { "General": "PASSED" }, 
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "18 years",
         "Maximum": "35 years"
       },
-      "age_as_on_date": "September 5, 2024 [21]",
-      "exam_subjects": {},
+      "age_as_on_date": "September 5, 2024 ",
+      "exam_subjects": { "Online Test": "Reasoning, Computer Knowledge, General Awareness, English, and Numerical Ability" }, 
       "conducting_body": "Madhya Pradesh State Co-operative Bank",
-      "application_fee": "General: Rs. 500 + GST; Reserved: Rs. 250 + GST (2022 Cycle) [29]"
+      "application_fee": "General: Rs. 500 + GST; Reserved: Rs. 250 + GST (2022 Cycle) "
     },
     "Syndicate Bank PO": {
-      "posts_classes_courses_departments_academy": "Probationary Officers (Junior Management Grade I) (Obsolete post due to merger with Canara Bank. Last confirmed vacancy 500 in 2017) [30]",
+      "posts_classes_courses_departments_academy": "Probationary Officers (Junior Management Grade I) (Obsolete post due to merger with Canara Bank. Last confirmed vacancy 500 in 2017) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PAN INDIA",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "A Degree (Graduation) in any discipline [11]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "A Degree (Graduation) in any discipline ",
+      "eligibility_course_year": "Passed (As per notification's cutoff date)", 
+      "eligibility_marks": { "General": "60% minimum", "SC/ST/PWD": "55% minimum" }, 
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "20 years", "Maximum": "28 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Online Test": "Reasoning, Quantitative Aptitude, English Language, and General Awareness" }, 
       "conducting_body": "Syndicate Bank (Now Canara Bank)"
     },
     "EPFO SSA": {
@@ -533,36 +535,40 @@
       "gender": {},
       "marital_status": "",
       "domicile": "PAN INDIA",
-      "nationality":,
-      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) [31]",
-      "caste_category":,
-      "eligibility_education_course": "Must possess the Bachelor’s Degree from a recognized university [31]",
-      "eligibility_course_year": "Passed (Awaiting results should not apply) [31]",
+      "nationality": [
+        "Indian citizens",
+        "Subjects of Nepal",
+        "Subjects of Bhutan"
+      ],
+      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC-NCL: 13 years, General: 10 years) ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
+      "eligibility_education_course": "Must possess the Bachelor’s Degree from a recognized university ",
+      "eligibility_course_year": "Passed (Awaiting results should not apply) ",
       "eligibility_marks": {},
-      "other_mandatory_skills": "Typing speed of 35 words per minute in English or 30 words per minute in Hindi on a computer [31]",
+      "other_mandatory_skills": "Typing speed of 35 words per minute in English or 30 words per minute in Hindi on a computer ",
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "18 years",
         "Maximum": "27 years"
       },
-      "age_as_on_date": "As on the Closing Date of Online Application form [31]",
+      "age_as_on_date": "As on the Closing Date of Online Application form ",
       "exam_subjects": {
-        "Phase 1 (Objective)": "General Aptitude (30 Q, 120 M), General Knowledge/ General Awareness (30 Q, 120 M), Quantitative Ability (30 Q, 120 M), General English with Comprehension (50 Q, 200 M), Computer Literacy (10 Q, 40 M) (Total 150 Q, 600 M, 150 minutes. Negative Marking: 1.0 deduction per wrong answer) [31]",
-        "Phase 2 (Skill Test)": "Computer Typing Test (Qualifying in nature) [31]"
+        "Phase 1 (Objective)": "General Aptitude, General Knowledge/General Awareness, Quantitative Ability, General English with Comprehension, Computer Literacy (Total 150 Q, 600 M, 150 minutes) ",
+        "Phase 2 (Skill Test)": "Computer Typing Test (Qualifying in nature) "
       },
       "conducting_body": "Employee Provident Fund Organisation (EPFO) / National Testing Agency (NTA)",
-      "selection_process": "Computer Based Examination (Phase-I), Computer Typing Test (Phase-II) [31]"
+      "selection_process": "Computer Based Examination (Phase-I), Computer Typing Test (Phase-II) "
     },
     "KSCB Clerk": {
-      "posts_classes_courses_departments_academy": "Clerk (Direct Recruitment from eligible employees of Member Societies) [32]",
+      "posts_classes_courses_departments_academy": "Clerk (Direct Recruitment from eligible employees of Member Societies) ",
       "gender": {},
       "marital_status": "",
-      "domicile": "KERALA (Required Service Certificate from the Assistant Registrar) [32]",
+      "domicile": "KERALA (Required Service Certificate from the Assistant Registrar) ",
       "nationality": [
         "Indian citizens"
       ],
       "pwd_status": "",
-      "caste_category":,
+      "caste_category":"",
       "eligibility_education_course": "",
       "eligibility_course_year": "",
       "eligibility_marks": {},
@@ -571,82 +577,118 @@
         "Minimum": "18 years",
         "Maximum": "50 years"
       },
-      "age_as_on_date": "01/01/2006 [32]",
-      "exam_subjects": {},
+      "age_as_on_date": "01/01/2006 ",
+      "exam_subjects": {},// TO be improved
       "conducting_body": "Kerala Public Service Commission (KPSC) / Cooperative Service Examination Board (CSEB)"
     },
     "PSCB Clerk Cum DEO": {
-      "posts_classes_courses_departments_academy": "",
+      "posts_classes_courses_departments_academy": "Clerk cum Data Entry Operator (DEO)", 
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "PUNJAB (State-specific requirements)",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC/ST", "BC"], 
+      "eligibility_education_course": "Graduation with a diploma/certificate in computer knowledge", 
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "PASSED" },"doubt":true,
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "18 years", "Maximum": "37 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Online Test": "Computer, Reasoning Ability, Quantitative Aptitude, General Awareness and English" }, 
       "conducting_body": "Punjab State Cooperative Bank (PSCB)"
     },
     "CG Apex Bank Office Assistant": {
-      "posts_classes_courses_departments_academy": "Office Assistant (17 vacancies for 2023 cycle) [33]",
+      "posts_classes_courses_departments_academy": "Office Assistant (17 vacancies for 2023 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "CHHATTISGARH",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduates [33]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "Graduates ",
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "50% minimum" }, 
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "21 years", "Maximum": "35 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Written Exam": "General Knowledge of Chhattisgarh, Knowledge of Chhattisgarhi Language, Cooperative Act and Banking related, General Knowledge, Mathematical & Reasoning Ability, and Hindi Language" }, 
       "conducting_body": "Chhattisgarh Rajya Sahakari Bank Maryadit (CG Apex Bank)",
-      "selection_process": "Written examination, interview and document verification [34]"
+      "selection_process": "Written examination, interview and document verification "
     },
-    "EPFO Assistant": {
-      "posts_classes_courses_departments_academy": "Assistant (Group A, Non-Ministerial) [35]",
+    "EPFO EO/AO": {
+    "posts_classes_courses_departments_academy": "Enforcement Officer/Accounts Officer (Group B, Non-Ministerial)",
+    "gender": {},
+    "marital_status": "",
+    "domicile": "PAN INDIA",
+    "nationality": [
+      "Indian citizens"
+    ],
+    "pwd_status": "Suitable for PwBD candidates: Blindness & Low Vision (B/LV), Deaf & Hard of Hearing (D/HH), Locomotor Disability (OL, OA, BL, BA, OLA), Autism, Intellectual Disability, Specific Learning Disability, Mental Illness, Multiple Disabilities",
+    "caste_category": ["UR", "EWS", "OBC", "SC", "ST"],
+    "eligibility_education_course": "Bachelor’s Degree in any subject from a recognised university or institute",
+    "eligibility_course_year": "Passed",
+    "eligibility_marks": {},
+    "exam_sector": "GOVERNMENT",
+    "age_criteria": {
+      "Minimum": "NONE",
+      "Maximum": {
+        "UR/EWS": "30 years",
+        "OBC": "33 years",
+        "SC/ST": "35 years",
+        "PwBD": "40 years"
+      }
+    },
+    "age_as_on_date": "",
+    "exam_subjects": {
+      "Recruitment Test": "General English, Indian Freedom Struggle, Current Events and Developmental Issues, Indian Polity & Economy, Industrial Relations & Labour Laws, General Accounting Principles, General Mental Ability & Quantitative Aptitude, Social Security in India"
+    },// TO be improved
+    "conducting_body": "Union Public Service Commission (UPSC)"
+    },
+    "EPFO APFC": {
+    "posts_classes_courses_departments_academy": "Assistant Provident Fund Commissioner (Group A, Gazetted, Non-Ministerial)",
+    "gender": {},
+    "marital_status": "",
+    "domicile": "PAN INDIA",
+    "nationality": [
+      "Indian citizens"
+    ],
+    "pwd_status": "Suitable for PwBD candidates: Deaf & Hard of Hearing (D/HH), Locomotor Disability (OL, OA, BL, BA, OLA, LC, DW, AAV, MDy, SD, SI)",
+    "caste_category": ["UR", "EWS", "OBC", "SC", "ST"],
+    "eligibility_education_course": "Bachelor’s Degree in any subject from a recognised university or institute",
+    "eligibility_course_year": "Passed",
+    "eligibility_marks": {},
+    "exam_sector": "GOVERNMENT",
+    "age_criteria": {
+      "Minimum": "NONE",
+      "Maximum": {
+        "UR/EWS": "35 years",
+        "OBC": "38 years",
+        "SC/ST": "40 years",
+        "PwBD": "45 years"
+      }
+    },
+    "age_as_on_date": "",
+    "exam_subjects": {
+      "Recruitment Test": "General English, Indian Culture, Indian Polity & Economy, General Accounting Principles, Industrial Relations & Labour Laws, Social Security in India, General Mental Ability & Quantitative Aptitude, General Science & Knowledge of Computer Applications, Current Events & Developmental Issues"
+    },// TO be improved
+    "conducting_body": "Union Public Service Commission (UPSC)"
+    },
+    "MP Cooperative BankPO" : {
+      "posts_classes_courses_departments_academy": "Bank Cadre Officer/Assistant Manager (197 various positions for 2024 cycle) ",
       "gender": {},
       "marital_status": "",
-      "domicile": "PAN INDIA",
+      "domicile": "MADHYA PRADESH (State-specific requirements) ",
       "nationality": [
         "Indian citizens"
       ],
       "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Degree of a recognised University or Equivalent [35]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
-      "exam_sector": "GOVERNMENT",
-      "age_criteria": {
-        "Minimum": "",
-        "Maximum": "35 years"
-      },
-      "age_as_on_date": "",
-      "exam_subjects": {},
-      "conducting_body": "Employee Provident Fund Organisation (EPFO)"
-    },
-    "MP Cooperative BankPO": {
-      "posts_classes_courses_departments_academy": "Bank Cadre Officer/Assistant Manager (197 various positions for 2024 cycle) [36]",
-      "gender": {},
-      "marital_status": "",
-      "domicile": "MADHYA PRADESH (State-specific requirements) [21]",
-      "nationality": [
-        "Indian citizens"
-      ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduate/ PG/ CA/ MBA/ B.Com/ M.Com (For Cadre Officer) [21]",
+      "caste_category":"",
+      "eligibility_education_course": "Graduate/ PG/ CA/ MBA/ B.Com/ M.Com (For Cadre Officer) ",
       "eligibility_course_year": "",
       "eligibility_marks": {},
       "exam_sector": "GOVERNMENT",
@@ -654,90 +696,92 @@
         "Minimum": "18 years",
         "Maximum": "35 years"
       },
-      "age_as_on_date": "September 5, 2024 [21]",
-      "exam_subjects": {},
+      "age_as_on_date": "September 5, 2024 ",
+      "exam_subjects": {},// TO be improved
       "conducting_body": "Madhya Pradesh State Co-operative Bank"
     },
     "HPSCB Assistant Manager": {
-      "posts_classes_courses_departments_academy": "Assistant Manager, Class-II (64 vacancies for 2023 cycle) [37, 38]",
+      "posts_classes_courses_departments_academy": "Assistant Manager, Class-II (64 vacancies for 2023 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "HIMACHAL PRADESH (State-specific requirements)",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "",
-      "caste_category":,
-      "eligibility_education_course": "Graduation [37]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
-      "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)", 
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "Graduation ",
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "50% minimum" }, "doubt": true,
+      "exam_sector" : "GOVERNMENT",
+      "age_criteria": { "Minimum": "18 years", "Maximum": "45 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Online Exam": "English Language, Numerical Ability, and Reasoning Ability" }, 
       "conducting_body": "Himachal Pradesh State Cooperative Bank (HPSCB)",
-      "selection_process": "Online examination followed by a Bank Interview [37]"
+      "selection_process": "Online examination followed by a Bank Interview "
     },
     "CG Apex Bank General Assistant": {
-      "posts_classes_courses_departments_academy": "General Assistant (98 vacancies for 2023 cycle) [34]",
+      "posts_classes_courses_departments_academy": "General Assistant (98 vacancies for 2023 cycle) ",
       "gender": {},
-      "marital_status": "",
+      "marital_status": "NO RESTRICTION", 
       "domicile": "CHHATTISGARH",
       "nationality": [
         "Indian citizens"
       ],
-      "pwd_status": "APPLICABLE (AS PER NOTIFICATION)",
-      "caste_category":,
-      "eligibility_education_course": "Graduation [34]",
-      "eligibility_course_year": "",
-      "eligibility_marks": {},
+      "pwd_status": "APPLICABLE ",
+      "caste_category": ["SC", "ST", "OBC"], 
+      "eligibility_education_course": "Graduation ",
+      "eligibility_course_year": "", 
+      "eligibility_marks": { "General": "50% minimum" }, 
       "exam_sector": "GOVERNMENT",
-      "age_criteria": {},
-      "age_as_on_date": "",
-      "exam_subjects": {},
+      "age_criteria": { "Minimum": "21 years", "Maximum": "35 years" }, 
+      "age_as_on_date": "AS PER NOTIFICATION", 
+      "exam_subjects": { "Written Exam": "General Knowledge of Chhattisgarh, Knowledge of Chhattisgarhi Language, Cooperative Act and Banking related, General Knowledge, Mathematical & Reasoning Ability, Hindi Language, English Language, and Computer Knowledge" }, 
       "conducting_body": "Chhattisgarh Rajya Sahakari Bank Maryadit (CG Apex Bank)",
-      "selection_process": "Written exam, interview and document Verification [34]"
+      "selection_process": "Written exam, interview and document Verification "
     },
     "IBPS SO": {
-      "posts_classes_courses_departments_academy": "Specialist Officer (SO) Scale I in various disciplines (CRP SPL-XV)",
+      "posts_classes_courses_departments_academy": "Specialist Officer (SO) Scale I in various disciplines (CRP SPL-XV) ",
       "gender": {},
       "marital_status": "",
       "domicile": "PAN INDIA",
-      "nationality":,
-      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC: 13 years, General: 10 years) [39]",
-      "caste_category":,
+      "nationality": [
+        "Indian citizens"
+      ],
+      "pwd_status": "Relaxation applicable (SC/ST: 15 years, OBC: 13 years, General: 10 years) ",
+      "caste_category": ["General", "OBC", "SC", "ST"],
       "eligibility_education_course": "Post-specific specialized qualification",
-      "eligibility_course_year": "Final result declared on or before 21.07.2025 [39]",
-      "eligibility_marks": {},
+      "eligibility_course_year": "Final result declared on or before 21.07.2025","Doubt": true,
+      "eligibility_marks": { "General": "PASSED (Post-specific requirements may apply)" }, 
       "exam_sector": "GOVERNMENT",
       "age_criteria": {
         "Minimum": "20 years",
         "Maximum": "30 years",
-        "Relaxation": "SC/ST: 5 years, OBC: 3 years, PwBD: 10 years [39]"
+        "Relaxation": "SC/ST: 5 years, OBC: 3 years, PwBD: 10 years "
       },
-      "age_as_on_date": "01.07.2025 [39]",
+      "age_as_on_date": "01.07.2025 ",
       "exam_subjects": {
-        "Phase 1 (IT, Ag., HR, Marketing Officer)": "English Language (50 Q, 25 M), Reasoning (50 Q, 50 M), Quantitative Aptitude (50 Q, 50 M) (Total 150 Q, 125 M, 2 Hours) [39]",
-        "Phase 2 (IT, Ag., HR, Marketing Officer)": "Professional Knowledge (60 Q, 60 M, 45 minutes) [39]",
-        "Phase 2 (Rajbhasha Adhikari)": "Professional Knowledge (Objective - 45 Q, 60 M; Descriptive - 2 Q) [39]"
+        "Phase 1 (IT, Ag., HR, Marketing Officer)": "English Language, Reasoning, Quantitative Aptitude (Total 150 Q, 125 M, 2 Hours) ",
+        "Phase 2 (IT, Ag., HR, Marketing Officer)": "Professional Knowledge (60 Q, 60 M, 45 minutes) ",
+        "Phase 2 (Rajbhasha Adhikari)": "Professional Knowledge (Objective - 45 Q, 60 M; Descriptive - 2 Q) "
       },
       "conducting_body": "Institute of Banking Personnel Selection (IBPS)",
-      "selection_process": "Preliminary Exam, Main Exam, Common Interview [39]",
+      "selection_process": "Preliminary Exam, Main Exam, Common Interview ",
       "specialized_posts": {
         "IT Officer (Scale I)": {
-          "eligibility_education_course": "4 year Engineering/ Technology Degree (CS/IT/Electronics, etc.) OR Post Graduate Degree in relevant fields OR DOEACC 'B' Level [39]"
+          "eligibility_education_course": "4 year Engineering/ Technology Degree (CS/IT/Electronics, etc.) OR Post Graduate Degree in relevant fields OR DOEACC 'B' Level "
         },
         "Agricultural Field Officer (Scale I)": {
-          "eligibility_education_course": "4 year Degree in Agriculture/ Horticulture/ Animal Husbandry/ Veterinary Science/ Dairy Science, etc. [39]"
+          "eligibility_education_course": "4 year Degree in Agriculture/ Horticulture/ Animal Husbandry/ Veterinary Science/ Dairy Science, etc. "
         },
         "Law Officer (Scale I)": {
-          "eligibility_education_course": "Bachelor Degree in Law (LLB) and enrolment as an advocate with Bar Council [39]"
+          "eligibility_education_course": "Bachelor Degree in Law (LLB) and enrolment as an advocate with Bar Council "
         },
         "HR/Personnel Officer (Scale I)": {
-          "eligibility_education_course": "Graduate and Two Years Full time PG Degree/Diploma in Personnel Management/HR/Labour Law, etc. [39]"
+          "eligibility_education_course": "Graduate and Two Years Full time PG Degree/Diploma in Personnel Management/HR/Labour Law, etc. "
         },
         "Marketing Officer (Scale I)": {
-          "eligibility_education_course": "Graduate and Two Years Full time MMS (Marketing)/MBA (Marketing)/PGDM with specialization in Marketing [39]"
+          "eligibility_education_course": "Graduate and Two Years Full time MMS (Marketing)/MBA (Marketing)/PGDM with specialization in Marketing "
         }
       }
     }
